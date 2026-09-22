@@ -1,5 +1,6 @@
 from rag_enterprise_lab.shortcuts.registry import SHORTCUTS
 
+
 def test_signature_shortcut_exists():
     assert "/signatures" in SHORTCUTS
 

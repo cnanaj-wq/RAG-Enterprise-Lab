@@ -6,6 +6,7 @@ shortcuts:
     example: "/contrats-client P:R"
   /tarif: {purpose: "Tarif contractuel applicable"}
   /version: {purpose: "Historique des versions"}
+  /sources: {purpose: "Sources utilisées dans la dernière réponse"}
   /completude: {purpose: "Complétude documentaire"}
   /conflits: {purpose: "Conflits documentaires"}
   /expiration: {purpose: "Échéances documentaires"}

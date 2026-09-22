@@ -1,5 +1,11 @@
-from rag_enterprise_lab.domain.models import Classification, DocumentRecord, DocumentStatus, UserContext
+from rag_enterprise_lab.domain.models import (
+    Classification,
+    DocumentRecord,
+    DocumentStatus,
+    UserContext,
+)
 from rag_enterprise_lab.security.acl import authorize
+
 
 def _doc(groups: list[str]) -> DocumentRecord:
     return DocumentRecord(

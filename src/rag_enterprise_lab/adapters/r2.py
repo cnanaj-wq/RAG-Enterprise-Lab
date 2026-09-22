@@ -1,5 +1,6 @@
 from typing import Protocol
 
+
 class ObjectStorePort(Protocol):
     async def get_bytes(self, object_key: str) -> bytes:
         ...

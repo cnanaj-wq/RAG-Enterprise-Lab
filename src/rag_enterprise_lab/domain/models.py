@@ -1,6 +1,8 @@
 from datetime import date, datetime
 from enum import StrEnum
+
 from pydantic import BaseModel, Field
+
 
 class Classification(StrEnum):
     PUBLIC = "PUBLIC"
