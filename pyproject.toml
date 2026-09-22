@@ -1,0 +1,29 @@
+[project]
+name = "rag-enterprise-lab"
+version = "0.1.0"
+description = "Governed enterprise RAG lab"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pydantic>=2",
+  "pydantic-settings",
+  "sqlalchemy>=2",
+  "psycopg[binary]",
+  "pgvector",
+  "boto3",
+  "httpx",
+  "pyyaml"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "ruff", "mypy"]
+ingestion = ["docling"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

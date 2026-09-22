@@ -1,0 +1,15 @@
+groups:
+  global:
+    - RAG_ALL_EMPLOYEES
+  departments:
+    - RAG_HR
+    - RAG_FINANCE
+    - RAG_LEGAL
+    - RAG_SALES
+    - RAG_IT
+    - RAG_DATA_AI
+    - RAG_ENGINEERING
+    - RAG_EXECUTIVE
+  dynamic_patterns:
+    - RAG_CLIENT_{CLIENT_CODE}
+    - RAG_PROJECT_{PROJECT_CODE}

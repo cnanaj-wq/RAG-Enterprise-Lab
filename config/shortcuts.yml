@@ -1,0 +1,22 @@
+shortcuts:
+  /client: {purpose: "Vue 360 client"}
+  /contrat: {purpose: "Contrat applicable"}
+  /contrats-client:
+    purpose: "Lister les contrats par plage alphabétique"
+    example: "/contrats-client P:R"
+  /tarif: {purpose: "Tarif contractuel applicable"}
+  /version: {purpose: "Historique des versions"}
+  /completude: {purpose: "Complétude documentaire"}
+  /conflits: {purpose: "Conflits documentaires"}
+  /expiration: {purpose: "Échéances documentaires"}
+  /rgpd: {purpose: "Vue RGPD / gouvernance"}
+  /signatures:
+    purpose: "Pilotage des signatures"
+    variants:
+      - "/signatures mois"
+      - "/signatures commerciaux"
+      - "/signatures manquantes"
+      - "/signatures risque"
+      - "/signatures deadline 7j"
+      - "/signatures client ACME"
+  /cloture-commerciale: {purpose: "Clôture commerciale mensuelle"}
