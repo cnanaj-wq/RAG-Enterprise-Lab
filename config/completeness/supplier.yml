@@ -1,0 +1,12 @@
+supplier_dossier:
+  mandatory:
+    - SUPPLIER_CONTRACT
+    - NDA
+    - DPA
+    - INSURANCE_CERTIFICATE
+    - COMPANY_REGISTRY_EXTRACT
+    - SECURITY_APPENDIX
+    - BUSINESS_CONTACT
+  rules:
+    insurance_warning_days: 30
+    company_registry_max_age_days: 365

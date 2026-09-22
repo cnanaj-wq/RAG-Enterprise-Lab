@@ -1,0 +1,8 @@
+hr_employee_dossier:
+  mandatory:
+    - EMPLOYMENT_CONTRACT
+    - JOB_DESCRIPTION
+    - ONBOARDING_DOCUMENT
+    - PAYROLL_RECORD
+  rules:
+    employment_contract_missing_is_blocking: true

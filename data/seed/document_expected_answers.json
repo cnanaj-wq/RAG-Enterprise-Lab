@@ -1,0 +1,248 @@
+[
+  {
+    "category": "CONFLICT_PAYMENT_TERMS",
+    "expected_answer": 45,
+    "question": "Quelle est la valeur applicable de 'payment_terms_days' parmi les documents DOC-01281, DOC-00956 ?",
+    "question_id": "QA-00001",
+    "source_document_ids": [
+      "DOC-00956"
+    ]
+  },
+  {
+    "category": "CONFLICT_PAYMENT_TERMS",
+    "expected_answer": 45,
+    "question": "Quelle est la valeur applicable de 'payment_terms_days' parmi les documents DOC-01677, DOC-00962 ?",
+    "question_id": "QA-00002",
+    "source_document_ids": [
+      "DOC-00962"
+    ]
+  },
+  {
+    "category": "CONFLICT_PAYMENT_TERMS",
+    "expected_answer": 45,
+    "question": "Quelle est la valeur applicable de 'payment_terms_days' parmi les documents DOC-01683, DOC-00968 ?",
+    "question_id": "QA-00003",
+    "source_document_ids": [
+      "DOC-00968"
+    ]
+  },
+  {
+    "category": "CONFLICT_CONTRACT_DATES",
+    "expected_answer": 730,
+    "question": "Quelle est la valeur applicable de 'contract_end_date_offset_days' parmi les documents DOC-01299, DOC-00974 ?",
+    "question_id": "QA-00004",
+    "source_document_ids": [
+      "DOC-00974"
+    ]
+  },
+  {
+    "category": "CONFLICT_CONTRACT_DATES",
+    "expected_answer": 730,
+    "question": "Quelle est la valeur applicable de 'contract_end_date_offset_days' parmi les documents DOC-01305, DOC-00980 ?",
+    "question_id": "QA-00005",
+    "source_document_ids": [
+      "DOC-00980"
+    ]
+  },
+  {
+    "category": "CONFLICT_CONTRACT_DATES",
+    "expected_answer": 730,
+    "question": "Quelle est la valeur applicable de 'contract_end_date_offset_days' parmi les documents DOC-01701, DOC-00986 ?",
+    "question_id": "QA-00006",
+    "source_document_ids": [
+      "DOC-00986"
+    ]
+  },
+  {
+    "category": "CONFLICT_SLA",
+    "expected_answer": 24,
+    "question": "Quelle est la valeur applicable de 'sla_response_hours' parmi les documents DOC-01707, DOC-00992 ?",
+    "question_id": "QA-00007",
+    "source_document_ids": [
+      "DOC-00992"
+    ]
+  },
+  {
+    "category": "CONFLICT_SLA",
+    "expected_answer": 24,
+    "question": "Quelle est la valeur applicable de 'sla_response_hours' parmi les documents DOC-01713, DOC-00998 ?",
+    "question_id": "QA-00008",
+    "source_document_ids": [
+      "DOC-00998"
+    ]
+  },
+  {
+    "category": "CONFLICT_SLA",
+    "expected_answer": 24,
+    "question": "Quelle est la valeur applicable de 'sla_response_hours' parmi les documents DOC-01719, DOC-01004 ?",
+    "question_id": "QA-00009",
+    "source_document_ids": [
+      "DOC-01004"
+    ]
+  },
+  {
+    "category": "CONFLICT_NOTICE_PERIOD",
+    "expected_answer": 90,
+    "question": "Quelle est la valeur applicable de 'notice_period_days' parmi les documents DOC-01725, DOC-01010 ?",
+    "question_id": "QA-00010",
+    "source_document_ids": [
+      "DOC-01010"
+    ]
+  },
+  {
+    "category": "CONFLICT_NOTICE_PERIOD",
+    "expected_answer": 90,
+    "question": "Quelle est la valeur applicable de 'notice_period_days' parmi les documents DOC-01341, DOC-01016 ?",
+    "question_id": "QA-00011",
+    "source_document_ids": [
+      "DOC-01016"
+    ]
+  },
+  {
+    "category": "CONFLICT_NOTICE_PERIOD",
+    "expected_answer": 90,
+    "question": "Quelle est la valeur applicable de 'notice_period_days' parmi les documents DOC-01347, DOC-01022 ?",
+    "question_id": "QA-00012",
+    "source_document_ids": [
+      "DOC-01022"
+    ]
+  },
+  {
+    "category": "CONFLICT_RENEWAL",
+    "expected_answer": true,
+    "question": "Quelle est la valeur applicable de 'auto_renewal' parmi les documents DOC-01743, DOC-01028 ?",
+    "question_id": "QA-00013",
+    "source_document_ids": [
+      "DOC-01028"
+    ]
+  },
+  {
+    "category": "CONFLICT_RENEWAL",
+    "expected_answer": true,
+    "question": "Quelle est la valeur applicable de 'auto_renewal' parmi les documents DOC-01749, DOC-01034 ?",
+    "question_id": "QA-00014",
+    "source_document_ids": [
+      "DOC-01034"
+    ]
+  },
+  {
+    "category": "CONFLICT_RENEWAL",
+    "expected_answer": true,
+    "question": "Quelle est la valeur applicable de 'auto_renewal' parmi les documents DOC-01365, DOC-01040 ?",
+    "question_id": "QA-00015",
+    "source_document_ids": [
+      "DOC-01040"
+    ]
+  },
+  {
+    "category": "CONFLICT_PRICING",
+    "expected_answer": 120.0,
+    "question": "Quelle est la valeur applicable de 'unit_price_eur' parmi les documents DOC-02963, DOC-02703 ?",
+    "question_id": "QA-00016",
+    "source_document_ids": [
+      "DOC-02703"
+    ]
+  },
+  {
+    "category": "CONFLICT_PRICING",
+    "expected_answer": 120.0,
+    "question": "Quelle est la valeur applicable de 'unit_price_eur' parmi les documents DOC-02971, DOC-02711 ?",
+    "question_id": "QA-00017",
+    "source_document_ids": [
+      "DOC-02711"
+    ]
+  },
+  {
+    "category": "CONFLICT_PRICING",
+    "expected_answer": 120.0,
+    "question": "Quelle est la valeur applicable de 'unit_price_eur' parmi les documents DOC-02983, DOC-02723 ?",
+    "question_id": "QA-00018",
+    "source_document_ids": [
+      "DOC-02723"
+    ]
+  },
+  {
+    "category": "CONFLICT_CUSTOMER_STATUS",
+    "expected_answer": "ACTIVE",
+    "question": "Quelle est la valeur applicable de 'customer_status' parmi les documents DOC-00951 ?",
+    "question_id": "QA-00019",
+    "source_document_ids": [
+      "CRM:CLI-0001"
+    ]
+  },
+  {
+    "category": "CONFLICT_CUSTOMER_STATUS",
+    "expected_answer": "ACTIVE",
+    "question": "Quelle est la valeur applicable de 'customer_status' parmi les documents DOC-00957 ?",
+    "question_id": "QA-00020",
+    "source_document_ids": [
+      "CRM:CLI-0007"
+    ]
+  },
+  {
+    "category": "CONFLICT_CUSTOMER_STATUS",
+    "expected_answer": "ACTIVE",
+    "question": "Quelle est la valeur applicable de 'customer_status' parmi les documents DOC-00963 ?",
+    "question_id": "QA-00021",
+    "source_document_ids": [
+      "CRM:CLI-0013"
+    ]
+  },
+  {
+    "category": "COMPLETENESS_CLIENT_DOSSIER",
+    "expected_answer": {
+      "is_complete": true,
+      "missing_types": []
+    },
+    "question": "Le dossier client CLI-0001 (Solace Systems) est-il complet ?",
+    "question_id": "QA-00022",
+    "source_document_ids": []
+  },
+  {
+    "category": "COMPLETENESS_CLIENT_DOSSIER",
+    "expected_answer": {
+      "is_complete": true,
+      "missing_types": []
+    },
+    "question": "Le dossier client CLI-0002 (Axion Consulting) est-il complet ?",
+    "question_id": "QA-00023",
+    "source_document_ids": []
+  },
+  {
+    "category": "COMPLETENESS_CLIENT_DOSSIER",
+    "expected_answer": {
+      "is_complete": true,
+      "missing_types": []
+    },
+    "question": "Le dossier client CLI-0003 (Driftwood Systems) est-il complet ?",
+    "question_id": "QA-00024",
+    "source_document_ids": []
+  },
+  {
+    "category": "COMPLETENESS_CLIENT_DOSSIER",
+    "expected_answer": {
+      "is_complete": true,
+      "missing_types": []
+    },
+    "question": "Le dossier client CLI-0004 (Vellum Consulting) est-il complet ?",
+    "question_id": "QA-00025",
+    "source_document_ids": []
+  },
+  {
+    "category": "COMPLETENESS_CLIENT_DOSSIER",
+    "expected_answer": {
+      "is_complete": true,
+      "missing_types": []
+    },
+    "question": "Le dossier client CLI-0005 (Verdant Labs) est-il complet ?",
+    "question_id": "QA-00026",
+    "source_document_ids": []
+  },
+  {
+    "category": "SIGNATURE_RATE",
+    "expected_answer": 0.4308,
+    "question": "Quel est le signature_rate du mois (contrats attendus signés / contrats attendus) ?",
+    "question_id": "QA-00027",
+    "source_document_ids": []
+  }
+]

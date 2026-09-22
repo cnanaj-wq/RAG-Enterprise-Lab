@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 from rag_enterprise_lab.domain.commercial import Client, Partner, Prospect, Supplier
 from rag_enterprise_lab.domain.delivery import Project
 from rag_enterprise_lab.domain.organization import Employee
-from rag_enterprise_lab.domain.sales import Opportunity
+from rag_enterprise_lab.domain.sales import ExpectedContract, Opportunity
 from rag_enterprise_lab.generation.commercial_generator import (
     CompanyNameFactory,
     generate_clients,
@@ -28,7 +28,7 @@ from rag_enterprise_lab.generation.organization_generator import (
     generate_employees,
     sales_manager_pool,
 )
-from rag_enterprise_lab.generation.sales_generator import generate_opportunities
+from rag_enterprise_lab.generation.sales_generator import generate_opportunities_and_contracts
 from rag_enterprise_lab.identity.groups import STATIC_GROUPS, client_group, project_group
 
 REFERENCE_MONTH_START = date(2026, 9, 1)
@@ -49,6 +49,7 @@ class OrganizationDataset(BaseModel):
     suppliers: list[Supplier]
     projects: list[Project]
     opportunities: list[Opportunity]
+    expected_contracts: list[ExpectedContract]
     identity_groups: list[str] = Field(default_factory=list)
 
 
@@ -102,7 +103,7 @@ def generate_dataset(seed: int) -> OrganizationDataset:
         reference_date=REFERENCE_MONTH_START,
     )
 
-    opportunities = generate_opportunities(
+    opportunities, expected_contracts = generate_opportunities_and_contracts(
         rng, clients=clients, reference_month_start=REFERENCE_MONTH_START
     )
 
@@ -144,6 +145,7 @@ def generate_dataset(seed: int) -> OrganizationDataset:
         suppliers=suppliers,
         projects=projects,
         opportunities=opportunities,
+        expected_contracts=expected_contracts,
         identity_groups=identity_groups,
     )
 
@@ -156,6 +158,7 @@ _FILES = {
     "suppliers.json": "suppliers",
     "projects.json": "projects",
     "opportunities.json": "opportunities",
+    "expected_contracts.json": "expected_contracts",
 }
 
 

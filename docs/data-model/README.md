@@ -43,14 +43,23 @@ sérialisées en JSON déterministe dans `data/seed/`.
 actif (65), équipe de 2 à 4 membres piochés dans Consulting / Data & AI /
 Engineering.
 
-## Opportunity (`domain/sales.py`)
+## Opportunity / ExpectedContract (`domain/sales.py`)
 
-Support direct du scénario *"avons-nous toutes nos signatures de contrats du
-mois ?"* (voir [01-contract-signature-control.md](../architecture/01-contract-signature-control.md)) :
-`opportunity_id`, `client_id`, `sales_owner_id`, `expected_close_date`,
-`expected_amount`, `signature_status`, `created_date`.
+Deux entités **distinctes et non ambiguës** (correctif Phase 1/2), support du
+scénario *"avons-nous toutes nos signatures de contrats du mois ?"* (voir
+[01-contract-signature-control.md](../architecture/01-contract-signature-control.md)) :
 
-`signature_status` (7 valeurs exactes) :
+- **Opportunity** (le pipeline commercial) : `opportunity_id`, `client_id`,
+  `sales_owner_id`, `stage` (`OPEN`/`WON`/`LOST`), `expected_close_date`,
+  `expected_amount`, `created_date`. **Ne porte pas** `signature_status`.
+- **ExpectedContract** (le contrat attendu, 1:1 avec son opportunité) :
+  `expected_contract_id`, `opportunity_id`, `client_id`, `sales_owner_id`,
+  `expected_close_date`, `expected_amount`, `signature_status`, `created_date`.
+
+`stage` est dérivé déterministiquement de `signature_status` :
+`SIGNED → WON`, `DECLINED`/`BLOCKED → LOST`, sinon `OPEN`.
+
+`signature_status` (7 valeurs exactes, portées uniquement par `ExpectedContract`) :
 `NOT_SENT → SENT → VIEWED → PARTIALLY_SIGNED → SIGNED` ; branches d'échec :
 `DECLINED`, `BLOCKED`.
 
@@ -65,10 +74,12 @@ Project (client_id) ----------> Client               [1:1]
 Project (team_member_ids) ----> Employee[]           [N:N]
 Opportunity (client_id) ------> Client                [1:1, 1 opportunité / client actif]
 Opportunity (sales_owner_id) -> Employee (Sales)      [1:1]
+ExpectedContract (opportunity_id) -> Opportunity      [1:1]
 ```
 
 ## Fichiers générés (`data/seed/`)
 
 `employees.json`, `clients.json`, `prospects.json`, `partners.json`,
 `suppliers.json`, `projects.json`, `opportunities.json`,
-`identity_groups.json`, `manifest.json` (seed, compte par entité).
+`expected_contracts.json`, `identity_groups.json`, `manifest.json` (seed,
+compte par entité).

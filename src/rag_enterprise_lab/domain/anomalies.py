@@ -1,0 +1,29 @@
+from enum import StrEnum
+
+from pydantic import BaseModel, Field
+
+
+class AnomalyType(StrEnum):
+    OBSOLETE_VERSION = "OBSOLETE_VERSION"
+    EXPIRED_DOCUMENT = "EXPIRED_DOCUMENT"
+    DUPLICATE = "DUPLICATE"
+    MISSING_OWNER = "MISSING_OWNER"
+    WRONG_CLASSIFICATION = "WRONG_CLASSIFICATION"
+    ACL_INCOHERENT = "ACL_INCOHERENT"
+    INCOMPLETE_DOCUMENT = "INCOMPLETE_DOCUMENT"
+    CONTRADICTORY_DOCUMENTS = "CONTRADICTORY_DOCUMENTS"
+    AMENDMENT_CONTRADICTS_CONTRACT = "AMENDMENT_CONTRADICTS_CONTRACT"
+    OBSOLETE_PRICING = "OBSOLETE_PRICING"
+    CRM_STATUS_INCOHERENT = "CRM_STATUS_INCOHERENT"
+    UNSIGNED_DOCUMENT = "UNSIGNED_DOCUMENT"
+    PARTIAL_SIGNATURE = "PARTIAL_SIGNATURE"
+    OCR_RISK = "OCR_RISK"
+    INCOHERENT_DATES = "INCOHERENT_DATES"
+
+
+class AnomalyRecord(BaseModel):
+    anomaly_id: str
+    type: AnomalyType
+    document_ids: list[str] = Field(default_factory=list)
+    description: str
+    ground_truth: dict[str, object] = Field(default_factory=dict)

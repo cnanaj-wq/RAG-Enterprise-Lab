@@ -14,6 +14,7 @@ class Classification(StrEnum):
 
 class DocumentStatus(StrEnum):
     DRAFT = "DRAFT"
+    IN_REVIEW = "IN_REVIEW"
     APPROVED = "APPROVED"
     SIGNED = "SIGNED"
     SUPERSEDED = "SUPERSEDED"

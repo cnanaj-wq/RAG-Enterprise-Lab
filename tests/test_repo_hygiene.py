@@ -21,8 +21,10 @@ FORBIDDEN_LOCAL_DIRS = [
     "vectorstore",
 ]
 
-# Volume local Phase 1 (data/seed/) : doit rester très inférieur à 100 Mo.
-MAX_SEED_DIR_BYTES = 5 * 1024 * 1024
+# Volume local data/seed/ (Phase 1 + manifest documentaire Phase 2) : doit
+# rester très inférieur à 100 Mo. Le seuil est aligné sur celui de
+# test_document_hygiene.py::test_total_repository_data_volume_under_limit.
+MAX_SEED_DIR_BYTES = 20 * 1024 * 1024
 
 
 def test_no_secrets_in_generated_seed_data():

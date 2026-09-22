@@ -1,0 +1,332 @@
+[
+  {
+    "category": "PAYMENT_TERMS",
+    "conflict_id": "CONF-00001",
+    "document_ids": [
+      "DOC-01281",
+      "DOC-00956"
+    ],
+    "field": "payment_terms_days",
+    "ground_truth_source_document_id": "DOC-00956",
+    "ground_truth_value": 45,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00956": 45,
+      "DOC-01281": 30
+    }
+  },
+  {
+    "category": "PAYMENT_TERMS",
+    "conflict_id": "CONF-00002",
+    "document_ids": [
+      "DOC-01677",
+      "DOC-00962"
+    ],
+    "field": "payment_terms_days",
+    "ground_truth_source_document_id": "DOC-00962",
+    "ground_truth_value": 45,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00962": 45,
+      "DOC-01677": 30
+    }
+  },
+  {
+    "category": "PAYMENT_TERMS",
+    "conflict_id": "CONF-00003",
+    "document_ids": [
+      "DOC-01683",
+      "DOC-00968"
+    ],
+    "field": "payment_terms_days",
+    "ground_truth_source_document_id": "DOC-00968",
+    "ground_truth_value": 45,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00968": 45,
+      "DOC-01683": 30
+    }
+  },
+  {
+    "category": "CONTRACT_DATES",
+    "conflict_id": "CONF-00004",
+    "document_ids": [
+      "DOC-01299",
+      "DOC-00974"
+    ],
+    "field": "contract_end_date_offset_days",
+    "ground_truth_source_document_id": "DOC-00974",
+    "ground_truth_value": 730,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00974": 730,
+      "DOC-01299": 365
+    }
+  },
+  {
+    "category": "CONTRACT_DATES",
+    "conflict_id": "CONF-00005",
+    "document_ids": [
+      "DOC-01305",
+      "DOC-00980"
+    ],
+    "field": "contract_end_date_offset_days",
+    "ground_truth_source_document_id": "DOC-00980",
+    "ground_truth_value": 730,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00980": 730,
+      "DOC-01305": 365
+    }
+  },
+  {
+    "category": "CONTRACT_DATES",
+    "conflict_id": "CONF-00006",
+    "document_ids": [
+      "DOC-01701",
+      "DOC-00986"
+    ],
+    "field": "contract_end_date_offset_days",
+    "ground_truth_source_document_id": "DOC-00986",
+    "ground_truth_value": 730,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00986": 730,
+      "DOC-01701": 365
+    }
+  },
+  {
+    "category": "SLA",
+    "conflict_id": "CONF-00007",
+    "document_ids": [
+      "DOC-01707",
+      "DOC-00992"
+    ],
+    "field": "sla_response_hours",
+    "ground_truth_source_document_id": "DOC-00992",
+    "ground_truth_value": 24,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00992": 24,
+      "DOC-01707": 48
+    }
+  },
+  {
+    "category": "SLA",
+    "conflict_id": "CONF-00008",
+    "document_ids": [
+      "DOC-01713",
+      "DOC-00998"
+    ],
+    "field": "sla_response_hours",
+    "ground_truth_source_document_id": "DOC-00998",
+    "ground_truth_value": 24,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-00998": 24,
+      "DOC-01713": 48
+    }
+  },
+  {
+    "category": "SLA",
+    "conflict_id": "CONF-00009",
+    "document_ids": [
+      "DOC-01719",
+      "DOC-01004"
+    ],
+    "field": "sla_response_hours",
+    "ground_truth_source_document_id": "DOC-01004",
+    "ground_truth_value": 24,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01004": 24,
+      "DOC-01719": 48
+    }
+  },
+  {
+    "category": "NOTICE_PERIOD",
+    "conflict_id": "CONF-00010",
+    "document_ids": [
+      "DOC-01725",
+      "DOC-01010"
+    ],
+    "field": "notice_period_days",
+    "ground_truth_source_document_id": "DOC-01010",
+    "ground_truth_value": 90,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01010": 90,
+      "DOC-01725": 60
+    }
+  },
+  {
+    "category": "NOTICE_PERIOD",
+    "conflict_id": "CONF-00011",
+    "document_ids": [
+      "DOC-01341",
+      "DOC-01016"
+    ],
+    "field": "notice_period_days",
+    "ground_truth_source_document_id": "DOC-01016",
+    "ground_truth_value": 90,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01016": 90,
+      "DOC-01341": 60
+    }
+  },
+  {
+    "category": "NOTICE_PERIOD",
+    "conflict_id": "CONF-00012",
+    "document_ids": [
+      "DOC-01347",
+      "DOC-01022"
+    ],
+    "field": "notice_period_days",
+    "ground_truth_source_document_id": "DOC-01022",
+    "ground_truth_value": 90,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01022": 90,
+      "DOC-01347": 60
+    }
+  },
+  {
+    "category": "RENEWAL",
+    "conflict_id": "CONF-00013",
+    "document_ids": [
+      "DOC-01743",
+      "DOC-01028"
+    ],
+    "field": "auto_renewal",
+    "ground_truth_source_document_id": "DOC-01028",
+    "ground_truth_value": true,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01028": true,
+      "DOC-01743": false
+    }
+  },
+  {
+    "category": "RENEWAL",
+    "conflict_id": "CONF-00014",
+    "document_ids": [
+      "DOC-01749",
+      "DOC-01034"
+    ],
+    "field": "auto_renewal",
+    "ground_truth_source_document_id": "DOC-01034",
+    "ground_truth_value": true,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01034": true,
+      "DOC-01749": false
+    }
+  },
+  {
+    "category": "RENEWAL",
+    "conflict_id": "CONF-00015",
+    "document_ids": [
+      "DOC-01365",
+      "DOC-01040"
+    ],
+    "field": "auto_renewal",
+    "ground_truth_source_document_id": "DOC-01040",
+    "ground_truth_value": true,
+    "resolution_rule": "SIGNED_AMENDMENT outrank SIGNED_CONTRACT dans AUTHORITY_RANK (docs/version-resolution/README.md)",
+    "values_by_document": {
+      "DOC-01040": true,
+      "DOC-01365": false
+    }
+  },
+  {
+    "category": "PRICING",
+    "conflict_id": "CONF-00016",
+    "document_ids": [
+      "DOC-02963",
+      "DOC-02703"
+    ],
+    "field": "unit_price_eur",
+    "ground_truth_source_document_id": "DOC-02703",
+    "ground_truth_value": 120.0,
+    "resolution_rule": "Version non supersedée (APPROVED_PRICING_GRID) prévaut sur la version SUPERSEDED de la même grille tarifaire.",
+    "values_by_document": {
+      "DOC-02703": 120.0,
+      "DOC-02963": 100.0
+    }
+  },
+  {
+    "category": "PRICING",
+    "conflict_id": "CONF-00017",
+    "document_ids": [
+      "DOC-02971",
+      "DOC-02711"
+    ],
+    "field": "unit_price_eur",
+    "ground_truth_source_document_id": "DOC-02711",
+    "ground_truth_value": 120.0,
+    "resolution_rule": "Version non supersedée (APPROVED_PRICING_GRID) prévaut sur la version SUPERSEDED de la même grille tarifaire.",
+    "values_by_document": {
+      "DOC-02711": 120.0,
+      "DOC-02971": 100.0
+    }
+  },
+  {
+    "category": "PRICING",
+    "conflict_id": "CONF-00018",
+    "document_ids": [
+      "DOC-02983",
+      "DOC-02723"
+    ],
+    "field": "unit_price_eur",
+    "ground_truth_source_document_id": "DOC-02723",
+    "ground_truth_value": 120.0,
+    "resolution_rule": "Version non supersedée (APPROVED_PRICING_GRID) prévaut sur la version SUPERSEDED de la même grille tarifaire.",
+    "values_by_document": {
+      "DOC-02723": 120.0,
+      "DOC-02983": 100.0
+    }
+  },
+  {
+    "category": "CUSTOMER_STATUS",
+    "conflict_id": "CONF-00019",
+    "document_ids": [
+      "DOC-00951"
+    ],
+    "field": "customer_status",
+    "ground_truth_source_document_id": "CRM:CLI-0001",
+    "ground_truth_value": "ACTIVE",
+    "resolution_rule": "PostgreSQL (registre client Phase 1) est la source de vérité calculable du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL).",
+    "values_by_document": {
+      "DOC-00951": "implicite SUPERSEDED (contrat)"
+    }
+  },
+  {
+    "category": "CUSTOMER_STATUS",
+    "conflict_id": "CONF-00020",
+    "document_ids": [
+      "DOC-00957"
+    ],
+    "field": "customer_status",
+    "ground_truth_source_document_id": "CRM:CLI-0007",
+    "ground_truth_value": "ACTIVE",
+    "resolution_rule": "PostgreSQL (registre client Phase 1) est la source de vérité calculable du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL).",
+    "values_by_document": {
+      "DOC-00957": "implicite SUPERSEDED (contrat)"
+    }
+  },
+  {
+    "category": "CUSTOMER_STATUS",
+    "conflict_id": "CONF-00021",
+    "document_ids": [
+      "DOC-00963"
+    ],
+    "field": "customer_status",
+    "ground_truth_source_document_id": "CRM:CLI-0013",
+    "ground_truth_value": "ACTIVE",
+    "resolution_rule": "PostgreSQL (registre client Phase 1) est la source de vérité calculable du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL).",
+    "values_by_document": {
+      "DOC-00963": "implicite SUPERSEDED (contrat)"
+    }
+  }
+]

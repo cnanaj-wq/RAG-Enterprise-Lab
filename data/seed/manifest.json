@@ -2,6 +2,7 @@
   "counts": {
     "clients": 65,
     "employees": 120,
+    "expected_contracts": 65,
     "opportunities": 65,
     "partners": 30,
     "projects": 65,

@@ -1,0 +1,755 @@
+[
+  {
+    "anomaly_id": "ANOM-00001",
+    "description": "DOC-01576 reste marqué SIGNED alors qu'il est remplacé par DOC-01336.",
+    "document_ids": [
+      "DOC-01576"
+    ],
+    "ground_truth": {
+      "correct_status": "SUPERSEDED",
+      "current_head_document_id": "DOC-01336"
+    },
+    "type": "OBSOLETE_VERSION"
+  },
+  {
+    "anomaly_id": "ANOM-00002",
+    "description": "DOC-02803 reste marqué SIGNED alors qu'il est remplacé par DOC-03063.",
+    "document_ids": [
+      "DOC-02803"
+    ],
+    "ground_truth": {
+      "correct_status": "SUPERSEDED",
+      "current_head_document_id": "DOC-03063"
+    },
+    "type": "OBSOLETE_VERSION"
+  },
+  {
+    "anomaly_id": "ANOM-00003",
+    "description": "DOC-00862 reste marqué SIGNED alors qu'il est remplacé par DOC-00022.",
+    "document_ids": [
+      "DOC-00862"
+    ],
+    "ground_truth": {
+      "correct_status": "SUPERSEDED",
+      "current_head_document_id": "DOC-00022"
+    },
+    "type": "OBSOLETE_VERSION"
+  },
+  {
+    "anomaly_id": "ANOM-00004",
+    "description": "DOC-02521 a une valid_to passée mais reste APPROVED.",
+    "document_ids": [
+      "DOC-02521"
+    ],
+    "ground_truth": {
+      "expected_status": "EXPIRED",
+      "valid_to": "2026-05-05"
+    },
+    "type": "EXPIRED_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00005",
+    "description": "DOC-02032 a une valid_to passée mais reste APPROVED.",
+    "document_ids": [
+      "DOC-02032"
+    ],
+    "ground_truth": {
+      "expected_status": "EXPIRED",
+      "valid_to": "2026-06-17"
+    },
+    "type": "EXPIRED_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00006",
+    "description": "DOC-01559 a une valid_to passée mais reste APPROVED.",
+    "document_ids": [
+      "DOC-01559"
+    ],
+    "ground_truth": {
+      "expected_status": "EXPIRED",
+      "valid_to": "2026-08-03"
+    },
+    "type": "EXPIRED_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00007",
+    "description": "DOC-03226 duplique DOC-01371.",
+    "document_ids": [
+      "DOC-01371",
+      "DOC-03226"
+    ],
+    "ground_truth": {
+      "duplicate": "DOC-03226",
+      "duplicate_of": "DOC-01371"
+    },
+    "type": "DUPLICATE"
+  },
+  {
+    "anomaly_id": "ANOM-00008",
+    "description": "DOC-04677 duplique DOC-02569.",
+    "document_ids": [
+      "DOC-02569",
+      "DOC-04677"
+    ],
+    "ground_truth": {
+      "duplicate": "DOC-04677",
+      "duplicate_of": "DOC-02569"
+    },
+    "type": "DUPLICATE"
+  },
+  {
+    "anomaly_id": "ANOM-00009",
+    "description": "DOC-03777 duplique DOC-02893.",
+    "document_ids": [
+      "DOC-02893",
+      "DOC-03777"
+    ],
+    "ground_truth": {
+      "duplicate": "DOC-03777",
+      "duplicate_of": "DOC-02893"
+    },
+    "type": "DUPLICATE"
+  },
+  {
+    "anomaly_id": "ANOM-00010",
+    "description": "DOC-01614 n'a plus de owner renseigné.",
+    "document_ids": [
+      "DOC-01614"
+    ],
+    "ground_truth": {
+      "expected_owner": "EMP-0116"
+    },
+    "type": "MISSING_OWNER"
+  },
+  {
+    "anomaly_id": "ANOM-00011",
+    "description": "DOC-01260 n'a plus de owner renseigné.",
+    "document_ids": [
+      "DOC-01260"
+    ],
+    "ground_truth": {
+      "expected_owner": "EMP-0112"
+    },
+    "type": "MISSING_OWNER"
+  },
+  {
+    "anomaly_id": "ANOM-00012",
+    "description": "DOC-04368 n'a plus de owner renseigné.",
+    "document_ids": [
+      "DOC-04368"
+    ],
+    "ground_truth": {
+      "expected_owner": "EMP-0042"
+    },
+    "type": "MISSING_OWNER"
+  },
+  {
+    "anomaly_id": "ANOM-00013",
+    "description": "DOC-03684 est classé PUBLIC au lieu de RESTRICTED.",
+    "document_ids": [
+      "DOC-03684"
+    ],
+    "ground_truth": {
+      "expected_classification": "RESTRICTED"
+    },
+    "type": "WRONG_CLASSIFICATION"
+  },
+  {
+    "anomaly_id": "ANOM-00014",
+    "description": "DOC-00160 est classé PUBLIC au lieu de PERSONAL_DATA.",
+    "document_ids": [
+      "DOC-00160"
+    ],
+    "ground_truth": {
+      "expected_classification": "PERSONAL_DATA"
+    },
+    "type": "WRONG_CLASSIFICATION"
+  },
+  {
+    "anomaly_id": "ANOM-00015",
+    "description": "DOC-01327 est classé PUBLIC au lieu de RESTRICTED.",
+    "document_ids": [
+      "DOC-01327"
+    ],
+    "ground_truth": {
+      "expected_classification": "RESTRICTED"
+    },
+    "type": "WRONG_CLASSIFICATION"
+  },
+  {
+    "anomaly_id": "ANOM-00016",
+    "description": "DOC-04618 (RESTRICTED) est ouvert à RAG_ALL_EMPLOYEES.",
+    "document_ids": [
+      "DOC-04618"
+    ],
+    "ground_truth": {
+      "expected_allowed_groups": [
+        "RAG_FINANCE",
+        "RAG_EXECUTIVE"
+      ]
+    },
+    "type": "ACL_INCOHERENT"
+  },
+  {
+    "anomaly_id": "ANOM-00017",
+    "description": "DOC-03726 (RESTRICTED) est ouvert à RAG_ALL_EMPLOYEES.",
+    "document_ids": [
+      "DOC-03726"
+    ],
+    "ground_truth": {
+      "expected_allowed_groups": [
+        "RAG_IT",
+        "RAG_EXECUTIVE",
+        "RAG_PROJECT_PJ056"
+      ]
+    },
+    "type": "ACL_INCOHERENT"
+  },
+  {
+    "anomaly_id": "ANOM-00018",
+    "description": "DOC-00723 (SENSITIVE_PERSONAL_DATA) est ouvert à RAG_ALL_EMPLOYEES.",
+    "document_ids": [
+      "DOC-00723"
+    ],
+    "ground_truth": {
+      "expected_allowed_groups": [
+        "RAG_HR"
+      ]
+    },
+    "type": "ACL_INCOHERENT"
+  },
+  {
+    "anomaly_id": "ANOM-00019",
+    "description": "DOC-00022 est SIGNED sans valid_from.",
+    "document_ids": [
+      "DOC-00022"
+    ],
+    "ground_truth": {
+      "expected_value": "2026-04-11",
+      "missing_field": "valid_from"
+    },
+    "type": "INCOMPLETE_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00020",
+    "description": "DOC-01280 est SIGNED sans valid_from.",
+    "document_ids": [
+      "DOC-01280"
+    ],
+    "ground_truth": {
+      "expected_value": "2025-04-29",
+      "missing_field": "valid_from"
+    },
+    "type": "INCOMPLETE_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00021",
+    "description": "DOC-01004 est SIGNED sans valid_from.",
+    "document_ids": [
+      "DOC-01004"
+    ],
+    "ground_truth": {
+      "expected_value": "2024-11-27",
+      "missing_field": "valid_from"
+    },
+    "type": "INCOMPLETE_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00022",
+    "description": "DOC-02935 (grille tarifaire) a expiré mais reste APPROVED.",
+    "document_ids": [
+      "DOC-02935"
+    ],
+    "ground_truth": {
+      "expected_status": "EXPIRED"
+    },
+    "type": "OBSOLETE_PRICING"
+  },
+  {
+    "anomaly_id": "ANOM-00023",
+    "description": "DOC-02711 (grille tarifaire) a expiré mais reste APPROVED.",
+    "document_ids": [
+      "DOC-02711"
+    ],
+    "ground_truth": {
+      "expected_status": "EXPIRED"
+    },
+    "type": "OBSOLETE_PRICING"
+  },
+  {
+    "anomaly_id": "ANOM-00024",
+    "description": "DOC-02947 (grille tarifaire) a expiré mais reste APPROVED.",
+    "document_ids": [
+      "DOC-02947"
+    ],
+    "ground_truth": {
+      "expected_status": "EXPIRED"
+    },
+    "type": "OBSOLETE_PRICING"
+  },
+  {
+    "anomaly_id": "ANOM-00025",
+    "description": "ExpectedContract ECT-0046 (client CLI-0046) est SIGNED côté CRM sans CLIENT_CONTRACT signé correspondant au manifest.",
+    "document_ids": [
+      "DOC-01581"
+    ],
+    "ground_truth": {
+      "client_id": "CLI-0046",
+      "expected_contract_id": "ECT-0046",
+      "issue": "signed_crm_without_signed_document"
+    },
+    "type": "CRM_STATUS_INCOHERENT"
+  },
+  {
+    "anomaly_id": "ANOM-00026",
+    "description": "ExpectedContract ECT-0014 (client CLI-0014) est SIGNED côté CRM sans CLIENT_CONTRACT signé correspondant au manifest.",
+    "document_ids": [
+      "DOC-01419"
+    ],
+    "ground_truth": {
+      "client_id": "CLI-0014",
+      "expected_contract_id": "ECT-0014",
+      "issue": "signed_crm_without_signed_document"
+    },
+    "type": "CRM_STATUS_INCOHERENT"
+  },
+  {
+    "anomaly_id": "ANOM-00027",
+    "description": "ExpectedContract ECT-0034 (client CLI-0034) est SIGNED côté CRM sans CLIENT_CONTRACT signé correspondant au manifest.",
+    "document_ids": [
+      "DOC-01179"
+    ],
+    "ground_truth": {
+      "client_id": "CLI-0034",
+      "expected_contract_id": "ECT-0034",
+      "issue": "signed_crm_without_signed_document"
+    },
+    "type": "CRM_STATUS_INCOHERENT"
+  },
+  {
+    "anomaly_id": "ANOM-00028",
+    "description": "DOC-01309 créé il y a plus de 2 ans, toujours DRAFT.",
+    "document_ids": [
+      "DOC-01309"
+    ],
+    "ground_truth": {
+      "issue": "created_long_ago_never_signed"
+    },
+    "type": "UNSIGNED_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00029",
+    "description": "DOC-00120 créé il y a plus de 2 ans, toujours DRAFT.",
+    "document_ids": [
+      "DOC-00120"
+    ],
+    "ground_truth": {
+      "issue": "created_long_ago_never_signed"
+    },
+    "type": "UNSIGNED_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00030",
+    "description": "DOC-01252 créé il y a plus de 2 ans, toujours DRAFT.",
+    "document_ids": [
+      "DOC-01252"
+    ],
+    "ground_truth": {
+      "issue": "created_long_ago_never_signed"
+    },
+    "type": "UNSIGNED_DOCUMENT"
+  },
+  {
+    "anomaly_id": "ANOM-00031",
+    "description": "ExpectedContract ECT-0032 est PARTIALLY_SIGNED.",
+    "document_ids": [
+      "DOC-01047"
+    ],
+    "ground_truth": {
+      "expected_contract_id": "ECT-0032",
+      "signature_status": "PARTIALLY_SIGNED"
+    },
+    "type": "PARTIAL_SIGNATURE"
+  },
+  {
+    "anomaly_id": "ANOM-00032",
+    "description": "ExpectedContract ECT-0052 est PARTIALLY_SIGNED.",
+    "document_ids": [
+      "DOC-01002"
+    ],
+    "ground_truth": {
+      "expected_contract_id": "ECT-0052",
+      "signature_status": "PARTIALLY_SIGNED"
+    },
+    "type": "PARTIAL_SIGNATURE"
+  },
+  {
+    "anomaly_id": "ANOM-00033",
+    "description": "ExpectedContract ECT-0038 est PARTIALLY_SIGNED.",
+    "document_ids": [
+      "DOC-01053"
+    ],
+    "ground_truth": {
+      "expected_contract_id": "ECT-0038",
+      "signature_status": "PARTIALLY_SIGNED"
+    },
+    "type": "PARTIAL_SIGNATURE"
+  },
+  {
+    "anomaly_id": "ANOM-00034",
+    "description": "DOC-00001 signalé à risque OCR (scan basse qualité simulé).",
+    "document_ids": [
+      "DOC-00001"
+    ],
+    "ground_truth": {
+      "ocr_confidence_expected": "LOW"
+    },
+    "type": "OCR_RISK"
+  },
+  {
+    "anomaly_id": "ANOM-00035",
+    "description": "DOC-01344 signalé à risque OCR (scan basse qualité simulé).",
+    "document_ids": [
+      "DOC-01344"
+    ],
+    "ground_truth": {
+      "ocr_confidence_expected": "LOW"
+    },
+    "type": "OCR_RISK"
+  },
+  {
+    "anomaly_id": "ANOM-00036",
+    "description": "DOC-01765 signalé à risque OCR (scan basse qualité simulé).",
+    "document_ids": [
+      "DOC-01765"
+    ],
+    "ground_truth": {
+      "ocr_confidence_expected": "LOW"
+    },
+    "type": "OCR_RISK"
+  },
+  {
+    "anomaly_id": "ANOM-00037",
+    "description": "DOC-00498 : signed_at antérieur à created_at.",
+    "document_ids": [
+      "DOC-00498"
+    ],
+    "ground_truth": {
+      "issue": "signed_at_before_created_at"
+    },
+    "type": "INCOHERENT_DATES"
+  },
+  {
+    "anomaly_id": "ANOM-00038",
+    "description": "DOC-01653 : signed_at antérieur à created_at.",
+    "document_ids": [
+      "DOC-01653"
+    ],
+    "ground_truth": {
+      "issue": "signed_at_before_created_at"
+    },
+    "type": "INCOHERENT_DATES"
+  },
+  {
+    "anomaly_id": "ANOM-00039",
+    "description": "DOC-01101 : signed_at antérieur à created_at.",
+    "document_ids": [
+      "DOC-01101"
+    ],
+    "ground_truth": {
+      "issue": "signed_at_before_created_at"
+    },
+    "type": "INCOHERENT_DATES"
+  },
+  {
+    "anomaly_id": "ANOM-00040",
+    "description": "Conflit CONF-00001 (PAYMENT_TERMS) sur payment_terms_days.",
+    "document_ids": [
+      "DOC-01281",
+      "DOC-00956"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00001",
+      "ground_truth_source_document_id": "DOC-00956",
+      "ground_truth_value": 45
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00041",
+    "description": "Conflit CONF-00002 (PAYMENT_TERMS) sur payment_terms_days.",
+    "document_ids": [
+      "DOC-01677",
+      "DOC-00962"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00002",
+      "ground_truth_source_document_id": "DOC-00962",
+      "ground_truth_value": 45
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00042",
+    "description": "Conflit CONF-00003 (PAYMENT_TERMS) sur payment_terms_days.",
+    "document_ids": [
+      "DOC-01683",
+      "DOC-00968"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00003",
+      "ground_truth_source_document_id": "DOC-00968",
+      "ground_truth_value": 45
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00043",
+    "description": "Conflit CONF-00004 (CONTRACT_DATES) sur contract_end_date_offset_days.",
+    "document_ids": [
+      "DOC-01299",
+      "DOC-00974"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00004",
+      "ground_truth_source_document_id": "DOC-00974",
+      "ground_truth_value": 730
+    },
+    "type": "CONTRADICTORY_DOCUMENTS"
+  },
+  {
+    "anomaly_id": "ANOM-00044",
+    "description": "Conflit CONF-00005 (CONTRACT_DATES) sur contract_end_date_offset_days.",
+    "document_ids": [
+      "DOC-01305",
+      "DOC-00980"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00005",
+      "ground_truth_source_document_id": "DOC-00980",
+      "ground_truth_value": 730
+    },
+    "type": "CONTRADICTORY_DOCUMENTS"
+  },
+  {
+    "anomaly_id": "ANOM-00045",
+    "description": "Conflit CONF-00006 (CONTRACT_DATES) sur contract_end_date_offset_days.",
+    "document_ids": [
+      "DOC-01701",
+      "DOC-00986"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00006",
+      "ground_truth_source_document_id": "DOC-00986",
+      "ground_truth_value": 730
+    },
+    "type": "CONTRADICTORY_DOCUMENTS"
+  },
+  {
+    "anomaly_id": "ANOM-00046",
+    "description": "Conflit CONF-00007 (SLA) sur sla_response_hours.",
+    "document_ids": [
+      "DOC-01707",
+      "DOC-00992"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00007",
+      "ground_truth_source_document_id": "DOC-00992",
+      "ground_truth_value": 24
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00047",
+    "description": "Conflit CONF-00008 (SLA) sur sla_response_hours.",
+    "document_ids": [
+      "DOC-01713",
+      "DOC-00998"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00008",
+      "ground_truth_source_document_id": "DOC-00998",
+      "ground_truth_value": 24
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00048",
+    "description": "Conflit CONF-00009 (SLA) sur sla_response_hours.",
+    "document_ids": [
+      "DOC-01719",
+      "DOC-01004"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00009",
+      "ground_truth_source_document_id": "DOC-01004",
+      "ground_truth_value": 24
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00049",
+    "description": "Conflit CONF-00010 (NOTICE_PERIOD) sur notice_period_days.",
+    "document_ids": [
+      "DOC-01725",
+      "DOC-01010"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00010",
+      "ground_truth_source_document_id": "DOC-01010",
+      "ground_truth_value": 90
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00050",
+    "description": "Conflit CONF-00011 (NOTICE_PERIOD) sur notice_period_days.",
+    "document_ids": [
+      "DOC-01341",
+      "DOC-01016"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00011",
+      "ground_truth_source_document_id": "DOC-01016",
+      "ground_truth_value": 90
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00051",
+    "description": "Conflit CONF-00012 (NOTICE_PERIOD) sur notice_period_days.",
+    "document_ids": [
+      "DOC-01347",
+      "DOC-01022"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00012",
+      "ground_truth_source_document_id": "DOC-01022",
+      "ground_truth_value": 90
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00052",
+    "description": "Conflit CONF-00013 (RENEWAL) sur auto_renewal.",
+    "document_ids": [
+      "DOC-01743",
+      "DOC-01028"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00013",
+      "ground_truth_source_document_id": "DOC-01028",
+      "ground_truth_value": true
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00053",
+    "description": "Conflit CONF-00014 (RENEWAL) sur auto_renewal.",
+    "document_ids": [
+      "DOC-01749",
+      "DOC-01034"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00014",
+      "ground_truth_source_document_id": "DOC-01034",
+      "ground_truth_value": true
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00054",
+    "description": "Conflit CONF-00015 (RENEWAL) sur auto_renewal.",
+    "document_ids": [
+      "DOC-01365",
+      "DOC-01040"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00015",
+      "ground_truth_source_document_id": "DOC-01040",
+      "ground_truth_value": true
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00055",
+    "description": "Conflit CONF-00016 (PRICING) sur unit_price_eur.",
+    "document_ids": [
+      "DOC-02963",
+      "DOC-02703"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00016",
+      "ground_truth_source_document_id": "DOC-02703",
+      "ground_truth_value": 120.0
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00056",
+    "description": "Conflit CONF-00017 (PRICING) sur unit_price_eur.",
+    "document_ids": [
+      "DOC-02971",
+      "DOC-02711"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00017",
+      "ground_truth_source_document_id": "DOC-02711",
+      "ground_truth_value": 120.0
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00057",
+    "description": "Conflit CONF-00018 (PRICING) sur unit_price_eur.",
+    "document_ids": [
+      "DOC-02983",
+      "DOC-02723"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00018",
+      "ground_truth_source_document_id": "DOC-02723",
+      "ground_truth_value": 120.0
+    },
+    "type": "AMENDMENT_CONTRADICTS_CONTRACT"
+  },
+  {
+    "anomaly_id": "ANOM-00058",
+    "description": "Conflit CONF-00019 (CUSTOMER_STATUS) sur customer_status.",
+    "document_ids": [
+      "DOC-00951"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00019",
+      "ground_truth_source_document_id": "CRM:CLI-0001",
+      "ground_truth_value": "ACTIVE"
+    },
+    "type": "CONTRADICTORY_DOCUMENTS"
+  },
+  {
+    "anomaly_id": "ANOM-00059",
+    "description": "Conflit CONF-00020 (CUSTOMER_STATUS) sur customer_status.",
+    "document_ids": [
+      "DOC-00957"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00020",
+      "ground_truth_source_document_id": "CRM:CLI-0007",
+      "ground_truth_value": "ACTIVE"
+    },
+    "type": "CONTRADICTORY_DOCUMENTS"
+  },
+  {
+    "anomaly_id": "ANOM-00060",
+    "description": "Conflit CONF-00021 (CUSTOMER_STATUS) sur customer_status.",
+    "document_ids": [
+      "DOC-00963"
+    ],
+    "ground_truth": {
+      "conflict_id": "CONF-00021",
+      "ground_truth_source_document_id": "CRM:CLI-0013",
+      "ground_truth_value": "ACTIVE"
+    },
+    "type": "CONTRADICTORY_DOCUMENTS"
+  }
+]

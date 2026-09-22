@@ -4,584 +4,649 @@
     "created_date": "2026-08-03",
     "expected_amount": 11516.52,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0001",
     "opportunity_id": "OPP-0001",
     "sales_owner_id": "EMP-0010",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0002",
     "created_date": "2026-08-17",
     "expected_amount": 297808.3,
     "expected_close_date": "2026-09-28",
+    "expected_contract_id": "ECT-0002",
     "opportunity_id": "OPP-0002",
     "sales_owner_id": "EMP-0011",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0003",
     "created_date": "2026-08-07",
     "expected_amount": 60913.17,
     "expected_close_date": "2026-09-24",
+    "expected_contract_id": "ECT-0003",
     "opportunity_id": "OPP-0003",
     "sales_owner_id": "EMP-0012",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0004",
     "created_date": "2026-07-29",
     "expected_amount": 36519.29,
     "expected_close_date": "2026-09-17",
+    "expected_contract_id": "ECT-0004",
     "opportunity_id": "OPP-0004",
     "sales_owner_id": "EMP-0013",
-    "stage": "OPEN"
+    "signature_status": "SENT"
   },
   {
     "client_id": "CLI-0005",
     "created_date": "2026-08-22",
     "expected_amount": 109917.4,
     "expected_close_date": "2026-09-01",
+    "expected_contract_id": "ECT-0005",
     "opportunity_id": "OPP-0005",
     "sales_owner_id": "EMP-0014",
-    "stage": "LOST"
+    "signature_status": "DECLINED"
   },
   {
     "client_id": "CLI-0006",
     "created_date": "2026-08-14",
     "expected_amount": 15807.17,
     "expected_close_date": "2026-09-08",
+    "expected_contract_id": "ECT-0006",
     "opportunity_id": "OPP-0006",
     "sales_owner_id": "EMP-0015",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0007",
     "created_date": "2026-07-27",
     "expected_amount": 33032.73,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0007",
     "opportunity_id": "OPP-0007",
     "sales_owner_id": "EMP-0016",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0008",
     "created_date": "2026-07-28",
     "expected_amount": 58049.76,
     "expected_close_date": "2026-09-22",
+    "expected_contract_id": "ECT-0008",
     "opportunity_id": "OPP-0008",
     "sales_owner_id": "EMP-0017",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0009",
     "created_date": "2026-07-31",
     "expected_amount": 31757.59,
     "expected_close_date": "2026-09-04",
+    "expected_contract_id": "ECT-0009",
     "opportunity_id": "OPP-0009",
     "sales_owner_id": "EMP-0018",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0010",
     "created_date": "2026-07-10",
     "expected_amount": 265539.31,
     "expected_close_date": "2026-09-12",
+    "expected_contract_id": "ECT-0010",
     "opportunity_id": "OPP-0010",
     "sales_owner_id": "EMP-0019",
-    "stage": "OPEN"
+    "signature_status": "SENT"
   },
   {
     "client_id": "CLI-0011",
     "created_date": "2026-07-22",
     "expected_amount": 219500.9,
     "expected_close_date": "2026-09-02",
+    "expected_contract_id": "ECT-0011",
     "opportunity_id": "OPP-0011",
     "sales_owner_id": "EMP-0020",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0012",
     "created_date": "2026-08-23",
     "expected_amount": 14306.5,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0012",
     "opportunity_id": "OPP-0012",
     "sales_owner_id": "EMP-0021",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0013",
     "created_date": "2026-08-10",
     "expected_amount": 45686.16,
     "expected_close_date": "2026-09-18",
+    "expected_contract_id": "ECT-0013",
     "opportunity_id": "OPP-0013",
     "sales_owner_id": "EMP-0010",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0014",
     "created_date": "2026-08-20",
     "expected_amount": 136352.29,
     "expected_close_date": "2026-09-20",
+    "expected_contract_id": "ECT-0014",
     "opportunity_id": "OPP-0014",
     "sales_owner_id": "EMP-0011",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0015",
     "created_date": "2026-07-08",
     "expected_amount": 11515.16,
     "expected_close_date": "2026-09-12",
+    "expected_contract_id": "ECT-0015",
     "opportunity_id": "OPP-0015",
     "sales_owner_id": "EMP-0012",
-    "stage": "LOST"
+    "signature_status": "BLOCKED"
   },
   {
     "client_id": "CLI-0016",
     "created_date": "2026-07-10",
     "expected_amount": 130857.87,
     "expected_close_date": "2026-09-12",
+    "expected_contract_id": "ECT-0016",
     "opportunity_id": "OPP-0016",
     "sales_owner_id": "EMP-0013",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0017",
     "created_date": "2026-07-26",
     "expected_amount": 50477.58,
     "expected_close_date": "2026-09-13",
+    "expected_contract_id": "ECT-0017",
     "opportunity_id": "OPP-0017",
     "sales_owner_id": "EMP-0014",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0018",
     "created_date": "2026-08-06",
     "expected_amount": 32725.79,
     "expected_close_date": "2026-09-23",
+    "expected_contract_id": "ECT-0018",
     "opportunity_id": "OPP-0018",
     "sales_owner_id": "EMP-0015",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0019",
     "created_date": "2026-07-20",
     "expected_amount": 15952.99,
     "expected_close_date": "2026-09-05",
+    "expected_contract_id": "ECT-0019",
     "opportunity_id": "OPP-0019",
     "sales_owner_id": "EMP-0016",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0020",
     "created_date": "2026-08-07",
     "expected_amount": 95741.6,
     "expected_close_date": "2026-09-20",
+    "expected_contract_id": "ECT-0020",
     "opportunity_id": "OPP-0020",
     "sales_owner_id": "EMP-0017",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0021",
     "created_date": "2026-07-05",
     "expected_amount": 167211.72,
     "expected_close_date": "2026-09-24",
+    "expected_contract_id": "ECT-0021",
     "opportunity_id": "OPP-0021",
     "sales_owner_id": "EMP-0018",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0022",
     "created_date": "2026-07-26",
     "expected_amount": 14031.92,
     "expected_close_date": "2026-09-27",
+    "expected_contract_id": "ECT-0022",
     "opportunity_id": "OPP-0022",
     "sales_owner_id": "EMP-0019",
-    "stage": "OPEN"
+    "signature_status": "SENT"
   },
   {
     "client_id": "CLI-0023",
     "created_date": "2026-07-28",
     "expected_amount": 53825.3,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0023",
     "opportunity_id": "OPP-0023",
     "sales_owner_id": "EMP-0020",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0024",
     "created_date": "2026-08-20",
     "expected_amount": 43103.27,
     "expected_close_date": "2026-09-22",
+    "expected_contract_id": "ECT-0024",
     "opportunity_id": "OPP-0024",
     "sales_owner_id": "EMP-0021",
-    "stage": "LOST"
+    "signature_status": "BLOCKED"
   },
   {
     "client_id": "CLI-0025",
     "created_date": "2026-07-12",
     "expected_amount": 49886.62,
     "expected_close_date": "2026-09-26",
+    "expected_contract_id": "ECT-0025",
     "opportunity_id": "OPP-0025",
     "sales_owner_id": "EMP-0010",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0026",
     "created_date": "2026-07-28",
     "expected_amount": 51321.71,
     "expected_close_date": "2026-09-20",
+    "expected_contract_id": "ECT-0026",
     "opportunity_id": "OPP-0026",
     "sales_owner_id": "EMP-0011",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0027",
     "created_date": "2026-07-21",
     "expected_amount": 52151.12,
     "expected_close_date": "2026-09-25",
+    "expected_contract_id": "ECT-0027",
     "opportunity_id": "OPP-0027",
     "sales_owner_id": "EMP-0012",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0028",
     "created_date": "2026-07-28",
     "expected_amount": 18074.7,
     "expected_close_date": "2026-09-19",
+    "expected_contract_id": "ECT-0028",
     "opportunity_id": "OPP-0028",
     "sales_owner_id": "EMP-0013",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0029",
     "created_date": "2026-07-09",
     "expected_amount": 342095.3,
     "expected_close_date": "2026-09-20",
+    "expected_contract_id": "ECT-0029",
     "opportunity_id": "OPP-0029",
     "sales_owner_id": "EMP-0014",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0030",
     "created_date": "2026-08-12",
     "expected_amount": 12051.64,
     "expected_close_date": "2026-09-22",
+    "expected_contract_id": "ECT-0030",
     "opportunity_id": "OPP-0030",
     "sales_owner_id": "EMP-0015",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0031",
     "created_date": "2026-08-15",
     "expected_amount": 409123.09,
     "expected_close_date": "2026-09-04",
+    "expected_contract_id": "ECT-0031",
     "opportunity_id": "OPP-0031",
     "sales_owner_id": "EMP-0016",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0032",
     "created_date": "2026-08-01",
     "expected_amount": 41381.31,
     "expected_close_date": "2026-09-05",
+    "expected_contract_id": "ECT-0032",
     "opportunity_id": "OPP-0032",
     "sales_owner_id": "EMP-0017",
-    "stage": "OPEN"
+    "signature_status": "PARTIALLY_SIGNED"
   },
   {
     "client_id": "CLI-0033",
     "created_date": "2026-07-19",
     "expected_amount": 44426.89,
     "expected_close_date": "2026-09-25",
+    "expected_contract_id": "ECT-0033",
     "opportunity_id": "OPP-0033",
     "sales_owner_id": "EMP-0018",
-    "stage": "LOST"
+    "signature_status": "DECLINED"
   },
   {
     "client_id": "CLI-0034",
     "created_date": "2026-07-12",
     "expected_amount": 393291.72,
     "expected_close_date": "2026-09-24",
+    "expected_contract_id": "ECT-0034",
     "opportunity_id": "OPP-0034",
     "sales_owner_id": "EMP-0019",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0035",
     "created_date": "2026-07-23",
     "expected_amount": 95598.93,
     "expected_close_date": "2026-09-07",
+    "expected_contract_id": "ECT-0035",
     "opportunity_id": "OPP-0035",
     "sales_owner_id": "EMP-0020",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0036",
     "created_date": "2026-08-03",
     "expected_amount": 139627.05,
     "expected_close_date": "2026-09-17",
+    "expected_contract_id": "ECT-0036",
     "opportunity_id": "OPP-0036",
     "sales_owner_id": "EMP-0021",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0037",
     "created_date": "2026-08-06",
     "expected_amount": 36955.25,
     "expected_close_date": "2026-09-18",
+    "expected_contract_id": "ECT-0037",
     "opportunity_id": "OPP-0037",
     "sales_owner_id": "EMP-0010",
-    "stage": "OPEN"
+    "signature_status": "SENT"
   },
   {
     "client_id": "CLI-0038",
     "created_date": "2026-07-12",
     "expected_amount": 17596.62,
     "expected_close_date": "2026-09-28",
+    "expected_contract_id": "ECT-0038",
     "opportunity_id": "OPP-0038",
     "sales_owner_id": "EMP-0011",
-    "stage": "OPEN"
+    "signature_status": "PARTIALLY_SIGNED"
   },
   {
     "client_id": "CLI-0039",
     "created_date": "2026-07-19",
     "expected_amount": 18938.35,
     "expected_close_date": "2026-09-09",
+    "expected_contract_id": "ECT-0039",
     "opportunity_id": "OPP-0039",
     "sales_owner_id": "EMP-0012",
-    "stage": "OPEN"
+    "signature_status": "SENT"
   },
   {
     "client_id": "CLI-0040",
     "created_date": "2026-07-23",
     "expected_amount": 61656.13,
     "expected_close_date": "2026-09-09",
+    "expected_contract_id": "ECT-0040",
     "opportunity_id": "OPP-0040",
     "sales_owner_id": "EMP-0013",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0041",
     "created_date": "2026-07-09",
     "expected_amount": 61156.79,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0041",
     "opportunity_id": "OPP-0041",
     "sales_owner_id": "EMP-0014",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0042",
     "created_date": "2026-07-27",
     "expected_amount": 38029.25,
     "expected_close_date": "2026-09-23",
+    "expected_contract_id": "ECT-0042",
     "opportunity_id": "OPP-0042",
     "sales_owner_id": "EMP-0015",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0043",
     "created_date": "2026-07-12",
     "expected_amount": 113299.47,
     "expected_close_date": "2026-09-26",
+    "expected_contract_id": "ECT-0043",
     "opportunity_id": "OPP-0043",
     "sales_owner_id": "EMP-0016",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0044",
     "created_date": "2026-07-24",
     "expected_amount": 35339.03,
     "expected_close_date": "2026-09-22",
+    "expected_contract_id": "ECT-0044",
     "opportunity_id": "OPP-0044",
     "sales_owner_id": "EMP-0017",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0045",
     "created_date": "2026-08-05",
     "expected_amount": 20791.69,
     "expected_close_date": "2026-09-27",
+    "expected_contract_id": "ECT-0045",
     "opportunity_id": "OPP-0045",
     "sales_owner_id": "EMP-0018",
-    "stage": "LOST"
+    "signature_status": "BLOCKED"
   },
   {
     "client_id": "CLI-0046",
     "created_date": "2026-08-25",
     "expected_amount": 378969.33,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0046",
     "opportunity_id": "OPP-0046",
     "sales_owner_id": "EMP-0019",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0047",
     "created_date": "2026-07-30",
     "expected_amount": 143987.87,
     "expected_close_date": "2026-09-12",
+    "expected_contract_id": "ECT-0047",
     "opportunity_id": "OPP-0047",
     "sales_owner_id": "EMP-0020",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0048",
     "created_date": "2026-08-15",
     "expected_amount": 18347.05,
     "expected_close_date": "2026-09-07",
+    "expected_contract_id": "ECT-0048",
     "opportunity_id": "OPP-0048",
     "sales_owner_id": "EMP-0021",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0049",
     "created_date": "2026-07-14",
     "expected_amount": 13346.89,
     "expected_close_date": "2026-09-18",
+    "expected_contract_id": "ECT-0049",
     "opportunity_id": "OPP-0049",
     "sales_owner_id": "EMP-0010",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0050",
     "created_date": "2026-07-21",
     "expected_amount": 34940.64,
     "expected_close_date": "2026-09-24",
+    "expected_contract_id": "ECT-0050",
     "opportunity_id": "OPP-0050",
     "sales_owner_id": "EMP-0011",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0051",
     "created_date": "2026-08-13",
     "expected_amount": 33099.11,
     "expected_close_date": "2026-09-17",
+    "expected_contract_id": "ECT-0051",
     "opportunity_id": "OPP-0051",
     "sales_owner_id": "EMP-0012",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0052",
     "created_date": "2026-08-06",
     "expected_amount": 33153.47,
     "expected_close_date": "2026-09-14",
+    "expected_contract_id": "ECT-0052",
     "opportunity_id": "OPP-0052",
     "sales_owner_id": "EMP-0013",
-    "stage": "OPEN"
+    "signature_status": "PARTIALLY_SIGNED"
   },
   {
     "client_id": "CLI-0053",
     "created_date": "2026-08-19",
     "expected_amount": 34667.16,
     "expected_close_date": "2026-09-25",
+    "expected_contract_id": "ECT-0053",
     "opportunity_id": "OPP-0053",
     "sales_owner_id": "EMP-0014",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0054",
     "created_date": "2026-08-01",
     "expected_amount": 48836.11,
     "expected_close_date": "2026-09-06",
+    "expected_contract_id": "ECT-0054",
     "opportunity_id": "OPP-0054",
     "sales_owner_id": "EMP-0015",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0055",
     "created_date": "2026-07-28",
     "expected_amount": 157974.39,
     "expected_close_date": "2026-09-16",
+    "expected_contract_id": "ECT-0055",
     "opportunity_id": "OPP-0055",
     "sales_owner_id": "EMP-0016",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0056",
     "created_date": "2026-08-07",
     "expected_amount": 18437.07,
     "expected_close_date": "2026-09-10",
+    "expected_contract_id": "ECT-0056",
     "opportunity_id": "OPP-0056",
     "sales_owner_id": "EMP-0017",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0057",
     "created_date": "2026-08-22",
     "expected_amount": 11121.21,
     "expected_close_date": "2026-09-25",
+    "expected_contract_id": "ECT-0057",
     "opportunity_id": "OPP-0057",
     "sales_owner_id": "EMP-0018",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0058",
     "created_date": "2026-07-12",
     "expected_amount": 38814.94,
     "expected_close_date": "2026-09-24",
+    "expected_contract_id": "ECT-0058",
     "opportunity_id": "OPP-0058",
     "sales_owner_id": "EMP-0019",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0059",
     "created_date": "2026-08-01",
     "expected_amount": 10891.63,
     "expected_close_date": "2026-09-06",
+    "expected_contract_id": "ECT-0059",
     "opportunity_id": "OPP-0059",
     "sales_owner_id": "EMP-0020",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0060",
     "created_date": "2026-07-05",
     "expected_amount": 12345.78,
     "expected_close_date": "2026-09-02",
+    "expected_contract_id": "ECT-0060",
     "opportunity_id": "OPP-0060",
     "sales_owner_id": "EMP-0021",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   },
   {
     "client_id": "CLI-0061",
     "created_date": "2026-07-03",
     "expected_amount": 15701.53,
     "expected_close_date": "2026-09-24",
+    "expected_contract_id": "ECT-0061",
     "opportunity_id": "OPP-0061",
     "sales_owner_id": "EMP-0010",
-    "stage": "LOST"
+    "signature_status": "DECLINED"
   },
   {
     "client_id": "CLI-0062",
     "created_date": "2026-08-08",
     "expected_amount": 394116.07,
     "expected_close_date": "2026-09-01",
+    "expected_contract_id": "ECT-0062",
     "opportunity_id": "OPP-0062",
     "sales_owner_id": "EMP-0011",
-    "stage": "OPEN"
+    "signature_status": "VIEWED"
   },
   {
     "client_id": "CLI-0063",
     "created_date": "2026-08-09",
     "expected_amount": 93013.26,
     "expected_close_date": "2026-09-11",
+    "expected_contract_id": "ECT-0063",
     "opportunity_id": "OPP-0063",
     "sales_owner_id": "EMP-0012",
-    "stage": "OPEN"
+    "signature_status": "SENT"
   },
   {
     "client_id": "CLI-0064",
     "created_date": "2026-07-27",
     "expected_amount": 17233.78,
     "expected_close_date": "2026-09-17",
+    "expected_contract_id": "ECT-0064",
     "opportunity_id": "OPP-0064",
     "sales_owner_id": "EMP-0013",
-    "stage": "OPEN"
+    "signature_status": "NOT_SENT"
   },
   {
     "client_id": "CLI-0065",
     "created_date": "2026-07-29",
     "expected_amount": 35727.3,
     "expected_close_date": "2026-09-17",
+    "expected_contract_id": "ECT-0065",
     "opportunity_id": "OPP-0065",
     "sales_owner_id": "EMP-0014",
-    "stage": "WON"
+    "signature_status": "SIGNED"
   }
 ]
