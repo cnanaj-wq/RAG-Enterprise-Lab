@@ -23,8 +23,11 @@ document (`NOT_SENT`), draft (`NOT_SENT`/`SENT` selon l'avancement),
 ## Conflits documentaires (7 catégories, 3 exemples chacune = 21)
 
 Ground truth toujours dérivé de l'autorité (`AUTHORITY_RANK`) ou de la
-source de vérité calculable (PostgreSQL / Phase 1) — jamais d'une simple
-règle de fraîcheur. Exemple canonique (`data/seed/document_conflicts.json`) :
+source de vérité calculable (**BUSINESS_REGISTRY**, actuellement implémentée
+par les fichiers seed structurés `data/seed/*.json` — PostgreSQL en sera
+l'implémentation persistante dans une phase ultérieure) — jamais d'une
+simple règle de fraîcheur. Exemple canonique
+(`data/seed/document_conflicts.json`) :
 
 | Contrat client | Avenant signé | Ground truth |
 |---|---|---|
@@ -38,7 +41,7 @@ règle de fraîcheur. Exemple canonique (`data/seed/document_conflicts.json`) :
 | SLA | sla_response_hours | Avenant signé > contrat signé |
 | NOTICE_PERIOD | notice_period_days | Avenant signé > contrat signé |
 | RENEWAL | auto_renewal | Avenant signé > contrat signé |
-| CUSTOMER_STATUS | customer_status | PostgreSQL (registre client Phase 1) fait autorité, pas un document |
+| CUSTOMER_STATUS | customer_status | BUSINESS_REGISTRY (registre client Phase 1) fait autorité, pas un document |
 
 ## Ground truth exploitable (`data/seed/document_expected_answers.json`)
 

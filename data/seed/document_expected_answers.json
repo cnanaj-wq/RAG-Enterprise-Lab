@@ -167,7 +167,7 @@
     "question": "Quelle est la valeur applicable de 'customer_status' parmi les documents DOC-00951 ?",
     "question_id": "QA-00019",
     "source_document_ids": [
-      "CRM:CLI-0001"
+      "BUSINESS_REGISTRY:CLI-0001"
     ]
   },
   {
@@ -176,7 +176,7 @@
     "question": "Quelle est la valeur applicable de 'customer_status' parmi les documents DOC-00957 ?",
     "question_id": "QA-00020",
     "source_document_ids": [
-      "CRM:CLI-0007"
+      "BUSINESS_REGISTRY:CLI-0007"
     ]
   },
   {
@@ -185,7 +185,7 @@
     "question": "Quelle est la valeur applicable de 'customer_status' parmi les documents DOC-00963 ?",
     "question_id": "QA-00021",
     "source_document_ids": [
-      "CRM:CLI-0013"
+      "BUSINESS_REGISTRY:CLI-0013"
     ]
   },
   {

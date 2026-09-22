@@ -114,7 +114,7 @@ Registre complet avec `ground_truth` : `data/seed/document_anomalies.json`.
 | SLA | 3 | Avenant signé > contrat signé |
 | NOTICE_PERIOD | 3 | Avenant signé > contrat signé |
 | RENEWAL | 3 | Avenant signé > contrat signé |
-| CUSTOMER_STATUS | 3 | PostgreSQL (Phase 1) fait autorité |
+| CUSTOMER_STATUS | 3 | BUSINESS_REGISTRY (Phase 1) fait autorité |
 
 Exemple exact demandé par la spécification (validé par
 `test_payment_terms_scenario_matches_specification_example`) :
@@ -222,11 +222,12 @@ Aucun point bloquant. Remarques documentées :
    un représentant par type demandé, un document expiré, une contradiction)
    plutôt que d'atteindre la limite pour atteindre la limite.
 3. **`CUSTOMER_STATUS` référence une source non-document** :
-   `ground_truth_source_document_id="CRM:{customer_id}"` plutôt qu'un
-   `document_id` réel, car le ground truth provient délibérément du
-   registre PostgreSQL (Phase 1), pas d'un document — cohérent avec
-   CLAUDE.md (« PostgreSQL = source de vérité calculable »), documenté dans
-   `docs/scenarios/README.md`.
+   `ground_truth_source_document_id="BUSINESS_REGISTRY:{customer_id}"`
+   plutôt qu'un `document_id` réel, car le ground truth provient
+   délibérément du registre métier (BUSINESS_REGISTRY), pas d'un document.
+   En Phase 1/2, ce registre est implémenté par les fichiers seed
+   structurés (`data/seed/*.json`) ; PostgreSQL en sera l'implémentation
+   persistante dans une phase ultérieure — voir `docs/scenarios/README.md`.
 4. **Le seuil de volume `data/seed/` du test Phase 1
    (`test_repo_hygiene.py`)** a été relevé de 5 Mo à 20 Mo : il ne
    couvrait à l'origine que les données Phase 1 (233 Ko) et est devenu trop

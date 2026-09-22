@@ -1,7 +1,9 @@
 """Génération déterministe de scénarios de conflits documentaires connus, sur
 les 7 catégories minimales demandées. Le ground truth applique toujours la
 règle d'autorité (AUTHORITY_RANK) ou la source de vérité calculable
-(PostgreSQL / Phase 1) — jamais une heuristique de fraîcheur."""
+(BUSINESS_REGISTRY, actuellement les fichiers seed Phase 1/2 — PostgreSQL en
+sera l'implémentation persistante dans une phase ultérieure) — jamais une
+heuristique de fraîcheur."""
 
 from rag_enterprise_lab.domain.commercial import Client
 from rag_enterprise_lab.domain.conflicts import ConflictCategory, ConflictRecord
@@ -135,10 +137,12 @@ def generate_conflicts(
                     entry.document_id: f"implicite {entry.status.value} (contrat)"
                 },
                 ground_truth_value=client.status.value,
-                ground_truth_source_document_id=f"CRM:{client.customer_id}",
+                ground_truth_source_document_id=f"BUSINESS_REGISTRY:{client.customer_id}",
                 resolution_rule=(
-                    "PostgreSQL (registre client Phase 1) est la source de vérité calculable "
-                    "du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL)."
+                    "BUSINESS_REGISTRY (registre client Phase 1/2, actuellement implémenté par "
+                    "les fichiers seed structurés data/seed/*.json — PostgreSQL en sera "
+                    "l'implémentation persistante dans une phase ultérieure) est la source de "
+                    "vérité calculable du statut commercial, pas un document individuel."
                 ),
             )
         )

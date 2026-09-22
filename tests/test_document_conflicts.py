@@ -9,8 +9,10 @@ def test_all_7_conflict_categories_are_present(document_dataset):
 def test_conflict_ground_truth_is_coherent(document_dataset):
     for conflict in document_dataset.conflicts:
         assert conflict.ground_truth_source_document_id
-        is_crm_source = conflict.ground_truth_source_document_id.startswith("CRM:")
-        if not is_crm_source:
+        is_business_registry_source = conflict.ground_truth_source_document_id.startswith(
+            "BUSINESS_REGISTRY:"
+        )
+        if not is_business_registry_source:
             assert conflict.ground_truth_source_document_id in conflict.document_ids
             assert (
                 conflict.values_by_document[conflict.ground_truth_source_document_id]

@@ -721,7 +721,7 @@
     ],
     "ground_truth": {
       "conflict_id": "CONF-00019",
-      "ground_truth_source_document_id": "CRM:CLI-0001",
+      "ground_truth_source_document_id": "BUSINESS_REGISTRY:CLI-0001",
       "ground_truth_value": "ACTIVE"
     },
     "type": "CONTRADICTORY_DOCUMENTS"
@@ -734,7 +734,7 @@
     ],
     "ground_truth": {
       "conflict_id": "CONF-00020",
-      "ground_truth_source_document_id": "CRM:CLI-0007",
+      "ground_truth_source_document_id": "BUSINESS_REGISTRY:CLI-0007",
       "ground_truth_value": "ACTIVE"
     },
     "type": "CONTRADICTORY_DOCUMENTS"
@@ -747,7 +747,7 @@
     ],
     "ground_truth": {
       "conflict_id": "CONF-00021",
-      "ground_truth_source_document_id": "CRM:CLI-0013",
+      "ground_truth_source_document_id": "BUSINESS_REGISTRY:CLI-0013",
       "ground_truth_value": "ACTIVE"
     },
     "type": "CONTRADICTORY_DOCUMENTS"

@@ -294,9 +294,9 @@
       "DOC-00951"
     ],
     "field": "customer_status",
-    "ground_truth_source_document_id": "CRM:CLI-0001",
+    "ground_truth_source_document_id": "BUSINESS_REGISTRY:CLI-0001",
     "ground_truth_value": "ACTIVE",
-    "resolution_rule": "PostgreSQL (registre client Phase 1) est la source de vérité calculable du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL).",
+    "resolution_rule": "BUSINESS_REGISTRY (registre client Phase 1/2, actuellement implémenté par les fichiers seed structurés data/seed/*.json — PostgreSQL en sera l'implémentation persistante dans une phase ultérieure) est la source de vérité calculable du statut commercial, pas un document individuel.",
     "values_by_document": {
       "DOC-00951": "implicite SUPERSEDED (contrat)"
     }
@@ -308,9 +308,9 @@
       "DOC-00957"
     ],
     "field": "customer_status",
-    "ground_truth_source_document_id": "CRM:CLI-0007",
+    "ground_truth_source_document_id": "BUSINESS_REGISTRY:CLI-0007",
     "ground_truth_value": "ACTIVE",
-    "resolution_rule": "PostgreSQL (registre client Phase 1) est la source de vérité calculable du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL).",
+    "resolution_rule": "BUSINESS_REGISTRY (registre client Phase 1/2, actuellement implémenté par les fichiers seed structurés data/seed/*.json — PostgreSQL en sera l'implémentation persistante dans une phase ultérieure) est la source de vérité calculable du statut commercial, pas un document individuel.",
     "values_by_document": {
       "DOC-00957": "implicite SUPERSEDED (contrat)"
     }
@@ -322,9 +322,9 @@
       "DOC-00963"
     ],
     "field": "customer_status",
-    "ground_truth_source_document_id": "CRM:CLI-0013",
+    "ground_truth_source_document_id": "BUSINESS_REGISTRY:CLI-0013",
     "ground_truth_value": "ACTIVE",
-    "resolution_rule": "PostgreSQL (registre client Phase 1) est la source de vérité calculable du statut commercial, pas un document individuel (CLAUDE.md § PostgreSQL).",
+    "resolution_rule": "BUSINESS_REGISTRY (registre client Phase 1/2, actuellement implémenté par les fichiers seed structurés data/seed/*.json — PostgreSQL en sera l'implémentation persistante dans une phase ultérieure) est la source de vérité calculable du statut commercial, pas un document individuel.",
     "values_by_document": {
       "DOC-00963": "implicite SUPERSEDED (contrat)"
     }
