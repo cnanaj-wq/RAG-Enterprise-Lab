@@ -1,0 +1,642 @@
+[
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "CH",
+    "creation_date": "2025-01-30",
+    "criticality": "LOW",
+    "name": "Aurea Dynamics",
+    "supplier_id": "SUP-0001"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "ES",
+    "creation_date": "2024-10-09",
+    "criticality": "LOW",
+    "name": "Cedarwood Holding",
+    "supplier_id": "SUP-0002"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "FR",
+    "creation_date": "2023-01-15",
+    "criticality": "MEDIUM",
+    "name": "Yewgate Partners",
+    "supplier_id": "SUP-0003"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "NL",
+    "creation_date": "2026-02-20",
+    "criticality": "LOW",
+    "name": "Silverline Industries",
+    "supplier_id": "SUP-0004"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "ES",
+    "creation_date": "2022-08-11",
+    "criticality": "LOW",
+    "name": "Everline Technologies",
+    "supplier_id": "SUP-0005"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "CH",
+    "creation_date": "2023-05-27",
+    "criticality": "LOW",
+    "name": "Cedarwood Consulting",
+    "supplier_id": "SUP-0006"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "CH",
+    "creation_date": "2024-12-05",
+    "criticality": "HIGH",
+    "name": "Larkspur Labs",
+    "supplier_id": "SUP-0007"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "ES",
+    "creation_date": "2022-09-11",
+    "criticality": "LOW",
+    "name": "Westhaven Dynamics",
+    "supplier_id": "SUP-0008"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "BE",
+    "creation_date": "2024-07-22",
+    "criticality": "LOW",
+    "name": "Brightline Group",
+    "supplier_id": "SUP-0009"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "NL",
+    "creation_date": "2022-11-29",
+    "criticality": "MEDIUM",
+    "name": "Rivendale Holding",
+    "supplier_id": "SUP-0010"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "BE",
+    "creation_date": "2024-04-17",
+    "criticality": "MEDIUM",
+    "name": "Cedarwood Industries",
+    "supplier_id": "SUP-0011"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "NL",
+    "creation_date": "2024-12-08",
+    "criticality": "LOW",
+    "name": "Aurea Solutions",
+    "supplier_id": "SUP-0012"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "CH",
+    "creation_date": "2024-10-02",
+    "criticality": "HIGH",
+    "name": "Axion Labs",
+    "supplier_id": "SUP-0013"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "IT",
+    "creation_date": "2025-11-24",
+    "criticality": "LOW",
+    "name": "Opaline Group",
+    "supplier_id": "SUP-0014"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "CH",
+    "creation_date": "2021-12-07",
+    "criticality": "LOW",
+    "name": "Quillfeather Industries",
+    "supplier_id": "SUP-0015"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "BE",
+    "creation_date": "2023-08-23",
+    "criticality": "LOW",
+    "name": "Northgate Solutions",
+    "supplier_id": "SUP-0016"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "FR",
+    "creation_date": "2021-10-03",
+    "criticality": "MEDIUM",
+    "name": "Cresta Industries",
+    "supplier_id": "SUP-0017"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "CH",
+    "creation_date": "2025-10-21",
+    "criticality": "MEDIUM",
+    "name": "Pinegate Labs",
+    "supplier_id": "SUP-0018"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "CH",
+    "creation_date": "2022-10-14",
+    "criticality": "LOW",
+    "name": "Cedarwood Dynamics",
+    "supplier_id": "SUP-0019"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "CH",
+    "creation_date": "2026-06-04",
+    "criticality": "MEDIUM",
+    "name": "Verdant Technologies",
+    "supplier_id": "SUP-0020"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "ES",
+    "creation_date": "2022-08-20",
+    "criticality": "LOW",
+    "name": "Orchard Industries",
+    "supplier_id": "SUP-0021"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "LU",
+    "creation_date": "2023-03-31",
+    "criticality": "HIGH",
+    "name": "Nova Industries",
+    "supplier_id": "SUP-0022"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "DE",
+    "creation_date": "2022-04-10",
+    "criticality": "MEDIUM",
+    "name": "Verdant Consulting",
+    "supplier_id": "SUP-0023"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "IT",
+    "creation_date": "2025-04-30",
+    "criticality": "LOW",
+    "name": "Vertex Technologies",
+    "supplier_id": "SUP-0024"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "DE",
+    "creation_date": "2022-04-09",
+    "criticality": "HIGH",
+    "name": "Arboria Labs",
+    "supplier_id": "SUP-0025"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "IT",
+    "creation_date": "2025-07-31",
+    "criticality": "HIGH",
+    "name": "Millbrook Partners",
+    "supplier_id": "SUP-0026"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "NL",
+    "creation_date": "2023-06-21",
+    "criticality": "MEDIUM",
+    "name": "Falkor Labs",
+    "supplier_id": "SUP-0027"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "IT",
+    "creation_date": "2025-02-01",
+    "criticality": "LOW",
+    "name": "Pinegate Group",
+    "supplier_id": "SUP-0028"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "ES",
+    "creation_date": "2024-04-27",
+    "criticality": "LOW",
+    "name": "Vertex Labs",
+    "supplier_id": "SUP-0029"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "CH",
+    "creation_date": "2022-03-06",
+    "criticality": "MEDIUM",
+    "name": "Driftwood Dynamics",
+    "supplier_id": "SUP-0030"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "CH",
+    "creation_date": "2026-05-18",
+    "criticality": "MEDIUM",
+    "name": "Everline Solutions",
+    "supplier_id": "SUP-0031"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "IT",
+    "creation_date": "2023-07-24",
+    "criticality": "MEDIUM",
+    "name": "Jasper Industries",
+    "supplier_id": "SUP-0032"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "BE",
+    "creation_date": "2023-10-11",
+    "criticality": "MEDIUM",
+    "name": "Pinegate Partners",
+    "supplier_id": "SUP-0033"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "BE",
+    "creation_date": "2022-05-23",
+    "criticality": "LOW",
+    "name": "Aurea Holding",
+    "supplier_id": "SUP-0034"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "CH",
+    "creation_date": "2023-10-16",
+    "criticality": "LOW",
+    "name": "Nordheim Labs",
+    "supplier_id": "SUP-0035"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "CH",
+    "creation_date": "2026-02-26",
+    "criticality": "MEDIUM",
+    "name": "Cresta Systems",
+    "supplier_id": "SUP-0036"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "LU",
+    "creation_date": "2024-09-16",
+    "criticality": "MEDIUM",
+    "name": "Silverline Systems",
+    "supplier_id": "SUP-0037"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "FR",
+    "creation_date": "2024-06-12",
+    "criticality": "LOW",
+    "name": "Orchard Holding",
+    "supplier_id": "SUP-0038"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "NL",
+    "creation_date": "2026-03-18",
+    "criticality": "LOW",
+    "name": "Larkspur Consulting",
+    "supplier_id": "SUP-0039"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "NL",
+    "creation_date": "2024-11-18",
+    "criticality": "LOW",
+    "name": "Ondine Labs",
+    "supplier_id": "SUP-0040"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "BE",
+    "creation_date": "2023-01-09",
+    "criticality": "MEDIUM",
+    "name": "Ondine Solutions",
+    "supplier_id": "SUP-0041"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "NL",
+    "creation_date": "2025-11-24",
+    "criticality": "MEDIUM",
+    "name": "Opaline Consulting",
+    "supplier_id": "SUP-0042"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "FR",
+    "creation_date": "2022-01-06",
+    "criticality": "LOW",
+    "name": "Jasper Partners",
+    "supplier_id": "SUP-0043"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "IT",
+    "creation_date": "2025-11-21",
+    "criticality": "MEDIUM",
+    "name": "Cobalt Systems",
+    "supplier_id": "SUP-0044"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "IT",
+    "creation_date": "2026-08-22",
+    "criticality": "LOW",
+    "name": "Tanglewood Consulting",
+    "supplier_id": "SUP-0045"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "BE",
+    "creation_date": "2025-06-17",
+    "criticality": "LOW",
+    "name": "Silverline Dynamics",
+    "supplier_id": "SUP-0046"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "CH",
+    "creation_date": "2022-08-04",
+    "criticality": "LOW",
+    "name": "Quillfeather Labs",
+    "supplier_id": "SUP-0047"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "ES",
+    "creation_date": "2025-01-19",
+    "criticality": "LOW",
+    "name": "Northgate Partners",
+    "supplier_id": "SUP-0048"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "LU",
+    "creation_date": "2026-05-27",
+    "criticality": "LOW",
+    "name": "Umberfield Systems",
+    "supplier_id": "SUP-0049"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "LU",
+    "creation_date": "2022-03-21",
+    "criticality": "LOW",
+    "name": "Axion Holding",
+    "supplier_id": "SUP-0050"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "IT",
+    "creation_date": "2021-12-23",
+    "criticality": "LOW",
+    "name": "Vertex Group",
+    "supplier_id": "SUP-0051"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "IT",
+    "creation_date": "2026-07-30",
+    "criticality": "MEDIUM",
+    "name": "Meridian Holding",
+    "supplier_id": "SUP-0052"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "LU",
+    "creation_date": "2025-01-13",
+    "criticality": "MEDIUM",
+    "name": "Ondine Systems",
+    "supplier_id": "SUP-0053"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "ES",
+    "creation_date": "2024-09-09",
+    "criticality": "LOW",
+    "name": "Cedarwood Labs",
+    "supplier_id": "SUP-0054"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "LU",
+    "creation_date": "2025-08-14",
+    "criticality": "MEDIUM",
+    "name": "Vertex Industries",
+    "supplier_id": "SUP-0055"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "BE",
+    "creation_date": "2024-08-24",
+    "criticality": "LOW",
+    "name": "Nova Labs",
+    "supplier_id": "SUP-0056"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "BE",
+    "creation_date": "2023-08-14",
+    "criticality": "HIGH",
+    "name": "Jasper Group",
+    "supplier_id": "SUP-0057"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "FR",
+    "creation_date": "2024-01-13",
+    "criticality": "LOW",
+    "name": "Silverline Consulting",
+    "supplier_id": "SUP-0058"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "FR",
+    "creation_date": "2024-07-29",
+    "criticality": "MEDIUM",
+    "name": "Kestrel Labs",
+    "supplier_id": "SUP-0059"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "DE",
+    "creation_date": "2024-08-31",
+    "criticality": "MEDIUM",
+    "name": "Zenith Industries",
+    "supplier_id": "SUP-0060"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "BE",
+    "creation_date": "2022-07-23",
+    "criticality": "LOW",
+    "name": "Verdant Partners",
+    "supplier_id": "SUP-0061"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "BE",
+    "creation_date": "2022-07-19",
+    "criticality": "MEDIUM",
+    "name": "Nordheim Partners",
+    "supplier_id": "SUP-0062"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "NL",
+    "creation_date": "2024-09-10",
+    "criticality": "LOW",
+    "name": "Tanglewood Labs",
+    "supplier_id": "SUP-0063"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "NL",
+    "creation_date": "2025-09-08",
+    "criticality": "MEDIUM",
+    "name": "Nordheim Solutions",
+    "supplier_id": "SUP-0064"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "IT",
+    "creation_date": "2023-12-26",
+    "criticality": "HIGH",
+    "name": "Ironbridge Partners",
+    "supplier_id": "SUP-0065"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "CH",
+    "creation_date": "2026-04-25",
+    "criticality": "MEDIUM",
+    "name": "Northgate Consulting",
+    "supplier_id": "SUP-0066"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "IT",
+    "creation_date": "2025-07-16",
+    "criticality": "LOW",
+    "name": "Brightline Technologies",
+    "supplier_id": "SUP-0067"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "FR",
+    "creation_date": "2026-06-08",
+    "criticality": "MEDIUM",
+    "name": "Quillfeather Technologies",
+    "supplier_id": "SUP-0068"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "NL",
+    "creation_date": "2023-10-12",
+    "criticality": "HIGH",
+    "name": "Halcyon Dynamics",
+    "supplier_id": "SUP-0069"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "ES",
+    "creation_date": "2023-08-16",
+    "criticality": "HIGH",
+    "name": "Westhaven Industries",
+    "supplier_id": "SUP-0070"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "IT",
+    "creation_date": "2022-06-12",
+    "criticality": "LOW",
+    "name": "Cresta Dynamics",
+    "supplier_id": "SUP-0071"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "LU",
+    "creation_date": "2021-11-01",
+    "criticality": "LOW",
+    "name": "Ironbridge Industries",
+    "supplier_id": "SUP-0072"
+  },
+  {
+    "category": "CLOUD_INFRASTRUCTURE",
+    "country": "FR",
+    "creation_date": "2024-10-22",
+    "criticality": "MEDIUM",
+    "name": "Cobalt Labs",
+    "supplier_id": "SUP-0073"
+  },
+  {
+    "category": "SOFTWARE_LICENSE",
+    "country": "DE",
+    "creation_date": "2024-08-09",
+    "criticality": "LOW",
+    "name": "Granite Labs",
+    "supplier_id": "SUP-0074"
+  },
+  {
+    "category": "FACILITIES",
+    "country": "ES",
+    "creation_date": "2022-07-02",
+    "criticality": "MEDIUM",
+    "name": "Solace Partners",
+    "supplier_id": "SUP-0075"
+  },
+  {
+    "category": "CONSULTING_SUBCONTRACTOR",
+    "country": "IT",
+    "creation_date": "2024-07-02",
+    "criticality": "MEDIUM",
+    "name": "Orchard Dynamics",
+    "supplier_id": "SUP-0076"
+  },
+  {
+    "category": "LEGAL_SERVICES",
+    "country": "NL",
+    "creation_date": "2023-11-20",
+    "criticality": "HIGH",
+    "name": "Nordheim Consulting",
+    "supplier_id": "SUP-0077"
+  },
+  {
+    "category": "HR_SERVICES",
+    "country": "IT",
+    "creation_date": "2022-03-14",
+    "criticality": "LOW",
+    "name": "Falkor Solutions",
+    "supplier_id": "SUP-0078"
+  },
+  {
+    "category": "MARKETING_SERVICES",
+    "country": "DE",
+    "creation_date": "2022-08-04",
+    "criticality": "MEDIUM",
+    "name": "Axion Dynamics",
+    "supplier_id": "SUP-0079"
+  },
+  {
+    "category": "HARDWARE",
+    "country": "ES",
+    "creation_date": "2023-04-17",
+    "criticality": "LOW",
+    "name": "Millbrook Dynamics",
+    "supplier_id": "SUP-0080"
+  }
+]

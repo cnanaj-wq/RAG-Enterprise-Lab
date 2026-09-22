@@ -1,0 +1,913 @@
+[
+  {
+    "client_id": "CLI-0001",
+    "delivery_lead_id": "EMP-0025",
+    "name": "Solace Analytics Program",
+    "project_code": "PJ001",
+    "project_id": "PRJ-0001",
+    "start_date": "2025-09-08",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0025",
+      "EMP-0026",
+      "EMP-0027"
+    ]
+  },
+  {
+    "client_id": "CLI-0002",
+    "delivery_lead_id": "EMP-0026",
+    "name": "Axion Cloud Migration",
+    "project_code": "PJ002",
+    "project_id": "PRJ-0002",
+    "start_date": "2024-09-25",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0026",
+      "EMP-0027",
+      "EMP-0028",
+      "EMP-0029"
+    ]
+  },
+  {
+    "client_id": "CLI-0003",
+    "delivery_lead_id": "EMP-0027",
+    "name": "Driftwood Governance Program",
+    "project_code": "PJ003",
+    "project_id": "PRJ-0003",
+    "start_date": "2024-11-23",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0027",
+      "EMP-0028"
+    ]
+  },
+  {
+    "client_id": "CLI-0004",
+    "delivery_lead_id": "EMP-0028",
+    "name": "Vellum Knowledge Base",
+    "project_code": "PJ004",
+    "project_id": "PRJ-0004",
+    "start_date": "2025-05-05",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0028",
+      "EMP-0029",
+      "EMP-0030"
+    ]
+  },
+  {
+    "client_id": "CLI-0005",
+    "delivery_lead_id": "EMP-0029",
+    "name": "Verdant Reporting Modernization",
+    "project_code": "PJ005",
+    "project_id": "PRJ-0005",
+    "start_date": "2025-08-06",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0029",
+      "EMP-0030",
+      "EMP-0031",
+      "EMP-0032"
+    ]
+  },
+  {
+    "client_id": "CLI-0006",
+    "delivery_lead_id": "EMP-0059",
+    "name": "Axion Automation Program",
+    "project_code": "PJ006",
+    "project_id": "PRJ-0006",
+    "start_date": "2025-10-25",
+    "status": "CANCELLED",
+    "team_member_ids": [
+      "EMP-0030",
+      "EMP-0031"
+    ]
+  },
+  {
+    "client_id": "CLI-0007",
+    "delivery_lead_id": "EMP-0060",
+    "name": "Opaline Data Platform",
+    "project_code": "PJ007",
+    "project_id": "PRJ-0007",
+    "start_date": "2024-10-19",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0031",
+      "EMP-0032",
+      "EMP-0033"
+    ]
+  },
+  {
+    "client_id": "CLI-0008",
+    "delivery_lead_id": "EMP-0061",
+    "name": "Pinegate Knowledge Base",
+    "project_code": "PJ008",
+    "project_id": "PRJ-0008",
+    "start_date": "2026-02-20",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0032",
+      "EMP-0033",
+      "EMP-0034",
+      "EMP-0035"
+    ]
+  },
+  {
+    "client_id": "CLI-0009",
+    "delivery_lead_id": "EMP-0062",
+    "name": "Westhaven Data Platform",
+    "project_code": "PJ009",
+    "project_id": "PRJ-0009",
+    "start_date": "2024-11-18",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0033",
+      "EMP-0034"
+    ]
+  },
+  {
+    "client_id": "CLI-0010",
+    "delivery_lead_id": "EMP-0079",
+    "name": "Brightline Integration Program",
+    "project_code": "PJ010",
+    "project_id": "PRJ-0010",
+    "start_date": "2026-05-26",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0034",
+      "EMP-0035",
+      "EMP-0036"
+    ]
+  },
+  {
+    "client_id": "CLI-0011",
+    "delivery_lead_id": "EMP-0080",
+    "name": "Nordheim AI Assistant",
+    "project_code": "PJ011",
+    "project_id": "PRJ-0011",
+    "start_date": "2025-07-23",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0035",
+      "EMP-0036",
+      "EMP-0037",
+      "EMP-0038"
+    ]
+  },
+  {
+    "client_id": "CLI-0012",
+    "delivery_lead_id": "EMP-0081",
+    "name": "Tanglewood Reporting Modernization",
+    "project_code": "PJ012",
+    "project_id": "PRJ-0012",
+    "start_date": "2024-12-30",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0036",
+      "EMP-0037"
+    ]
+  },
+  {
+    "client_id": "CLI-0013",
+    "delivery_lead_id": "EMP-0025",
+    "name": "Ironbridge Data Platform",
+    "project_code": "PJ013",
+    "project_id": "PRJ-0013",
+    "start_date": "2025-04-29",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0037",
+      "EMP-0038",
+      "EMP-0039"
+    ]
+  },
+  {
+    "client_id": "CLI-0014",
+    "delivery_lead_id": "EMP-0026",
+    "name": "Arboria Reporting Modernization",
+    "project_code": "PJ014",
+    "project_id": "PRJ-0014",
+    "start_date": "2026-05-16",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0038",
+      "EMP-0039",
+      "EMP-0040",
+      "EMP-0041"
+    ]
+  },
+  {
+    "client_id": "CLI-0015",
+    "delivery_lead_id": "EMP-0027",
+    "name": "Arboria Automation Program",
+    "project_code": "PJ015",
+    "project_id": "PRJ-0015",
+    "start_date": "2025-07-23",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0039",
+      "EMP-0040"
+    ]
+  },
+  {
+    "client_id": "CLI-0016",
+    "delivery_lead_id": "EMP-0028",
+    "name": "Rivendale Knowledge Base",
+    "project_code": "PJ016",
+    "project_id": "PRJ-0016",
+    "start_date": "2025-10-21",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0040",
+      "EMP-0041",
+      "EMP-0042"
+    ]
+  },
+  {
+    "client_id": "CLI-0017",
+    "delivery_lead_id": "EMP-0029",
+    "name": "Cresta AI Assistant",
+    "project_code": "PJ017",
+    "project_id": "PRJ-0017",
+    "start_date": "2026-07-07",
+    "status": "CANCELLED",
+    "team_member_ids": [
+      "EMP-0041",
+      "EMP-0042",
+      "EMP-0043",
+      "EMP-0044"
+    ]
+  },
+  {
+    "client_id": "CLI-0018",
+    "delivery_lead_id": "EMP-0059",
+    "name": "Westhaven Analytics Program",
+    "project_code": "PJ018",
+    "project_id": "PRJ-0018",
+    "start_date": "2025-07-02",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0042",
+      "EMP-0043"
+    ]
+  },
+  {
+    "client_id": "CLI-0019",
+    "delivery_lead_id": "EMP-0060",
+    "name": "Orchard Security Uplift",
+    "project_code": "PJ019",
+    "project_id": "PRJ-0019",
+    "start_date": "2025-11-09",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0043",
+      "EMP-0044",
+      "EMP-0045"
+    ]
+  },
+  {
+    "client_id": "CLI-0020",
+    "delivery_lead_id": "EMP-0061",
+    "name": "Falkor Integration Program",
+    "project_code": "PJ020",
+    "project_id": "PRJ-0020",
+    "start_date": "2024-11-14",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0044",
+      "EMP-0045",
+      "EMP-0046",
+      "EMP-0047"
+    ]
+  },
+  {
+    "client_id": "CLI-0021",
+    "delivery_lead_id": "EMP-0062",
+    "name": "Aurea Governance Program",
+    "project_code": "PJ021",
+    "project_id": "PRJ-0021",
+    "start_date": "2025-03-18",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0045",
+      "EMP-0046"
+    ]
+  },
+  {
+    "client_id": "CLI-0022",
+    "delivery_lead_id": "EMP-0079",
+    "name": "Rivendale AI Assistant",
+    "project_code": "PJ022",
+    "project_id": "PRJ-0022",
+    "start_date": "2026-05-19",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0046",
+      "EMP-0047",
+      "EMP-0048"
+    ]
+  },
+  {
+    "client_id": "CLI-0023",
+    "delivery_lead_id": "EMP-0080",
+    "name": "Quillfeather Integration Program",
+    "project_code": "PJ023",
+    "project_id": "PRJ-0023",
+    "start_date": "2025-05-04",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0047",
+      "EMP-0048",
+      "EMP-0049",
+      "EMP-0050"
+    ]
+  },
+  {
+    "client_id": "CLI-0024",
+    "delivery_lead_id": "EMP-0081",
+    "name": "Ironbridge Cloud Migration",
+    "project_code": "PJ024",
+    "project_id": "PRJ-0024",
+    "start_date": "2025-09-09",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0048",
+      "EMP-0049"
+    ]
+  },
+  {
+    "client_id": "CLI-0025",
+    "delivery_lead_id": "EMP-0025",
+    "name": "Pinegate Reporting Modernization",
+    "project_code": "PJ025",
+    "project_id": "PRJ-0025",
+    "start_date": "2025-01-16",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0049",
+      "EMP-0050",
+      "EMP-0051"
+    ]
+  },
+  {
+    "client_id": "CLI-0026",
+    "delivery_lead_id": "EMP-0026",
+    "name": "Opaline Security Uplift",
+    "project_code": "PJ026",
+    "project_id": "PRJ-0026",
+    "start_date": "2025-09-29",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0050",
+      "EMP-0051",
+      "EMP-0052",
+      "EMP-0053"
+    ]
+  },
+  {
+    "client_id": "CLI-0027",
+    "delivery_lead_id": "EMP-0027",
+    "name": "Nova Analytics Program",
+    "project_code": "PJ027",
+    "project_id": "PRJ-0027",
+    "start_date": "2024-10-18",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0051",
+      "EMP-0052"
+    ]
+  },
+  {
+    "client_id": "CLI-0028",
+    "delivery_lead_id": "EMP-0028",
+    "name": "Granite Analytics Program",
+    "project_code": "PJ028",
+    "project_id": "PRJ-0028",
+    "start_date": "2025-02-28",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0052",
+      "EMP-0053",
+      "EMP-0054"
+    ]
+  },
+  {
+    "client_id": "CLI-0029",
+    "delivery_lead_id": "EMP-0029",
+    "name": "Jasper AI Assistant",
+    "project_code": "PJ029",
+    "project_id": "PRJ-0029",
+    "start_date": "2026-01-09",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0053",
+      "EMP-0054",
+      "EMP-0055",
+      "EMP-0056"
+    ]
+  },
+  {
+    "client_id": "CLI-0030",
+    "delivery_lead_id": "EMP-0059",
+    "name": "Hearthstone Analytics Program",
+    "project_code": "PJ030",
+    "project_id": "PRJ-0030",
+    "start_date": "2025-03-15",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0054",
+      "EMP-0055"
+    ]
+  },
+  {
+    "client_id": "CLI-0031",
+    "delivery_lead_id": "EMP-0060",
+    "name": "Solace Data Platform",
+    "project_code": "PJ031",
+    "project_id": "PRJ-0031",
+    "start_date": "2024-12-24",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0055",
+      "EMP-0056",
+      "EMP-0057"
+    ]
+  },
+  {
+    "client_id": "CLI-0032",
+    "delivery_lead_id": "EMP-0061",
+    "name": "Opaline Reporting Modernization",
+    "project_code": "PJ032",
+    "project_id": "PRJ-0032",
+    "start_date": "2025-01-15",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0056",
+      "EMP-0057",
+      "EMP-0058",
+      "EMP-0059"
+    ]
+  },
+  {
+    "client_id": "CLI-0033",
+    "delivery_lead_id": "EMP-0062",
+    "name": "Jasper Analytics Program",
+    "project_code": "PJ033",
+    "project_id": "PRJ-0033",
+    "start_date": "2026-05-06",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0057",
+      "EMP-0058"
+    ]
+  },
+  {
+    "client_id": "CLI-0034",
+    "delivery_lead_id": "EMP-0079",
+    "name": "Kelvin Cloud Migration",
+    "project_code": "PJ034",
+    "project_id": "PRJ-0034",
+    "start_date": "2025-03-30",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0058",
+      "EMP-0059",
+      "EMP-0060"
+    ]
+  },
+  {
+    "client_id": "CLI-0035",
+    "delivery_lead_id": "EMP-0080",
+    "name": "Lumen Security Uplift",
+    "project_code": "PJ035",
+    "project_id": "PRJ-0035",
+    "start_date": "2025-06-09",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0059",
+      "EMP-0060",
+      "EMP-0061",
+      "EMP-0062"
+    ]
+  },
+  {
+    "client_id": "CLI-0036",
+    "delivery_lead_id": "EMP-0081",
+    "name": "Solace Automation Program",
+    "project_code": "PJ036",
+    "project_id": "PRJ-0036",
+    "start_date": "2025-09-12",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0060",
+      "EMP-0061"
+    ]
+  },
+  {
+    "client_id": "CLI-0037",
+    "delivery_lead_id": "EMP-0025",
+    "name": "Tanglewood Cloud Migration",
+    "project_code": "PJ037",
+    "project_id": "PRJ-0037",
+    "start_date": "2025-02-19",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0061",
+      "EMP-0062",
+      "EMP-0063"
+    ]
+  },
+  {
+    "client_id": "CLI-0038",
+    "delivery_lead_id": "EMP-0026",
+    "name": "Kelvin Reporting Modernization",
+    "project_code": "PJ038",
+    "project_id": "PRJ-0038",
+    "start_date": "2025-01-15",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0062",
+      "EMP-0063",
+      "EMP-0064",
+      "EMP-0065"
+    ]
+  },
+  {
+    "client_id": "CLI-0039",
+    "delivery_lead_id": "EMP-0027",
+    "name": "Kelvin Automation Program",
+    "project_code": "PJ039",
+    "project_id": "PRJ-0039",
+    "start_date": "2026-03-23",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0063",
+      "EMP-0064"
+    ]
+  },
+  {
+    "client_id": "CLI-0040",
+    "delivery_lead_id": "EMP-0028",
+    "name": "Brightline Knowledge Base",
+    "project_code": "PJ040",
+    "project_id": "PRJ-0040",
+    "start_date": "2026-06-07",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0064",
+      "EMP-0065",
+      "EMP-0066"
+    ]
+  },
+  {
+    "client_id": "CLI-0041",
+    "delivery_lead_id": "EMP-0029",
+    "name": "Northgate Cloud Migration",
+    "project_code": "PJ041",
+    "project_id": "PRJ-0041",
+    "start_date": "2025-09-25",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0065",
+      "EMP-0066",
+      "EMP-0067",
+      "EMP-0068"
+    ]
+  },
+  {
+    "client_id": "CLI-0042",
+    "delivery_lead_id": "EMP-0059",
+    "name": "Zenith Analytics Program",
+    "project_code": "PJ042",
+    "project_id": "PRJ-0042",
+    "start_date": "2025-12-15",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0066",
+      "EMP-0067"
+    ]
+  },
+  {
+    "client_id": "CLI-0043",
+    "delivery_lead_id": "EMP-0060",
+    "name": "Driftwood Reporting Modernization",
+    "project_code": "PJ043",
+    "project_id": "PRJ-0043",
+    "start_date": "2025-02-17",
+    "status": "ON_HOLD",
+    "team_member_ids": [
+      "EMP-0067",
+      "EMP-0068",
+      "EMP-0069"
+    ]
+  },
+  {
+    "client_id": "CLI-0044",
+    "delivery_lead_id": "EMP-0061",
+    "name": "Opaline Governance Program",
+    "project_code": "PJ044",
+    "project_id": "PRJ-0044",
+    "start_date": "2025-11-19",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0068",
+      "EMP-0069",
+      "EMP-0070",
+      "EMP-0071"
+    ]
+  },
+  {
+    "client_id": "CLI-0045",
+    "delivery_lead_id": "EMP-0062",
+    "name": "Driftwood AI Assistant",
+    "project_code": "PJ045",
+    "project_id": "PRJ-0045",
+    "start_date": "2025-01-15",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0069",
+      "EMP-0070"
+    ]
+  },
+  {
+    "client_id": "CLI-0046",
+    "delivery_lead_id": "EMP-0079",
+    "name": "Vertex Governance Program",
+    "project_code": "PJ046",
+    "project_id": "PRJ-0046",
+    "start_date": "2025-09-26",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0070",
+      "EMP-0071",
+      "EMP-0072"
+    ]
+  },
+  {
+    "client_id": "CLI-0047",
+    "delivery_lead_id": "EMP-0080",
+    "name": "Northgate Automation Program",
+    "project_code": "PJ047",
+    "project_id": "PRJ-0047",
+    "start_date": "2025-03-06",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0071",
+      "EMP-0072",
+      "EMP-0073",
+      "EMP-0074"
+    ]
+  },
+  {
+    "client_id": "CLI-0048",
+    "delivery_lead_id": "EMP-0081",
+    "name": "Meridian Analytics Program",
+    "project_code": "PJ048",
+    "project_id": "PRJ-0048",
+    "start_date": "2024-12-16",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0072",
+      "EMP-0073"
+    ]
+  },
+  {
+    "client_id": "CLI-0049",
+    "delivery_lead_id": "EMP-0025",
+    "name": "Hearthstone Analytics Program",
+    "project_code": "PJ049",
+    "project_id": "PRJ-0049",
+    "start_date": "2024-11-01",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0073",
+      "EMP-0074",
+      "EMP-0075"
+    ]
+  },
+  {
+    "client_id": "CLI-0050",
+    "delivery_lead_id": "EMP-0026",
+    "name": "Falkor Automation Program",
+    "project_code": "PJ050",
+    "project_id": "PRJ-0050",
+    "start_date": "2025-01-02",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0074",
+      "EMP-0075",
+      "EMP-0076",
+      "EMP-0077"
+    ]
+  },
+  {
+    "client_id": "CLI-0051",
+    "delivery_lead_id": "EMP-0027",
+    "name": "Umberfield Data Platform",
+    "project_code": "PJ051",
+    "project_id": "PRJ-0051",
+    "start_date": "2026-07-04",
+    "status": "DELIVERED",
+    "team_member_ids": [
+      "EMP-0075",
+      "EMP-0076"
+    ]
+  },
+  {
+    "client_id": "CLI-0052",
+    "delivery_lead_id": "EMP-0028",
+    "name": "Opaline Cloud Migration",
+    "project_code": "PJ052",
+    "project_id": "PRJ-0052",
+    "start_date": "2024-10-15",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0076",
+      "EMP-0077",
+      "EMP-0078"
+    ]
+  },
+  {
+    "client_id": "CLI-0053",
+    "delivery_lead_id": "EMP-0029",
+    "name": "Everline Automation Program",
+    "project_code": "PJ053",
+    "project_id": "PRJ-0053",
+    "start_date": "2025-12-30",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0077",
+      "EMP-0078",
+      "EMP-0079",
+      "EMP-0080"
+    ]
+  },
+  {
+    "client_id": "CLI-0054",
+    "delivery_lead_id": "EMP-0059",
+    "name": "Hearthstone Automation Program",
+    "project_code": "PJ054",
+    "project_id": "PRJ-0054",
+    "start_date": "2024-10-17",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0078",
+      "EMP-0079"
+    ]
+  },
+  {
+    "client_id": "CLI-0055",
+    "delivery_lead_id": "EMP-0060",
+    "name": "Aurea Data Platform",
+    "project_code": "PJ055",
+    "project_id": "PRJ-0055",
+    "start_date": "2024-10-29",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0079",
+      "EMP-0080",
+      "EMP-0081"
+    ]
+  },
+  {
+    "client_id": "CLI-0056",
+    "delivery_lead_id": "EMP-0061",
+    "name": "Westhaven Security Uplift",
+    "project_code": "PJ056",
+    "project_id": "PRJ-0056",
+    "start_date": "2025-09-27",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0080",
+      "EMP-0081",
+      "EMP-0082",
+      "EMP-0083"
+    ]
+  },
+  {
+    "client_id": "CLI-0057",
+    "delivery_lead_id": "EMP-0062",
+    "name": "Orchard Integration Program",
+    "project_code": "PJ057",
+    "project_id": "PRJ-0057",
+    "start_date": "2025-06-13",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0081",
+      "EMP-0082"
+    ]
+  },
+  {
+    "client_id": "CLI-0058",
+    "delivery_lead_id": "EMP-0079",
+    "name": "Cedarwood Governance Program",
+    "project_code": "PJ058",
+    "project_id": "PRJ-0058",
+    "start_date": "2026-06-02",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0082",
+      "EMP-0083",
+      "EMP-0084"
+    ]
+  },
+  {
+    "client_id": "CLI-0059",
+    "delivery_lead_id": "EMP-0080",
+    "name": "Lumen Analytics Program",
+    "project_code": "PJ059",
+    "project_id": "PRJ-0059",
+    "start_date": "2025-03-25",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0083",
+      "EMP-0084",
+      "EMP-0085",
+      "EMP-0086"
+    ]
+  },
+  {
+    "client_id": "CLI-0060",
+    "delivery_lead_id": "EMP-0081",
+    "name": "Cobalt Integration Program",
+    "project_code": "PJ060",
+    "project_id": "PRJ-0060",
+    "start_date": "2024-11-19",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0084",
+      "EMP-0085"
+    ]
+  },
+  {
+    "client_id": "CLI-0061",
+    "delivery_lead_id": "EMP-0025",
+    "name": "Halcyon Analytics Program",
+    "project_code": "PJ061",
+    "project_id": "PRJ-0061",
+    "start_date": "2025-09-10",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0085",
+      "EMP-0086",
+      "EMP-0087"
+    ]
+  },
+  {
+    "client_id": "CLI-0062",
+    "delivery_lead_id": "EMP-0026",
+    "name": "Ironbridge Reporting Modernization",
+    "project_code": "PJ062",
+    "project_id": "PRJ-0062",
+    "start_date": "2026-03-22",
+    "status": "CANCELLED",
+    "team_member_ids": [
+      "EMP-0086",
+      "EMP-0087",
+      "EMP-0088",
+      "EMP-0089"
+    ]
+  },
+  {
+    "client_id": "CLI-0063",
+    "delivery_lead_id": "EMP-0027",
+    "name": "Everline Reporting Modernization",
+    "project_code": "PJ063",
+    "project_id": "PRJ-0063",
+    "start_date": "2026-04-16",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0087",
+      "EMP-0088"
+    ]
+  },
+  {
+    "client_id": "CLI-0064",
+    "delivery_lead_id": "EMP-0028",
+    "name": "Vellum Reporting Modernization",
+    "project_code": "PJ064",
+    "project_id": "PRJ-0064",
+    "start_date": "2026-03-30",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0088",
+      "EMP-0089",
+      "EMP-0090"
+    ]
+  },
+  {
+    "client_id": "CLI-0065",
+    "delivery_lead_id": "EMP-0029",
+    "name": "Hearthstone Governance Program",
+    "project_code": "PJ065",
+    "project_id": "PRJ-0065",
+    "start_date": "2026-03-11",
+    "status": "ACTIVE",
+    "team_member_ids": [
+      "EMP-0089",
+      "EMP-0090",
+      "EMP-0091",
+      "EMP-0092"
+    ]
+  }
+]

@@ -1,0 +1,587 @@
+[
+  {
+    "client_id": "CLI-0001",
+    "created_date": "2026-07-03",
+    "expected_amount": 11516.52,
+    "expected_close_date": "2026-09-10",
+    "opportunity_id": "OPP-0001",
+    "sales_owner_id": "EMP-0010",
+    "signature_status": "DECLINED"
+  },
+  {
+    "client_id": "CLI-0002",
+    "created_date": "2026-08-17",
+    "expected_amount": 339229.26,
+    "expected_close_date": "2026-09-08",
+    "opportunity_id": "OPP-0002",
+    "sales_owner_id": "EMP-0011",
+    "signature_status": "BLOCKED"
+  },
+  {
+    "client_id": "CLI-0003",
+    "created_date": "2026-08-15",
+    "expected_amount": 57124.55,
+    "expected_close_date": "2026-09-19",
+    "opportunity_id": "OPP-0003",
+    "sales_owner_id": "EMP-0012",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0004",
+    "created_date": "2026-07-29",
+    "expected_amount": 55538.32,
+    "expected_close_date": "2026-09-16",
+    "opportunity_id": "OPP-0004",
+    "sales_owner_id": "EMP-0013",
+    "signature_status": "BLOCKED"
+  },
+  {
+    "client_id": "CLI-0005",
+    "created_date": "2026-08-22",
+    "expected_amount": 125895.82,
+    "expected_close_date": "2026-09-10",
+    "opportunity_id": "OPP-0005",
+    "sales_owner_id": "EMP-0014",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0006",
+    "created_date": "2026-08-12",
+    "expected_amount": 20424.94,
+    "expected_close_date": "2026-09-17",
+    "opportunity_id": "OPP-0006",
+    "sales_owner_id": "EMP-0015",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0007",
+    "created_date": "2026-08-09",
+    "expected_amount": 38277.05,
+    "expected_close_date": "2026-09-12",
+    "opportunity_id": "OPP-0007",
+    "sales_owner_id": "EMP-0016",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0008",
+    "created_date": "2026-07-28",
+    "expected_amount": 47089.17,
+    "expected_close_date": "2026-09-27",
+    "opportunity_id": "OPP-0008",
+    "sales_owner_id": "EMP-0017",
+    "signature_status": "VIEWED"
+  },
+  {
+    "client_id": "CLI-0009",
+    "created_date": "2026-07-31",
+    "expected_amount": 40501.07,
+    "expected_close_date": "2026-09-01",
+    "opportunity_id": "OPP-0009",
+    "sales_owner_id": "EMP-0018",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0010",
+    "created_date": "2026-07-10",
+    "expected_amount": 238126.34,
+    "expected_close_date": "2026-09-09",
+    "opportunity_id": "OPP-0010",
+    "sales_owner_id": "EMP-0019",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0011",
+    "created_date": "2026-07-22",
+    "expected_amount": 294683.36,
+    "expected_close_date": "2026-09-02",
+    "opportunity_id": "OPP-0011",
+    "sales_owner_id": "EMP-0020",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0012",
+    "created_date": "2026-08-23",
+    "expected_amount": 16399.08,
+    "expected_close_date": "2026-09-12",
+    "opportunity_id": "OPP-0012",
+    "sales_owner_id": "EMP-0021",
+    "signature_status": "VIEWED"
+  },
+  {
+    "client_id": "CLI-0013",
+    "created_date": "2026-08-10",
+    "expected_amount": 43669.99,
+    "expected_close_date": "2026-09-15",
+    "opportunity_id": "OPP-0013",
+    "sales_owner_id": "EMP-0010",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0014",
+    "created_date": "2026-08-20",
+    "expected_amount": 153326.15,
+    "expected_close_date": "2026-09-20",
+    "opportunity_id": "OPP-0014",
+    "sales_owner_id": "EMP-0011",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0015",
+    "created_date": "2026-07-08",
+    "expected_amount": 11850.97,
+    "expected_close_date": "2026-09-04",
+    "opportunity_id": "OPP-0015",
+    "sales_owner_id": "EMP-0012",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0016",
+    "created_date": "2026-07-10",
+    "expected_amount": 166890.16,
+    "expected_close_date": "2026-09-18",
+    "opportunity_id": "OPP-0016",
+    "sales_owner_id": "EMP-0013",
+    "signature_status": "DECLINED"
+  },
+  {
+    "client_id": "CLI-0017",
+    "created_date": "2026-07-26",
+    "expected_amount": 36044.42,
+    "expected_close_date": "2026-09-20",
+    "opportunity_id": "OPP-0017",
+    "sales_owner_id": "EMP-0014",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0018",
+    "created_date": "2026-08-06",
+    "expected_amount": 32768.03,
+    "expected_close_date": "2026-09-02",
+    "opportunity_id": "OPP-0018",
+    "sales_owner_id": "EMP-0015",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0019",
+    "created_date": "2026-07-20",
+    "expected_amount": 18941.64,
+    "expected_close_date": "2026-09-17",
+    "opportunity_id": "OPP-0019",
+    "sales_owner_id": "EMP-0016",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0020",
+    "created_date": "2026-07-19",
+    "expected_amount": 159023.06,
+    "expected_close_date": "2026-09-05",
+    "opportunity_id": "OPP-0020",
+    "sales_owner_id": "EMP-0017",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0021",
+    "created_date": "2026-07-11",
+    "expected_amount": 110756.52,
+    "expected_close_date": "2026-09-13",
+    "opportunity_id": "OPP-0021",
+    "sales_owner_id": "EMP-0018",
+    "signature_status": "BLOCKED"
+  },
+  {
+    "client_id": "CLI-0022",
+    "created_date": "2026-07-05",
+    "expected_amount": 19347.32,
+    "expected_close_date": "2026-09-19",
+    "opportunity_id": "OPP-0022",
+    "sales_owner_id": "EMP-0019",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0023",
+    "created_date": "2026-08-08",
+    "expected_amount": 47555.99,
+    "expected_close_date": "2026-09-16",
+    "opportunity_id": "OPP-0023",
+    "sales_owner_id": "EMP-0020",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0024",
+    "created_date": "2026-07-15",
+    "expected_amount": 46459.12,
+    "expected_close_date": "2026-09-01",
+    "opportunity_id": "OPP-0024",
+    "sales_owner_id": "EMP-0021",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0025",
+    "created_date": "2026-07-08",
+    "expected_amount": 34952.54,
+    "expected_close_date": "2026-09-14",
+    "opportunity_id": "OPP-0025",
+    "sales_owner_id": "EMP-0010",
+    "signature_status": "VIEWED"
+  },
+  {
+    "client_id": "CLI-0026",
+    "created_date": "2026-08-26",
+    "expected_amount": 59811.16,
+    "expected_close_date": "2026-09-28",
+    "opportunity_id": "OPP-0026",
+    "sales_owner_id": "EMP-0011",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0027",
+    "created_date": "2026-07-08",
+    "expected_amount": 50302.65,
+    "expected_close_date": "2026-09-09",
+    "opportunity_id": "OPP-0027",
+    "sales_owner_id": "EMP-0012",
+    "signature_status": "BLOCKED"
+  },
+  {
+    "client_id": "CLI-0028",
+    "created_date": "2026-07-12",
+    "expected_amount": 20706.6,
+    "expected_close_date": "2026-09-19",
+    "opportunity_id": "OPP-0028",
+    "sales_owner_id": "EMP-0013",
+    "signature_status": "VIEWED"
+  },
+  {
+    "client_id": "CLI-0029",
+    "created_date": "2026-07-18",
+    "expected_amount": 220784.58,
+    "expected_close_date": "2026-09-16",
+    "opportunity_id": "OPP-0029",
+    "sales_owner_id": "EMP-0014",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0030",
+    "created_date": "2026-08-18",
+    "expected_amount": 18072.42,
+    "expected_close_date": "2026-09-25",
+    "opportunity_id": "OPP-0030",
+    "sales_owner_id": "EMP-0015",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0031",
+    "created_date": "2026-07-14",
+    "expected_amount": 382548.87,
+    "expected_close_date": "2026-09-08",
+    "opportunity_id": "OPP-0031",
+    "sales_owner_id": "EMP-0016",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0032",
+    "created_date": "2026-08-01",
+    "expected_amount": 34961.71,
+    "expected_close_date": "2026-09-01",
+    "opportunity_id": "OPP-0032",
+    "sales_owner_id": "EMP-0017",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0033",
+    "created_date": "2026-07-26",
+    "expected_amount": 36270.08,
+    "expected_close_date": "2026-09-23",
+    "opportunity_id": "OPP-0033",
+    "sales_owner_id": "EMP-0018",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0034",
+    "created_date": "2026-07-11",
+    "expected_amount": 372744.18,
+    "expected_close_date": "2026-09-16",
+    "opportunity_id": "OPP-0034",
+    "sales_owner_id": "EMP-0019",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0035",
+    "created_date": "2026-08-14",
+    "expected_amount": 145101.78,
+    "expected_close_date": "2026-09-23",
+    "opportunity_id": "OPP-0035",
+    "sales_owner_id": "EMP-0020",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0036",
+    "created_date": "2026-08-03",
+    "expected_amount": 131114.49,
+    "expected_close_date": "2026-09-22",
+    "opportunity_id": "OPP-0036",
+    "sales_owner_id": "EMP-0021",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0037",
+    "created_date": "2026-07-24",
+    "expected_amount": 41383.21,
+    "expected_close_date": "2026-09-06",
+    "opportunity_id": "OPP-0037",
+    "sales_owner_id": "EMP-0010",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0038",
+    "created_date": "2026-07-03",
+    "expected_amount": 14094.43,
+    "expected_close_date": "2026-09-12",
+    "opportunity_id": "OPP-0038",
+    "sales_owner_id": "EMP-0011",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0039",
+    "created_date": "2026-08-11",
+    "expected_amount": 18069.71,
+    "expected_close_date": "2026-09-21",
+    "opportunity_id": "OPP-0039",
+    "sales_owner_id": "EMP-0012",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0040",
+    "created_date": "2026-08-10",
+    "expected_amount": 50717.41,
+    "expected_close_date": "2026-09-07",
+    "opportunity_id": "OPP-0040",
+    "sales_owner_id": "EMP-0013",
+    "signature_status": "BLOCKED"
+  },
+  {
+    "client_id": "CLI-0041",
+    "created_date": "2026-08-08",
+    "expected_amount": 49079.73,
+    "expected_close_date": "2026-09-08",
+    "opportunity_id": "OPP-0041",
+    "sales_owner_id": "EMP-0014",
+    "signature_status": "DECLINED"
+  },
+  {
+    "client_id": "CLI-0042",
+    "created_date": "2026-07-13",
+    "expected_amount": 55791.99,
+    "expected_close_date": "2026-09-23",
+    "opportunity_id": "OPP-0042",
+    "sales_owner_id": "EMP-0015",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0043",
+    "created_date": "2026-07-08",
+    "expected_amount": 125076.26,
+    "expected_close_date": "2026-09-16",
+    "opportunity_id": "OPP-0043",
+    "sales_owner_id": "EMP-0016",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0044",
+    "created_date": "2026-07-15",
+    "expected_amount": 54232.43,
+    "expected_close_date": "2026-09-10",
+    "opportunity_id": "OPP-0044",
+    "sales_owner_id": "EMP-0017",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0045",
+    "created_date": "2026-07-09",
+    "expected_amount": 16203.5,
+    "expected_close_date": "2026-09-13",
+    "opportunity_id": "OPP-0045",
+    "sales_owner_id": "EMP-0018",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0046",
+    "created_date": "2026-07-13",
+    "expected_amount": 378969.33,
+    "expected_close_date": "2026-09-10",
+    "opportunity_id": "OPP-0046",
+    "sales_owner_id": "EMP-0019",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0047",
+    "created_date": "2026-07-11",
+    "expected_amount": 90638.47,
+    "expected_close_date": "2026-09-15",
+    "opportunity_id": "OPP-0047",
+    "sales_owner_id": "EMP-0020",
+    "signature_status": "VIEWED"
+  },
+  {
+    "client_id": "CLI-0048",
+    "created_date": "2026-08-10",
+    "expected_amount": 15530.33,
+    "expected_close_date": "2026-09-07",
+    "opportunity_id": "OPP-0048",
+    "sales_owner_id": "EMP-0021",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0049",
+    "created_date": "2026-08-21",
+    "expected_amount": 20296.75,
+    "expected_close_date": "2026-09-23",
+    "opportunity_id": "OPP-0049",
+    "sales_owner_id": "EMP-0010",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0050",
+    "created_date": "2026-08-24",
+    "expected_amount": 50893.83,
+    "expected_close_date": "2026-09-19",
+    "opportunity_id": "OPP-0050",
+    "sales_owner_id": "EMP-0011",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0051",
+    "created_date": "2026-08-13",
+    "expected_amount": 52599.77,
+    "expected_close_date": "2026-09-17",
+    "opportunity_id": "OPP-0051",
+    "sales_owner_id": "EMP-0012",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0052",
+    "created_date": "2026-07-28",
+    "expected_amount": 33153.47,
+    "expected_close_date": "2026-09-14",
+    "opportunity_id": "OPP-0052",
+    "sales_owner_id": "EMP-0013",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0053",
+    "created_date": "2026-07-23",
+    "expected_amount": 34667.16,
+    "expected_close_date": "2026-09-25",
+    "opportunity_id": "OPP-0053",
+    "sales_owner_id": "EMP-0014",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0054",
+    "created_date": "2026-07-28",
+    "expected_amount": 62304.19,
+    "expected_close_date": "2026-09-06",
+    "opportunity_id": "OPP-0054",
+    "sales_owner_id": "EMP-0015",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0055",
+    "created_date": "2026-08-09",
+    "expected_amount": 124105.68,
+    "expected_close_date": "2026-09-07",
+    "opportunity_id": "OPP-0055",
+    "sales_owner_id": "EMP-0016",
+    "signature_status": "PARTIALLY_SIGNED"
+  },
+  {
+    "client_id": "CLI-0056",
+    "created_date": "2026-07-09",
+    "expected_amount": 13872.26,
+    "expected_close_date": "2026-09-21",
+    "opportunity_id": "OPP-0056",
+    "sales_owner_id": "EMP-0017",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0057",
+    "created_date": "2026-07-11",
+    "expected_amount": 11439.34,
+    "expected_close_date": "2026-09-19",
+    "opportunity_id": "OPP-0057",
+    "sales_owner_id": "EMP-0018",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0058",
+    "created_date": "2026-08-16",
+    "expected_amount": 54278.21,
+    "expected_close_date": "2026-09-02",
+    "opportunity_id": "OPP-0058",
+    "sales_owner_id": "EMP-0019",
+    "signature_status": "DECLINED"
+  },
+  {
+    "client_id": "CLI-0059",
+    "created_date": "2026-08-25",
+    "expected_amount": 14887.79,
+    "expected_close_date": "2026-09-27",
+    "opportunity_id": "OPP-0059",
+    "sales_owner_id": "EMP-0020",
+    "signature_status": "SIGNED"
+  },
+  {
+    "client_id": "CLI-0060",
+    "created_date": "2026-08-16",
+    "expected_amount": 20970.3,
+    "expected_close_date": "2026-09-13",
+    "opportunity_id": "OPP-0060",
+    "sales_owner_id": "EMP-0021",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0061",
+    "created_date": "2026-08-25",
+    "expected_amount": 20334.39,
+    "expected_close_date": "2026-09-28",
+    "opportunity_id": "OPP-0061",
+    "sales_owner_id": "EMP-0010",
+    "signature_status": "DECLINED"
+  },
+  {
+    "client_id": "CLI-0062",
+    "created_date": "2026-08-06",
+    "expected_amount": 211946.11,
+    "expected_close_date": "2026-09-19",
+    "opportunity_id": "OPP-0062",
+    "sales_owner_id": "EMP-0011",
+    "signature_status": "VIEWED"
+  },
+  {
+    "client_id": "CLI-0063",
+    "created_date": "2026-07-27",
+    "expected_amount": 107903.18,
+    "expected_close_date": "2026-09-21",
+    "opportunity_id": "OPP-0063",
+    "sales_owner_id": "EMP-0012",
+    "signature_status": "SENT"
+  },
+  {
+    "client_id": "CLI-0064",
+    "created_date": "2026-07-29",
+    "expected_amount": 19837.23,
+    "expected_close_date": "2026-09-05",
+    "opportunity_id": "OPP-0064",
+    "sales_owner_id": "EMP-0013",
+    "signature_status": "NOT_SENT"
+  },
+  {
+    "client_id": "CLI-0065",
+    "created_date": "2026-08-17",
+    "expected_amount": 40094.37,
+    "expected_close_date": "2026-09-26",
+    "opportunity_id": "OPP-0065",
+    "sales_owner_id": "EMP-0014",
+    "signature_status": "SIGNED"
+  }
+]

@@ -1,0 +1,1082 @@
+[
+  {
+    "creation_date": "2026-01-19",
+    "industry": "Banking & Insurance",
+    "name": "Lumen Group",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0001",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-06-26",
+    "industry": "Banking & Insurance",
+    "name": "Millbrook Group",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0002",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-03-18",
+    "industry": "Retail & E-commerce",
+    "name": "Tanglewood Group",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0003",
+    "segment": "STRATEGIC",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-26",
+    "industry": "Telecom",
+    "name": "Opaline Solutions",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0004",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-02-26",
+    "industry": "Media & Entertainment",
+    "name": "Nova Consulting",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0005",
+    "segment": "ENTERPRISE",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-04-15",
+    "industry": "Media & Entertainment",
+    "name": "Pinegate Solutions",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0006",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-12-29",
+    "industry": "Manufacturing",
+    "name": "Vellum Solutions",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0007",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-03-12",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Brightline Solutions",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0008",
+    "segment": "ENTERPRISE",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-07-25",
+    "industry": "Retail & E-commerce",
+    "name": "Yewgate Holding",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0009",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-05-09",
+    "industry": "Manufacturing",
+    "name": "Ondine Dynamics",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0010",
+    "segment": "ENTERPRISE",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-11-20",
+    "industry": "Telecom",
+    "name": "Solace Dynamics",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0011",
+    "segment": "STRATEGIC",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-02-11",
+    "industry": "Public Sector",
+    "name": "Driftwood Partners",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0012",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-06-30",
+    "industry": "Banking & Insurance",
+    "name": "Quillfeather Solutions",
+    "owner_id": "EMP-0019",
+    "prospect_id": "PRO-0013",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-09-22",
+    "industry": "Transport & Logistics",
+    "name": "Cobalt Group",
+    "owner_id": "EMP-0020",
+    "prospect_id": "PRO-0014",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-10-10",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Larkspur Partners",
+    "owner_id": "EMP-0021",
+    "prospect_id": "PRO-0015",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-05-05",
+    "industry": "Public Sector",
+    "name": "Arboria Dynamics",
+    "owner_id": "EMP-0022",
+    "prospect_id": "PRO-0016",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-11-18",
+    "industry": "Transport & Logistics",
+    "name": "Everline Holding",
+    "owner_id": "EMP-0023",
+    "prospect_id": "PRO-0017",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-05-11",
+    "industry": "Public Sector",
+    "name": "Orchard Group",
+    "owner_id": "EMP-0024",
+    "prospect_id": "PRO-0018",
+    "segment": "STRATEGIC",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-01-07",
+    "industry": "Retail & E-commerce",
+    "name": "Halcyon Holding",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0019",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-07-04",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Umberfield Consulting",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0020",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-08-13",
+    "industry": "Manufacturing",
+    "name": "Cresta Solutions",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0021",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-07-04",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Zenith Systems",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0022",
+    "segment": "STRATEGIC",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-11-30",
+    "industry": "Retail & E-commerce",
+    "name": "Aurea Systems",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0023",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-02-24",
+    "industry": "Manufacturing",
+    "name": "Zenith Dynamics",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0024",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-06-14",
+    "industry": "Media & Entertainment",
+    "name": "Nova Holding",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0025",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-12-25",
+    "industry": "Telecom",
+    "name": "Halcyon Group",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0026",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-04-11",
+    "industry": "Professional Services",
+    "name": "Axion Industries",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0027",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-05-13",
+    "industry": "Banking & Insurance",
+    "name": "Westhaven Systems",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0028",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-05-04",
+    "industry": "Transport & Logistics",
+    "name": "Kestrel Consulting",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0029",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-09-15",
+    "industry": "Public Sector",
+    "name": "Nova Solutions",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0030",
+    "segment": "SMB",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-10-06",
+    "industry": "Public Sector",
+    "name": "Meridian Consulting",
+    "owner_id": "EMP-0019",
+    "prospect_id": "PRO-0031",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-04-13",
+    "industry": "Public Sector",
+    "name": "Cedarwood Systems",
+    "owner_id": "EMP-0020",
+    "prospect_id": "PRO-0032",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-01-12",
+    "industry": "Energy & Utilities",
+    "name": "Everline Dynamics",
+    "owner_id": "EMP-0021",
+    "prospect_id": "PRO-0033",
+    "segment": "STRATEGIC",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-10-08",
+    "industry": "Retail & E-commerce",
+    "name": "Jasper Holding",
+    "owner_id": "EMP-0022",
+    "prospect_id": "PRO-0034",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-08-07",
+    "industry": "Professional Services",
+    "name": "Zenith Labs",
+    "owner_id": "EMP-0023",
+    "prospect_id": "PRO-0035",
+    "segment": "STRATEGIC",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-29",
+    "industry": "Public Sector",
+    "name": "Pinegate Holding",
+    "owner_id": "EMP-0024",
+    "prospect_id": "PRO-0036",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-11-22",
+    "industry": "Professional Services",
+    "name": "Axion Partners",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0037",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-05-05",
+    "industry": "Energy & Utilities",
+    "name": "Meridian Industries",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0038",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-10-31",
+    "industry": "Public Sector",
+    "name": "Arboria Industries",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0039",
+    "segment": "ENTERPRISE",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-19",
+    "industry": "Banking & Insurance",
+    "name": "Cobalt Technologies",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0040",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-06-04",
+    "industry": "Manufacturing",
+    "name": "Rivendale Technologies",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0041",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-08-19",
+    "industry": "Retail & E-commerce",
+    "name": "Halcyon Consulting",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0042",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-05-03",
+    "industry": "Manufacturing",
+    "name": "Hearthstone Group",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0043",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-04",
+    "industry": "Professional Services",
+    "name": "Umberfield Solutions",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0044",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-01-29",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Granite Solutions",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0045",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-07-31",
+    "industry": "Media & Entertainment",
+    "name": "Driftwood Industries",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0046",
+    "segment": "SMB",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-02-28",
+    "industry": "Transport & Logistics",
+    "name": "Kelvin Solutions",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0047",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-01-13",
+    "industry": "Media & Entertainment",
+    "name": "Tanglewood Dynamics",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0048",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-10-22",
+    "industry": "Media & Entertainment",
+    "name": "Vellum Industries",
+    "owner_id": "EMP-0019",
+    "prospect_id": "PRO-0049",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-09-29",
+    "industry": "Banking & Insurance",
+    "name": "Halcyon Solutions",
+    "owner_id": "EMP-0020",
+    "prospect_id": "PRO-0050",
+    "segment": "ENTERPRISE",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-10-07",
+    "industry": "Media & Entertainment",
+    "name": "Millbrook Consulting",
+    "owner_id": "EMP-0021",
+    "prospect_id": "PRO-0051",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2025-12-30",
+    "industry": "Banking & Insurance",
+    "name": "Cedarwood Technologies",
+    "owner_id": "EMP-0022",
+    "prospect_id": "PRO-0052",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-07-08",
+    "industry": "Telecom",
+    "name": "Cresta Holding",
+    "owner_id": "EMP-0023",
+    "prospect_id": "PRO-0053",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-01-17",
+    "industry": "Transport & Logistics",
+    "name": "Kelvin Labs",
+    "owner_id": "EMP-0024",
+    "prospect_id": "PRO-0054",
+    "segment": "ENTERPRISE",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-03-21",
+    "industry": "Retail & E-commerce",
+    "name": "Solace Group",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0055",
+    "segment": "ENTERPRISE",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-29",
+    "industry": "Professional Services",
+    "name": "Vertex Systems",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0056",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-11-06",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Silverline Labs",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0057",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-02-18",
+    "industry": "Media & Entertainment",
+    "name": "Larkspur Systems",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0058",
+    "segment": "ENTERPRISE",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-01-12",
+    "industry": "Professional Services",
+    "name": "Umberfield Technologies",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0059",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-07-13",
+    "industry": "Media & Entertainment",
+    "name": "Silverline Solutions",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0060",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-10-03",
+    "industry": "Retail & E-commerce",
+    "name": "Everline Group",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0061",
+    "segment": "ENTERPRISE",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-05-14",
+    "industry": "Media & Entertainment",
+    "name": "Meridian Systems",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0062",
+    "segment": "ENTERPRISE",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-05-08",
+    "industry": "Telecom",
+    "name": "Ondine Industries",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0063",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-01-12",
+    "industry": "Telecom",
+    "name": "Aurea Labs",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0064",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-07-15",
+    "industry": "Telecom",
+    "name": "Orchard Technologies",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0065",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-09-26",
+    "industry": "Public Sector",
+    "name": "Vellum Group",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0066",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-06-15",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Rivendale Labs",
+    "owner_id": "EMP-0019",
+    "prospect_id": "PRO-0067",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-07-20",
+    "industry": "Transport & Logistics",
+    "name": "Verdant Dynamics",
+    "owner_id": "EMP-0020",
+    "prospect_id": "PRO-0068",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-02-23",
+    "industry": "Retail & E-commerce",
+    "name": "Yewgate Labs",
+    "owner_id": "EMP-0021",
+    "prospect_id": "PRO-0069",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-11-05",
+    "industry": "Manufacturing",
+    "name": "Larkspur Group",
+    "owner_id": "EMP-0022",
+    "prospect_id": "PRO-0070",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-09-23",
+    "industry": "Media & Entertainment",
+    "name": "Vellum Labs",
+    "owner_id": "EMP-0023",
+    "prospect_id": "PRO-0071",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2025-09-26",
+    "industry": "Retail & E-commerce",
+    "name": "Northgate Dynamics",
+    "owner_id": "EMP-0024",
+    "prospect_id": "PRO-0072",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-08-06",
+    "industry": "Telecom",
+    "name": "Opaline Industries",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0073",
+    "segment": "ENTERPRISE",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-03-05",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Yewgate Technologies",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0074",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-05-16",
+    "industry": "Retail & E-commerce",
+    "name": "Vertex Dynamics",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0075",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-05-10",
+    "industry": "Manufacturing",
+    "name": "Nova Systems",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0076",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-11-21",
+    "industry": "Retail & E-commerce",
+    "name": "Larkspur Technologies",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0077",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-04-12",
+    "industry": "Public Sector",
+    "name": "Tanglewood Systems",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0078",
+    "segment": "SMB",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-01-25",
+    "industry": "Professional Services",
+    "name": "Kestrel Solutions",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0079",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2025-10-18",
+    "industry": "Media & Entertainment",
+    "name": "Westhaven Group",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0080",
+    "segment": "STRATEGIC",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-11-20",
+    "industry": "Professional Services",
+    "name": "Millbrook Systems",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0081",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-09-30",
+    "industry": "Banking & Insurance",
+    "name": "Orchard Solutions",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0082",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-04-15",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Northgate Systems",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0083",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-03-06",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Cobalt Solutions",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0084",
+    "segment": "STRATEGIC",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-06-20",
+    "industry": "Banking & Insurance",
+    "name": "Vertex Solutions",
+    "owner_id": "EMP-0019",
+    "prospect_id": "PRO-0085",
+    "segment": "SMB",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-07-28",
+    "industry": "Professional Services",
+    "name": "Solace Consulting",
+    "owner_id": "EMP-0020",
+    "prospect_id": "PRO-0086",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-08-17",
+    "industry": "Manufacturing",
+    "name": "Umberfield Holding",
+    "owner_id": "EMP-0021",
+    "prospect_id": "PRO-0087",
+    "segment": "ENTERPRISE",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-05-14",
+    "industry": "Retail & E-commerce",
+    "name": "Yewgate Systems",
+    "owner_id": "EMP-0022",
+    "prospect_id": "PRO-0088",
+    "segment": "ENTERPRISE",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-03-11",
+    "industry": "Telecom",
+    "name": "Quillfeather Group",
+    "owner_id": "EMP-0023",
+    "prospect_id": "PRO-0089",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-03-19",
+    "industry": "Manufacturing",
+    "name": "Silverline Technologies",
+    "owner_id": "EMP-0024",
+    "prospect_id": "PRO-0090",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-08-06",
+    "industry": "Professional Services",
+    "name": "Vellum Dynamics",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0091",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2025-10-20",
+    "industry": "Manufacturing",
+    "name": "Westhaven Partners",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0092",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-04-15",
+    "industry": "Banking & Insurance",
+    "name": "Granite Group",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0093",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-12-27",
+    "industry": "Transport & Logistics",
+    "name": "Cobalt Industries",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0094",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-04-15",
+    "industry": "Professional Services",
+    "name": "Yewgate Group",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0095",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-07-05",
+    "industry": "Energy & Utilities",
+    "name": "Yewgate Dynamics",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0096",
+    "segment": "ENTERPRISE",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-04-09",
+    "industry": "Public Sector",
+    "name": "Yewgate Consulting",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0097",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2025-09-25",
+    "industry": "Professional Services",
+    "name": "Solace Industries",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0098",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-02-11",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Lumen Dynamics",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0099",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-05-20",
+    "industry": "Professional Services",
+    "name": "Larkspur Dynamics",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0100",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-06-23",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Nova Technologies",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0101",
+    "segment": "STRATEGIC",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-07-02",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Lumen Industries",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0102",
+    "segment": "SMB",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-01-24",
+    "industry": "Banking & Insurance",
+    "name": "Cresta Technologies",
+    "owner_id": "EMP-0019",
+    "prospect_id": "PRO-0103",
+    "segment": "MID_MARKET",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2025-12-03",
+    "industry": "Manufacturing",
+    "name": "Aurea Industries",
+    "owner_id": "EMP-0020",
+    "prospect_id": "PRO-0104",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2025-09-24",
+    "industry": "Energy & Utilities",
+    "name": "Verdant Holding",
+    "owner_id": "EMP-0021",
+    "prospect_id": "PRO-0105",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-08-11",
+    "industry": "Public Sector",
+    "name": "Yewgate Industries",
+    "owner_id": "EMP-0022",
+    "prospect_id": "PRO-0106",
+    "segment": "SMB",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-07-24",
+    "industry": "Telecom",
+    "name": "Granite Industries",
+    "owner_id": "EMP-0023",
+    "prospect_id": "PRO-0107",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2025-11-12",
+    "industry": "Public Sector",
+    "name": "Ondine Holding",
+    "owner_id": "EMP-0024",
+    "prospect_id": "PRO-0108",
+    "segment": "MID_MARKET",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-01-31",
+    "industry": "Telecom",
+    "name": "Arboria Solutions",
+    "owner_id": "EMP-0007",
+    "prospect_id": "PRO-0109",
+    "segment": "ENTERPRISE",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-08-22",
+    "industry": "Healthcare & Life Sciences",
+    "name": "Vertex Partners",
+    "owner_id": "EMP-0008",
+    "prospect_id": "PRO-0110",
+    "segment": "SMB",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-10-20",
+    "industry": "Public Sector",
+    "name": "Hearthstone Partners",
+    "owner_id": "EMP-0009",
+    "prospect_id": "PRO-0111",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-02-28",
+    "industry": "Transport & Logistics",
+    "name": "Lumen Partners",
+    "owner_id": "EMP-0010",
+    "prospect_id": "PRO-0112",
+    "segment": "ENTERPRISE",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-07-09",
+    "industry": "Retail & E-commerce",
+    "name": "Westhaven Solutions",
+    "owner_id": "EMP-0011",
+    "prospect_id": "PRO-0113",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-02-08",
+    "industry": "Energy & Utilities",
+    "name": "Vellum Systems",
+    "owner_id": "EMP-0012",
+    "prospect_id": "PRO-0114",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2026-03-27",
+    "industry": "Media & Entertainment",
+    "name": "Driftwood Labs",
+    "owner_id": "EMP-0013",
+    "prospect_id": "PRO-0115",
+    "segment": "SMB",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-07",
+    "industry": "Public Sector",
+    "name": "Kelvin Systems",
+    "owner_id": "EMP-0014",
+    "prospect_id": "PRO-0116",
+    "segment": "SMB",
+    "status": "LOST"
+  },
+  {
+    "creation_date": "2026-07-05",
+    "industry": "Retail & E-commerce",
+    "name": "Kestrel Dynamics",
+    "owner_id": "EMP-0015",
+    "prospect_id": "PRO-0117",
+    "segment": "MID_MARKET",
+    "status": "NEW"
+  },
+  {
+    "creation_date": "2026-03-07",
+    "industry": "Media & Entertainment",
+    "name": "Halcyon Technologies",
+    "owner_id": "EMP-0016",
+    "prospect_id": "PRO-0118",
+    "segment": "MID_MARKET",
+    "status": "QUALIFIED"
+  },
+  {
+    "creation_date": "2025-10-06",
+    "industry": "Public Sector",
+    "name": "Aurea Technologies",
+    "owner_id": "EMP-0017",
+    "prospect_id": "PRO-0119",
+    "segment": "ENTERPRISE",
+    "status": "IN_DISCUSSION"
+  },
+  {
+    "creation_date": "2026-06-19",
+    "industry": "Manufacturing",
+    "name": "Nordheim Technologies",
+    "owner_id": "EMP-0018",
+    "prospect_id": "PRO-0120",
+    "segment": "SMB",
+    "status": "LOST"
+  }
+]

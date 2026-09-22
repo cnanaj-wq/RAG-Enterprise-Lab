@@ -5,10 +5,10 @@ RESTRICTED_MESSAGE = (
     "à laquelle votre profil n'a pas accès."
 )
 
-def authorize(user: UserContext, document: DocumentRecord) -> AccessDecision:
-    allowed = set(document.allowed_groups)
-    user_groups = set(user.groups)
-    matches = sorted(allowed.intersection(user_groups))
+def authorize_groups(user_groups: list[str], allowed_groups: list[str]) -> AccessDecision:
+    allowed = set(allowed_groups)
+    groups = set(user_groups)
+    matches = sorted(allowed.intersection(groups))
 
     if not allowed:
         return AccessDecision(allowed=False, reason="NO_ACL_DEFINED", matched_groups=[])
@@ -17,3 +17,7 @@ def authorize(user: UserContext, document: DocumentRecord) -> AccessDecision:
         return AccessDecision(allowed=True, reason="ACL_GROUP_MATCH", matched_groups=matches)
 
     return AccessDecision(allowed=False, reason="ACL_NO_MATCH", matched_groups=[])
+
+
+def authorize(user: UserContext, document: DocumentRecord) -> AccessDecision:
+    return authorize_groups(user.groups, document.allowed_groups)

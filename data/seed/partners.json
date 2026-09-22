@@ -1,0 +1,212 @@
+[
+  {
+    "country": "DE",
+    "creation_date": "2025-07-24",
+    "name": "Brightline Industries",
+    "partner_id": "PAR-0001",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "CH",
+    "creation_date": "2023-04-17",
+    "name": "Nordheim Dynamics",
+    "partner_id": "PAR-0002",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "CH",
+    "creation_date": "2022-05-29",
+    "name": "Driftwood Technologies",
+    "partner_id": "PAR-0003",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "BE",
+    "creation_date": "2025-09-04",
+    "name": "Solace Holding",
+    "partner_id": "PAR-0004",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2024-01-25",
+    "name": "Kelvin Holding",
+    "partner_id": "PAR-0005",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2022-11-07",
+    "name": "Tanglewood Holding",
+    "partner_id": "PAR-0006",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "NL",
+    "creation_date": "2021-10-28",
+    "name": "Driftwood Solutions",
+    "partner_id": "PAR-0007",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "NL",
+    "creation_date": "2025-10-27",
+    "name": "Ondine Technologies",
+    "partner_id": "PAR-0008",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2026-04-15",
+    "name": "Vellum Holding",
+    "partner_id": "PAR-0009",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2024-03-10",
+    "name": "Cresta Partners",
+    "partner_id": "PAR-0010",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "DE",
+    "creation_date": "2022-03-16",
+    "name": "Ondine Group",
+    "partner_id": "PAR-0011",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "DE",
+    "creation_date": "2023-05-09",
+    "name": "Umberfield Dynamics",
+    "partner_id": "PAR-0012",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "FR",
+    "creation_date": "2024-09-11",
+    "name": "Kestrel Holding",
+    "partner_id": "PAR-0013",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "BE",
+    "creation_date": "2024-12-05",
+    "name": "Northgate Technologies",
+    "partner_id": "PAR-0014",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2024-02-19",
+    "name": "Quillfeather Holding",
+    "partner_id": "PAR-0015",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "FR",
+    "creation_date": "2026-05-08",
+    "name": "Lumen Technologies",
+    "partner_id": "PAR-0016",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "NL",
+    "creation_date": "2022-01-02",
+    "name": "Brightline Holding",
+    "partner_id": "PAR-0017",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "DE",
+    "creation_date": "2026-03-28",
+    "name": "Quillfeather Consulting",
+    "partner_id": "PAR-0018",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "BE",
+    "creation_date": "2023-03-22",
+    "name": "Axion Technologies",
+    "partner_id": "PAR-0019",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "ES",
+    "creation_date": "2024-01-28",
+    "name": "Kelvin Group",
+    "partner_id": "PAR-0020",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "FR",
+    "creation_date": "2024-02-23",
+    "name": "Rivendale Consulting",
+    "partner_id": "PAR-0021",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "LU",
+    "creation_date": "2024-11-12",
+    "name": "Silverline Partners",
+    "partner_id": "PAR-0022",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2023-11-10",
+    "name": "Halcyon Industries",
+    "partner_id": "PAR-0023",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "CH",
+    "creation_date": "2026-04-28",
+    "name": "Lumen Consulting",
+    "partner_id": "PAR-0024",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2026-02-02",
+    "name": "Larkspur Solutions",
+    "partner_id": "PAR-0025",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "NL",
+    "creation_date": "2022-08-31",
+    "name": "Falkor Group",
+    "partner_id": "PAR-0026",
+    "partner_type": "RESELLER"
+  },
+  {
+    "country": "BE",
+    "creation_date": "2023-11-03",
+    "name": "Verdant Systems",
+    "partner_id": "PAR-0027",
+    "partner_type": "INTEGRATOR"
+  },
+  {
+    "country": "CH",
+    "creation_date": "2026-06-13",
+    "name": "Falkor Dynamics",
+    "partner_id": "PAR-0028",
+    "partner_type": "ALLIANCE"
+  },
+  {
+    "country": "LU",
+    "creation_date": "2022-09-13",
+    "name": "Meridian Group",
+    "partner_id": "PAR-0029",
+    "partner_type": "TECHNOLOGY"
+  },
+  {
+    "country": "IT",
+    "creation_date": "2024-03-16",
+    "name": "Falkor Industries",
+    "partner_id": "PAR-0030",
+    "partner_type": "RESELLER"
+  }
+]

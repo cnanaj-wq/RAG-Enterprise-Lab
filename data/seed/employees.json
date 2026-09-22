@@ -1,0 +1,4104 @@
+[
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "EXECUTIVE",
+    "client_memberships": [],
+    "corporate_email": "olivier.fischer@genai-enterprise-lab.example",
+    "department": "Direction",
+    "employee_id": "EMP-0001",
+    "employment_type": "CDI",
+    "first_name": "Olivier",
+    "identity_roles": [
+      "EXECUTIVE"
+    ],
+    "job_title": "Chief Executive Officer",
+    "last_name": "Fischer",
+    "location": "Paris, FR",
+    "manager_id": null,
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_EXECUTIVE"
+    ],
+    "seniority_level": "EXECUTIVE"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "EXECUTIVE",
+    "client_memberships": [],
+    "corporate_email": "priya.costa@genai-enterprise-lab.example",
+    "department": "Direction",
+    "employee_id": "EMP-0002",
+    "employment_type": "CDI",
+    "first_name": "Priya",
+    "identity_roles": [
+      "EXECUTIVE"
+    ],
+    "job_title": "Chief Operating Officer",
+    "last_name": "Costa",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0001",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_EXECUTIVE"
+    ],
+    "seniority_level": "EXECUTIVE"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "EXECUTIVE",
+    "client_memberships": [],
+    "corporate_email": "romy.conti@genai-enterprise-lab.example",
+    "department": "Direction",
+    "employee_id": "EMP-0003",
+    "employment_type": "CDI",
+    "first_name": "Romy",
+    "identity_roles": [
+      "EXECUTIVE"
+    ],
+    "job_title": "Chief Financial Officer",
+    "last_name": "Conti",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0001",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_EXECUTIVE"
+    ],
+    "seniority_level": "EXECUTIVE"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "EXECUTIVE",
+    "client_memberships": [],
+    "corporate_email": "bianca.rossi@genai-enterprise-lab.example",
+    "department": "Direction",
+    "employee_id": "EMP-0004",
+    "employment_type": "CDI",
+    "first_name": "Bianca",
+    "identity_roles": [
+      "EXECUTIVE"
+    ],
+    "job_title": "Chief Technology Officer",
+    "last_name": "Rossi",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0001",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_EXECUTIVE"
+    ],
+    "seniority_level": "EXECUTIVE"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "EXECUTIVE",
+    "client_memberships": [],
+    "corporate_email": "oscar.robin@genai-enterprise-lab.example",
+    "department": "Direction",
+    "employee_id": "EMP-0005",
+    "employment_type": "CDI",
+    "first_name": "Oscar",
+    "identity_roles": [
+      "EXECUTIVE"
+    ],
+    "job_title": "Chief Human Resources Officer",
+    "last_name": "Robin",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0001",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_EXECUTIVE"
+    ],
+    "seniority_level": "EXECUTIVE"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "EXECUTIVE",
+    "client_memberships": [],
+    "corporate_email": "mateo.larsen@genai-enterprise-lab.example",
+    "department": "Direction",
+    "employee_id": "EMP-0006",
+    "employment_type": "CDI",
+    "first_name": "Mateo",
+    "identity_roles": [
+      "EXECUTIVE"
+    ],
+    "job_title": "Chief Revenue Officer",
+    "last_name": "Larsen",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0001",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_EXECUTIVE"
+    ],
+    "seniority_level": "EXECUTIVE"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "adam.costa@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0007",
+    "employment_type": "CDI",
+    "first_name": "Adam",
+    "identity_roles": [
+      "SALES_DIRECTOR",
+      "DEPARTMENT_HEAD",
+      "MANAGER"
+    ],
+    "job_title": "Sales Director",
+    "last_name": "Costa",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0006",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0001",
+      "CLI-0003",
+      "CLI-0005",
+      "CLI-0007",
+      "CLI-0009",
+      "CLI-0011",
+      "CLI-0013",
+      "CLI-0015",
+      "CLI-0017",
+      "CLI-0019",
+      "CLI-0021",
+      "CLI-0023",
+      "CLI-0025",
+      "CLI-0027",
+      "CLI-0029",
+      "CLI-0031",
+      "CLI-0033",
+      "CLI-0035",
+      "CLI-0037",
+      "CLI-0039",
+      "CLI-0041",
+      "CLI-0043",
+      "CLI-0045",
+      "CLI-0047",
+      "CLI-0049",
+      "CLI-0051",
+      "CLI-0053",
+      "CLI-0055",
+      "CLI-0057",
+      "CLI-0059",
+      "CLI-0061",
+      "CLI-0063",
+      "CLI-0065"
+    ],
+    "corporate_email": "bea.wagner@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0008",
+    "employment_type": "CDI",
+    "first_name": "Bea",
+    "identity_roles": [
+      "SALES_MANAGER",
+      "MANAGER"
+    ],
+    "job_title": "Sales Manager",
+    "last_name": "Wagner",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0007",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C001",
+      "RAG_CLIENT_C003",
+      "RAG_CLIENT_C005",
+      "RAG_CLIENT_C007",
+      "RAG_CLIENT_C009",
+      "RAG_CLIENT_C011",
+      "RAG_CLIENT_C013",
+      "RAG_CLIENT_C015",
+      "RAG_CLIENT_C017",
+      "RAG_CLIENT_C019",
+      "RAG_CLIENT_C021",
+      "RAG_CLIENT_C023",
+      "RAG_CLIENT_C025",
+      "RAG_CLIENT_C027",
+      "RAG_CLIENT_C029",
+      "RAG_CLIENT_C031",
+      "RAG_CLIENT_C033",
+      "RAG_CLIENT_C035",
+      "RAG_CLIENT_C037",
+      "RAG_CLIENT_C039",
+      "RAG_CLIENT_C041",
+      "RAG_CLIENT_C043",
+      "RAG_CLIENT_C045",
+      "RAG_CLIENT_C047",
+      "RAG_CLIENT_C049",
+      "RAG_CLIENT_C051",
+      "RAG_CLIENT_C053",
+      "RAG_CLIENT_C055",
+      "RAG_CLIENT_C057",
+      "RAG_CLIENT_C059",
+      "RAG_CLIENT_C061",
+      "RAG_CLIENT_C063",
+      "RAG_CLIENT_C065"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0002",
+      "CLI-0004",
+      "CLI-0006",
+      "CLI-0008",
+      "CLI-0010",
+      "CLI-0012",
+      "CLI-0014",
+      "CLI-0016",
+      "CLI-0018",
+      "CLI-0020",
+      "CLI-0022",
+      "CLI-0024",
+      "CLI-0026",
+      "CLI-0028",
+      "CLI-0030",
+      "CLI-0032",
+      "CLI-0034",
+      "CLI-0036",
+      "CLI-0038",
+      "CLI-0040",
+      "CLI-0042",
+      "CLI-0044",
+      "CLI-0046",
+      "CLI-0048",
+      "CLI-0050",
+      "CLI-0052",
+      "CLI-0054",
+      "CLI-0056",
+      "CLI-0058",
+      "CLI-0060",
+      "CLI-0062",
+      "CLI-0064"
+    ],
+    "corporate_email": "karim.perrin@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0009",
+    "employment_type": "CDI",
+    "first_name": "Karim",
+    "identity_roles": [
+      "SALES_MANAGER",
+      "MANAGER"
+    ],
+    "job_title": "Sales Manager",
+    "last_name": "Perrin",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0007",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C002",
+      "RAG_CLIENT_C004",
+      "RAG_CLIENT_C006",
+      "RAG_CLIENT_C008",
+      "RAG_CLIENT_C010",
+      "RAG_CLIENT_C012",
+      "RAG_CLIENT_C014",
+      "RAG_CLIENT_C016",
+      "RAG_CLIENT_C018",
+      "RAG_CLIENT_C020",
+      "RAG_CLIENT_C022",
+      "RAG_CLIENT_C024",
+      "RAG_CLIENT_C026",
+      "RAG_CLIENT_C028",
+      "RAG_CLIENT_C030",
+      "RAG_CLIENT_C032",
+      "RAG_CLIENT_C034",
+      "RAG_CLIENT_C036",
+      "RAG_CLIENT_C038",
+      "RAG_CLIENT_C040",
+      "RAG_CLIENT_C042",
+      "RAG_CLIENT_C044",
+      "RAG_CLIENT_C046",
+      "RAG_CLIENT_C048",
+      "RAG_CLIENT_C050",
+      "RAG_CLIENT_C052",
+      "RAG_CLIENT_C054",
+      "RAG_CLIENT_C056",
+      "RAG_CLIENT_C058",
+      "RAG_CLIENT_C060",
+      "RAG_CLIENT_C062",
+      "RAG_CLIENT_C064"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0001",
+      "CLI-0013",
+      "CLI-0025",
+      "CLI-0037",
+      "CLI-0049",
+      "CLI-0061"
+    ],
+    "corporate_email": "wassim.fontaine@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0010",
+    "employment_type": "CDI",
+    "first_name": "Wassim",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Fontaine",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0008",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C001",
+      "RAG_CLIENT_C013",
+      "RAG_CLIENT_C025",
+      "RAG_CLIENT_C037",
+      "RAG_CLIENT_C049",
+      "RAG_CLIENT_C061"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0002",
+      "CLI-0014",
+      "CLI-0026",
+      "CLI-0038",
+      "CLI-0050",
+      "CLI-0062"
+    ],
+    "corporate_email": "erwan.weber@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0011",
+    "employment_type": "CDI",
+    "first_name": "Erwan",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Weber",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0009",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C002",
+      "RAG_CLIENT_C014",
+      "RAG_CLIENT_C026",
+      "RAG_CLIENT_C038",
+      "RAG_CLIENT_C050",
+      "RAG_CLIENT_C062"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0003",
+      "CLI-0015",
+      "CLI-0027",
+      "CLI-0039",
+      "CLI-0051",
+      "CLI-0063"
+    ],
+    "corporate_email": "dana.simon@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0012",
+    "employment_type": "APPRENTICESHIP",
+    "first_name": "Dana",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Simon",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0008",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C003",
+      "RAG_CLIENT_C015",
+      "RAG_CLIENT_C027",
+      "RAG_CLIENT_C039",
+      "RAG_CLIENT_C051",
+      "RAG_CLIENT_C063"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0004",
+      "CLI-0016",
+      "CLI-0028",
+      "CLI-0040",
+      "CLI-0052",
+      "CLI-0064"
+    ],
+    "corporate_email": "julie.schmidt@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0013",
+    "employment_type": "CDI",
+    "first_name": "Julie",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Schmidt",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0009",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C004",
+      "RAG_CLIENT_C016",
+      "RAG_CLIENT_C028",
+      "RAG_CLIENT_C040",
+      "RAG_CLIENT_C052",
+      "RAG_CLIENT_C064"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0005",
+      "CLI-0017",
+      "CLI-0029",
+      "CLI-0041",
+      "CLI-0053",
+      "CLI-0065"
+    ],
+    "corporate_email": "xenia.chevalier@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0014",
+    "employment_type": "CDI",
+    "first_name": "Xenia",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Chevalier",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0008",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C005",
+      "RAG_CLIENT_C017",
+      "RAG_CLIENT_C029",
+      "RAG_CLIENT_C041",
+      "RAG_CLIENT_C053",
+      "RAG_CLIENT_C065"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0006",
+      "CLI-0018",
+      "CLI-0030",
+      "CLI-0042",
+      "CLI-0054"
+    ],
+    "corporate_email": "oscar.eriksson@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0015",
+    "employment_type": "APPRENTICESHIP",
+    "first_name": "Oscar",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Eriksson",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0009",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C006",
+      "RAG_CLIENT_C018",
+      "RAG_CLIENT_C030",
+      "RAG_CLIENT_C042",
+      "RAG_CLIENT_C054"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0007",
+      "CLI-0019",
+      "CLI-0031",
+      "CLI-0043",
+      "CLI-0055"
+    ],
+    "corporate_email": "fiona.dubois@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0016",
+    "employment_type": "CDI",
+    "first_name": "Fiona",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Dubois",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0008",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C007",
+      "RAG_CLIENT_C019",
+      "RAG_CLIENT_C031",
+      "RAG_CLIENT_C043",
+      "RAG_CLIENT_C055"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0008",
+      "CLI-0020",
+      "CLI-0032",
+      "CLI-0044",
+      "CLI-0056"
+    ],
+    "corporate_email": "xenia.garnier@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0017",
+    "employment_type": "CDI",
+    "first_name": "Xenia",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Account Executive",
+    "last_name": "Garnier",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0009",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C008",
+      "RAG_CLIENT_C020",
+      "RAG_CLIENT_C032",
+      "RAG_CLIENT_C044",
+      "RAG_CLIENT_C056"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0009",
+      "CLI-0021",
+      "CLI-0033",
+      "CLI-0045",
+      "CLI-0057"
+    ],
+    "corporate_email": "samuel.almeida@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0018",
+    "employment_type": "CDI",
+    "first_name": "Samuel",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Key Account Manager",
+    "last_name": "Almeida",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0008",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C009",
+      "RAG_CLIENT_C021",
+      "RAG_CLIENT_C033",
+      "RAG_CLIENT_C045",
+      "RAG_CLIENT_C057"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0010",
+      "CLI-0022",
+      "CLI-0034",
+      "CLI-0046",
+      "CLI-0058"
+    ],
+    "corporate_email": "karim.simon@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0019",
+    "employment_type": "CDI",
+    "first_name": "Karim",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Key Account Manager",
+    "last_name": "Simon",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0009",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C010",
+      "RAG_CLIENT_C022",
+      "RAG_CLIENT_C034",
+      "RAG_CLIENT_C046",
+      "RAG_CLIENT_C058"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0011",
+      "CLI-0023",
+      "CLI-0035",
+      "CLI-0047",
+      "CLI-0059"
+    ],
+    "corporate_email": "rana.almeida@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0020",
+    "employment_type": "CDI",
+    "first_name": "Rana",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Key Account Manager",
+    "last_name": "Almeida",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0008",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C011",
+      "RAG_CLIENT_C023",
+      "RAG_CLIENT_C035",
+      "RAG_CLIENT_C047",
+      "RAG_CLIENT_C059"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0012",
+      "CLI-0024",
+      "CLI-0036",
+      "CLI-0048",
+      "CLI-0060"
+    ],
+    "corporate_email": "uma.novotny@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0021",
+    "employment_type": "CDI",
+    "first_name": "Uma",
+    "identity_roles": [
+      "ACCOUNT_MANAGER"
+    ],
+    "job_title": "Key Account Manager",
+    "last_name": "Novotny",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0009",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES",
+      "RAG_CLIENT_C012",
+      "RAG_CLIENT_C024",
+      "RAG_CLIENT_C036",
+      "RAG_CLIENT_C048",
+      "RAG_CLIENT_C060"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "camille.keller@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0022",
+    "employment_type": "CDI",
+    "first_name": "Camille",
+    "identity_roles": [
+      "SALES_OPERATIONS"
+    ],
+    "job_title": "Sales Operations Analyst",
+    "last_name": "Keller",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0007",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "idris.chevalier@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0023",
+    "employment_type": "CDI",
+    "first_name": "Idris",
+    "identity_roles": [
+      "SALES_OPERATIONS"
+    ],
+    "job_title": "Sales Operations Analyst",
+    "last_name": "Chevalier",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0007",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "zoe.royer@genai-enterprise-lab.example",
+    "department": "Sales / Account",
+    "employee_id": "EMP-0024",
+    "employment_type": "CDI",
+    "first_name": "Zoe",
+    "identity_roles": [
+      "SALES_OPERATIONS"
+    ],
+    "job_title": "Sales Operations Analyst",
+    "last_name": "Royer",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0007",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_SALES"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0001",
+      "CLI-0013",
+      "CLI-0025",
+      "CLI-0037",
+      "CLI-0049",
+      "CLI-0061"
+    ],
+    "corporate_email": "quentin.okafor@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0025",
+    "employment_type": "CDI",
+    "first_name": "Quentin",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER"
+    ],
+    "job_title": "Head of Consulting",
+    "last_name": "Okafor",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0002",
+    "project_memberships": [
+      "PRJ-0001",
+      "PRJ-0013",
+      "PRJ-0025",
+      "PRJ-0037",
+      "PRJ-0049",
+      "PRJ-0061"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ001",
+      "RAG_PROJECT_PJ013",
+      "RAG_PROJECT_PJ025",
+      "RAG_PROJECT_PJ037",
+      "RAG_PROJECT_PJ049",
+      "RAG_PROJECT_PJ061"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0001",
+      "CLI-0002",
+      "CLI-0014",
+      "CLI-0026",
+      "CLI-0038",
+      "CLI-0050",
+      "CLI-0062"
+    ],
+    "corporate_email": "ismael.benali@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0026",
+    "employment_type": "CDI",
+    "first_name": "Ismael",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Consulting Team Lead",
+    "last_name": "Benali",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0025",
+    "project_memberships": [
+      "PRJ-0001",
+      "PRJ-0002",
+      "PRJ-0014",
+      "PRJ-0026",
+      "PRJ-0038",
+      "PRJ-0050",
+      "PRJ-0062"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ001",
+      "RAG_PROJECT_PJ002",
+      "RAG_PROJECT_PJ014",
+      "RAG_PROJECT_PJ026",
+      "RAG_PROJECT_PJ038",
+      "RAG_PROJECT_PJ050",
+      "RAG_PROJECT_PJ062"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0001",
+      "CLI-0002",
+      "CLI-0003",
+      "CLI-0015",
+      "CLI-0027",
+      "CLI-0039",
+      "CLI-0051",
+      "CLI-0063"
+    ],
+    "corporate_email": "helena.lund@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0027",
+    "employment_type": "CDI",
+    "first_name": "Helena",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Consulting Team Lead",
+    "last_name": "Lund",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0025",
+    "project_memberships": [
+      "PRJ-0001",
+      "PRJ-0002",
+      "PRJ-0003",
+      "PRJ-0015",
+      "PRJ-0027",
+      "PRJ-0039",
+      "PRJ-0051",
+      "PRJ-0063"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ001",
+      "RAG_PROJECT_PJ002",
+      "RAG_PROJECT_PJ003",
+      "RAG_PROJECT_PJ015",
+      "RAG_PROJECT_PJ027",
+      "RAG_PROJECT_PJ039",
+      "RAG_PROJECT_PJ051",
+      "RAG_PROJECT_PJ063"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0002",
+      "CLI-0003",
+      "CLI-0004",
+      "CLI-0016",
+      "CLI-0028",
+      "CLI-0040",
+      "CLI-0052",
+      "CLI-0064"
+    ],
+    "corporate_email": "ines.robin@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0028",
+    "employment_type": "CDI",
+    "first_name": "Ines",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Consulting Team Lead",
+    "last_name": "Robin",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0025",
+    "project_memberships": [
+      "PRJ-0002",
+      "PRJ-0003",
+      "PRJ-0004",
+      "PRJ-0016",
+      "PRJ-0028",
+      "PRJ-0040",
+      "PRJ-0052",
+      "PRJ-0064"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ002",
+      "RAG_PROJECT_PJ003",
+      "RAG_PROJECT_PJ004",
+      "RAG_PROJECT_PJ016",
+      "RAG_PROJECT_PJ028",
+      "RAG_PROJECT_PJ040",
+      "RAG_PROJECT_PJ052",
+      "RAG_PROJECT_PJ064"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0002",
+      "CLI-0004",
+      "CLI-0005",
+      "CLI-0017",
+      "CLI-0029",
+      "CLI-0041",
+      "CLI-0053",
+      "CLI-0065"
+    ],
+    "corporate_email": "david.wagner@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0029",
+    "employment_type": "CDI",
+    "first_name": "David",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Consulting Team Lead",
+    "last_name": "Wagner",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0025",
+    "project_memberships": [
+      "PRJ-0002",
+      "PRJ-0004",
+      "PRJ-0005",
+      "PRJ-0017",
+      "PRJ-0029",
+      "PRJ-0041",
+      "PRJ-0053",
+      "PRJ-0065"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ002",
+      "RAG_PROJECT_PJ004",
+      "RAG_PROJECT_PJ005",
+      "RAG_PROJECT_PJ017",
+      "RAG_PROJECT_PJ029",
+      "RAG_PROJECT_PJ041",
+      "RAG_PROJECT_PJ053",
+      "RAG_PROJECT_PJ065"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0004",
+      "CLI-0005",
+      "CLI-0006"
+    ],
+    "corporate_email": "romy.martins@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0030",
+    "employment_type": "CDI",
+    "first_name": "Romy",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Martins",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0004",
+      "PRJ-0005",
+      "PRJ-0006"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ004",
+      "RAG_PROJECT_PJ005",
+      "RAG_PROJECT_PJ006"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0005",
+      "CLI-0006",
+      "CLI-0007"
+    ],
+    "corporate_email": "dana.moreno@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0031",
+    "employment_type": "APPRENTICESHIP",
+    "first_name": "Dana",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Moreno",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0005",
+      "PRJ-0006",
+      "PRJ-0007"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ005",
+      "RAG_PROJECT_PJ006",
+      "RAG_PROJECT_PJ007"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0005",
+      "CLI-0007",
+      "CLI-0008"
+    ],
+    "corporate_email": "alice.richter@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0032",
+    "employment_type": "CDI",
+    "first_name": "Alice",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Richter",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0005",
+      "PRJ-0007",
+      "PRJ-0008"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ005",
+      "RAG_PROJECT_PJ007",
+      "RAG_PROJECT_PJ008"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0007",
+      "CLI-0008",
+      "CLI-0009"
+    ],
+    "corporate_email": "wassim.lambert@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0033",
+    "employment_type": "CDI",
+    "first_name": "Wassim",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Lambert",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0007",
+      "PRJ-0008",
+      "PRJ-0009"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ007",
+      "RAG_PROJECT_PJ008",
+      "RAG_PROJECT_PJ009"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0008",
+      "CLI-0009",
+      "CLI-0010"
+    ],
+    "corporate_email": "bianca.garnier@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0034",
+    "employment_type": "CDI",
+    "first_name": "Bianca",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Garnier",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0008",
+      "PRJ-0009",
+      "PRJ-0010"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ008",
+      "RAG_PROJECT_PJ009",
+      "RAG_PROJECT_PJ010"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0008",
+      "CLI-0010",
+      "CLI-0011"
+    ],
+    "corporate_email": "ulysse.benali@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0035",
+    "employment_type": "CDI",
+    "first_name": "Ulysse",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Benali",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0008",
+      "PRJ-0010",
+      "PRJ-0011"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ008",
+      "RAG_PROJECT_PJ010",
+      "RAG_PROJECT_PJ011"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0010",
+      "CLI-0011",
+      "CLI-0012"
+    ],
+    "corporate_email": "giulia.wagner@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0036",
+    "employment_type": "CDI",
+    "first_name": "Giulia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Wagner",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0010",
+      "PRJ-0011",
+      "PRJ-0012"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ010",
+      "RAG_PROJECT_PJ011",
+      "RAG_PROJECT_PJ012"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0011",
+      "CLI-0012",
+      "CLI-0013"
+    ],
+    "corporate_email": "marco.leroy@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0037",
+    "employment_type": "CDI",
+    "first_name": "Marco",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Leroy",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0011",
+      "PRJ-0012",
+      "PRJ-0013"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ011",
+      "RAG_PROJECT_PJ012",
+      "RAG_PROJECT_PJ013"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0011",
+      "CLI-0013",
+      "CLI-0014"
+    ],
+    "corporate_email": "yara.almeida@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0038",
+    "employment_type": "FREELANCE",
+    "first_name": "Yara",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Almeida",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0011",
+      "PRJ-0013",
+      "PRJ-0014"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ011",
+      "RAG_PROJECT_PJ013",
+      "RAG_PROJECT_PJ014"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0013",
+      "CLI-0014",
+      "CLI-0015"
+    ],
+    "corporate_email": "fatou.bernard@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0039",
+    "employment_type": "FREELANCE",
+    "first_name": "Fatou",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Bernard",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0013",
+      "PRJ-0014",
+      "PRJ-0015"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ013",
+      "RAG_PROJECT_PJ014",
+      "RAG_PROJECT_PJ015"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0014",
+      "CLI-0015",
+      "CLI-0016"
+    ],
+    "corporate_email": "dalia.keller@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0040",
+    "employment_type": "CDI",
+    "first_name": "Dalia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Keller",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0014",
+      "PRJ-0015",
+      "PRJ-0016"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ014",
+      "RAG_PROJECT_PJ015",
+      "RAG_PROJECT_PJ016"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0014",
+      "CLI-0016",
+      "CLI-0017"
+    ],
+    "corporate_email": "kenji.kowalski@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0041",
+    "employment_type": "CDI",
+    "first_name": "Kenji",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Kowalski",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0014",
+      "PRJ-0016",
+      "PRJ-0017"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ014",
+      "RAG_PROJECT_PJ016",
+      "RAG_PROJECT_PJ017"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0016",
+      "CLI-0017",
+      "CLI-0018"
+    ],
+    "corporate_email": "wassim.simon@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0042",
+    "employment_type": "CDI",
+    "first_name": "Wassim",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Simon",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0016",
+      "PRJ-0017",
+      "PRJ-0018"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ016",
+      "RAG_PROJECT_PJ017",
+      "RAG_PROJECT_PJ018"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0017",
+      "CLI-0018",
+      "CLI-0019"
+    ],
+    "corporate_email": "julie.garnier@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0043",
+    "employment_type": "CDI",
+    "first_name": "Julie",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Garnier",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0017",
+      "PRJ-0018",
+      "PRJ-0019"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ017",
+      "RAG_PROJECT_PJ018",
+      "RAG_PROJECT_PJ019"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0017",
+      "CLI-0019",
+      "CLI-0020"
+    ],
+    "corporate_email": "nora.almeida@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0044",
+    "employment_type": "CDI",
+    "first_name": "Nora",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Almeida",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0017",
+      "PRJ-0019",
+      "PRJ-0020"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ017",
+      "RAG_PROJECT_PJ019",
+      "RAG_PROJECT_PJ020"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0019",
+      "CLI-0020",
+      "CLI-0021"
+    ],
+    "corporate_email": "tara.roux@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0045",
+    "employment_type": "APPRENTICESHIP",
+    "first_name": "Tara",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Roux",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0019",
+      "PRJ-0020",
+      "PRJ-0021"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ019",
+      "RAG_PROJECT_PJ020",
+      "RAG_PROJECT_PJ021"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0020",
+      "CLI-0021",
+      "CLI-0022"
+    ],
+    "corporate_email": "cedric.silva@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0046",
+    "employment_type": "CDI",
+    "first_name": "Cedric",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Silva",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0020",
+      "PRJ-0021",
+      "PRJ-0022"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ020",
+      "RAG_PROJECT_PJ021",
+      "RAG_PROJECT_PJ022"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0020",
+      "CLI-0022",
+      "CLI-0023"
+    ],
+    "corporate_email": "elena.fontaine@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0047",
+    "employment_type": "CDI",
+    "first_name": "Elena",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Fontaine",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0020",
+      "PRJ-0022",
+      "PRJ-0023"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ020",
+      "RAG_PROJECT_PJ022",
+      "RAG_PROJECT_PJ023"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0022",
+      "CLI-0023",
+      "CLI-0024"
+    ],
+    "corporate_email": "oscar.moreau@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0048",
+    "employment_type": "CDI",
+    "first_name": "Oscar",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Moreau",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0022",
+      "PRJ-0023",
+      "PRJ-0024"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ022",
+      "RAG_PROJECT_PJ023",
+      "RAG_PROJECT_PJ024"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0023",
+      "CLI-0024",
+      "CLI-0025"
+    ],
+    "corporate_email": "elena.silva@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0049",
+    "employment_type": "CDD",
+    "first_name": "Elena",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Silva",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0023",
+      "PRJ-0024",
+      "PRJ-0025"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ023",
+      "RAG_PROJECT_PJ024",
+      "RAG_PROJECT_PJ025"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0023",
+      "CLI-0025",
+      "CLI-0026"
+    ],
+    "corporate_email": "priya.lambert@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0050",
+    "employment_type": "CDI",
+    "first_name": "Priya",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Lambert",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0023",
+      "PRJ-0025",
+      "PRJ-0026"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ023",
+      "RAG_PROJECT_PJ025",
+      "RAG_PROJECT_PJ026"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0025",
+      "CLI-0026",
+      "CLI-0027"
+    ],
+    "corporate_email": "ulysse.almeida@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0051",
+    "employment_type": "CDI",
+    "first_name": "Ulysse",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Almeida",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0025",
+      "PRJ-0026",
+      "PRJ-0027"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ025",
+      "RAG_PROJECT_PJ026",
+      "RAG_PROJECT_PJ027"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0026",
+      "CLI-0027",
+      "CLI-0028"
+    ],
+    "corporate_email": "emile.keller@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0052",
+    "employment_type": "CDI",
+    "first_name": "Emile",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Keller",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0026",
+      "PRJ-0027",
+      "PRJ-0028"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ026",
+      "RAG_PROJECT_PJ027",
+      "RAG_PROJECT_PJ028"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0026",
+      "CLI-0028",
+      "CLI-0029"
+    ],
+    "corporate_email": "bianca.weber@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0053",
+    "employment_type": "CDI",
+    "first_name": "Bianca",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Weber",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0026",
+      "PRJ-0028",
+      "PRJ-0029"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ026",
+      "RAG_PROJECT_PJ028",
+      "RAG_PROJECT_PJ029"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0028",
+      "CLI-0029",
+      "CLI-0030"
+    ],
+    "corporate_email": "david.richter@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0054",
+    "employment_type": "APPRENTICESHIP",
+    "first_name": "David",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Richter",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0028",
+      "PRJ-0029",
+      "PRJ-0030"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ028",
+      "RAG_PROJECT_PJ029",
+      "RAG_PROJECT_PJ030"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0029",
+      "CLI-0030",
+      "CLI-0031"
+    ],
+    "corporate_email": "zoe.masson@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0055",
+    "employment_type": "CDI",
+    "first_name": "Zoe",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Masson",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0027",
+    "project_memberships": [
+      "PRJ-0029",
+      "PRJ-0030",
+      "PRJ-0031"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ029",
+      "RAG_PROJECT_PJ030",
+      "RAG_PROJECT_PJ031"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0029",
+      "CLI-0031",
+      "CLI-0032"
+    ],
+    "corporate_email": "mateo.leroy@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0056",
+    "employment_type": "CDI",
+    "first_name": "Mateo",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Leroy",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0028",
+    "project_memberships": [
+      "PRJ-0029",
+      "PRJ-0031",
+      "PRJ-0032"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ029",
+      "RAG_PROJECT_PJ031",
+      "RAG_PROJECT_PJ032"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0031",
+      "CLI-0032",
+      "CLI-0033"
+    ],
+    "corporate_email": "rana.karlsson@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0057",
+    "employment_type": "CDD",
+    "first_name": "Rana",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Karlsson",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0029",
+    "project_memberships": [
+      "PRJ-0031",
+      "PRJ-0032",
+      "PRJ-0033"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ031",
+      "RAG_PROJECT_PJ032",
+      "RAG_PROJECT_PJ033"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0032",
+      "CLI-0033",
+      "CLI-0034"
+    ],
+    "corporate_email": "bea.wagner2@genai-enterprise-lab.example",
+    "department": "Consulting",
+    "employee_id": "EMP-0058",
+    "employment_type": "CDI",
+    "first_name": "Bea",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Consultant",
+    "last_name": "Wagner",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0026",
+    "project_memberships": [
+      "PRJ-0032",
+      "PRJ-0033",
+      "PRJ-0034"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_CONSULTING",
+      "RAG_PROJECT_PJ032",
+      "RAG_PROJECT_PJ033",
+      "RAG_PROJECT_PJ034"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0006",
+      "CLI-0018",
+      "CLI-0030",
+      "CLI-0032",
+      "CLI-0034",
+      "CLI-0035",
+      "CLI-0042",
+      "CLI-0054"
+    ],
+    "corporate_email": "david.aydin@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0059",
+    "employment_type": "CDI",
+    "first_name": "David",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER"
+    ],
+    "job_title": "Head of Data & AI",
+    "last_name": "Aydin",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0004",
+    "project_memberships": [
+      "PRJ-0006",
+      "PRJ-0018",
+      "PRJ-0030",
+      "PRJ-0032",
+      "PRJ-0034",
+      "PRJ-0035",
+      "PRJ-0042",
+      "PRJ-0054"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ006",
+      "RAG_PROJECT_PJ018",
+      "RAG_PROJECT_PJ030",
+      "RAG_PROJECT_PJ032",
+      "RAG_PROJECT_PJ034",
+      "RAG_PROJECT_PJ035",
+      "RAG_PROJECT_PJ042",
+      "RAG_PROJECT_PJ054"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0007",
+      "CLI-0019",
+      "CLI-0031",
+      "CLI-0034",
+      "CLI-0035",
+      "CLI-0036",
+      "CLI-0043",
+      "CLI-0055"
+    ],
+    "corporate_email": "farid.almeida@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0060",
+    "employment_type": "CDI",
+    "first_name": "Farid",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Data & AI Team Lead",
+    "last_name": "Almeida",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0059",
+    "project_memberships": [
+      "PRJ-0007",
+      "PRJ-0019",
+      "PRJ-0031",
+      "PRJ-0034",
+      "PRJ-0035",
+      "PRJ-0036",
+      "PRJ-0043",
+      "PRJ-0055"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ007",
+      "RAG_PROJECT_PJ019",
+      "RAG_PROJECT_PJ031",
+      "RAG_PROJECT_PJ034",
+      "RAG_PROJECT_PJ035",
+      "RAG_PROJECT_PJ036",
+      "RAG_PROJECT_PJ043",
+      "RAG_PROJECT_PJ055"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0008",
+      "CLI-0020",
+      "CLI-0032",
+      "CLI-0035",
+      "CLI-0036",
+      "CLI-0037",
+      "CLI-0044",
+      "CLI-0056"
+    ],
+    "corporate_email": "karim.nguyen@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0061",
+    "employment_type": "CDI",
+    "first_name": "Karim",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Data & AI Team Lead",
+    "last_name": "Nguyen",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0059",
+    "project_memberships": [
+      "PRJ-0008",
+      "PRJ-0020",
+      "PRJ-0032",
+      "PRJ-0035",
+      "PRJ-0036",
+      "PRJ-0037",
+      "PRJ-0044",
+      "PRJ-0056"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ008",
+      "RAG_PROJECT_PJ020",
+      "RAG_PROJECT_PJ032",
+      "RAG_PROJECT_PJ035",
+      "RAG_PROJECT_PJ036",
+      "RAG_PROJECT_PJ037",
+      "RAG_PROJECT_PJ044",
+      "RAG_PROJECT_PJ056"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0009",
+      "CLI-0021",
+      "CLI-0033",
+      "CLI-0035",
+      "CLI-0037",
+      "CLI-0038",
+      "CLI-0045",
+      "CLI-0057"
+    ],
+    "corporate_email": "fiona.bianchi@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0062",
+    "employment_type": "CDI",
+    "first_name": "Fiona",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Data & AI Team Lead",
+    "last_name": "Bianchi",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0059",
+    "project_memberships": [
+      "PRJ-0009",
+      "PRJ-0021",
+      "PRJ-0033",
+      "PRJ-0035",
+      "PRJ-0037",
+      "PRJ-0038",
+      "PRJ-0045",
+      "PRJ-0057"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ009",
+      "RAG_PROJECT_PJ021",
+      "RAG_PROJECT_PJ033",
+      "RAG_PROJECT_PJ035",
+      "RAG_PROJECT_PJ037",
+      "RAG_PROJECT_PJ038",
+      "RAG_PROJECT_PJ045",
+      "RAG_PROJECT_PJ057"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0037",
+      "CLI-0038",
+      "CLI-0039"
+    ],
+    "corporate_email": "yanis.benali@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0063",
+    "employment_type": "CDI",
+    "first_name": "Yanis",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Benali",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0060",
+    "project_memberships": [
+      "PRJ-0037",
+      "PRJ-0038",
+      "PRJ-0039"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ037",
+      "RAG_PROJECT_PJ038",
+      "RAG_PROJECT_PJ039"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0038",
+      "CLI-0039",
+      "CLI-0040"
+    ],
+    "corporate_email": "samuel.masson@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0064",
+    "employment_type": "CDI",
+    "first_name": "Samuel",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Masson",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0061",
+    "project_memberships": [
+      "PRJ-0038",
+      "PRJ-0039",
+      "PRJ-0040"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ038",
+      "RAG_PROJECT_PJ039",
+      "RAG_PROJECT_PJ040"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0038",
+      "CLI-0040",
+      "CLI-0041"
+    ],
+    "corporate_email": "jonas.leroy@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0065",
+    "employment_type": "CDI",
+    "first_name": "Jonas",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Leroy",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0062",
+    "project_memberships": [
+      "PRJ-0038",
+      "PRJ-0040",
+      "PRJ-0041"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ038",
+      "RAG_PROJECT_PJ040",
+      "RAG_PROJECT_PJ041"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0040",
+      "CLI-0041",
+      "CLI-0042"
+    ],
+    "corporate_email": "valentina.simon@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0066",
+    "employment_type": "CDI",
+    "first_name": "Valentina",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Simon",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0060",
+    "project_memberships": [
+      "PRJ-0040",
+      "PRJ-0041",
+      "PRJ-0042"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ040",
+      "RAG_PROJECT_PJ041",
+      "RAG_PROJECT_PJ042"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0041",
+      "CLI-0042",
+      "CLI-0043"
+    ],
+    "corporate_email": "leila.faure@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0067",
+    "employment_type": "FREELANCE",
+    "first_name": "Leila",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Faure",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0061",
+    "project_memberships": [
+      "PRJ-0041",
+      "PRJ-0042",
+      "PRJ-0043"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ041",
+      "RAG_PROJECT_PJ042",
+      "RAG_PROJECT_PJ043"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0041",
+      "CLI-0043",
+      "CLI-0044"
+    ],
+    "corporate_email": "david.robin@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0068",
+    "employment_type": "CDD",
+    "first_name": "David",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Robin",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0062",
+    "project_memberships": [
+      "PRJ-0041",
+      "PRJ-0043",
+      "PRJ-0044"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ041",
+      "RAG_PROJECT_PJ043",
+      "RAG_PROJECT_PJ044"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": false,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0043",
+      "CLI-0044",
+      "CLI-0045"
+    ],
+    "corporate_email": "elena.richter@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0069",
+    "employment_type": "CDI",
+    "first_name": "Elena",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Richter",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0060",
+    "project_memberships": [
+      "PRJ-0043",
+      "PRJ-0044",
+      "PRJ-0045"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ043",
+      "RAG_PROJECT_PJ044",
+      "RAG_PROJECT_PJ045"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0044",
+      "CLI-0045",
+      "CLI-0046"
+    ],
+    "corporate_email": "gustav.chevalier@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0070",
+    "employment_type": "CDI",
+    "first_name": "Gustav",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Chevalier",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0061",
+    "project_memberships": [
+      "PRJ-0044",
+      "PRJ-0045",
+      "PRJ-0046"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ044",
+      "RAG_PROJECT_PJ045",
+      "RAG_PROJECT_PJ046"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0044",
+      "CLI-0046",
+      "CLI-0047"
+    ],
+    "corporate_email": "farid.nguyen@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0071",
+    "employment_type": "CDI",
+    "first_name": "Farid",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Nguyen",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0062",
+    "project_memberships": [
+      "PRJ-0044",
+      "PRJ-0046",
+      "PRJ-0047"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ044",
+      "RAG_PROJECT_PJ046",
+      "RAG_PROJECT_PJ047"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0046",
+      "CLI-0047",
+      "CLI-0048"
+    ],
+    "corporate_email": "jana.benali@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0072",
+    "employment_type": "CDI",
+    "first_name": "Jana",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Benali",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0060",
+    "project_memberships": [
+      "PRJ-0046",
+      "PRJ-0047",
+      "PRJ-0048"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ046",
+      "RAG_PROJECT_PJ047",
+      "RAG_PROJECT_PJ048"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0047",
+      "CLI-0048",
+      "CLI-0049"
+    ],
+    "corporate_email": "quentin.bianchi@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0073",
+    "employment_type": "CDI",
+    "first_name": "Quentin",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Bianchi",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0061",
+    "project_memberships": [
+      "PRJ-0047",
+      "PRJ-0048",
+      "PRJ-0049"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ047",
+      "RAG_PROJECT_PJ048",
+      "RAG_PROJECT_PJ049"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0047",
+      "CLI-0049",
+      "CLI-0050"
+    ],
+    "corporate_email": "uma.almeida@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0074",
+    "employment_type": "FREELANCE",
+    "first_name": "Uma",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Almeida",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0062",
+    "project_memberships": [
+      "PRJ-0047",
+      "PRJ-0049",
+      "PRJ-0050"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ047",
+      "RAG_PROJECT_PJ049",
+      "RAG_PROJECT_PJ050"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0049",
+      "CLI-0050",
+      "CLI-0051"
+    ],
+    "corporate_email": "nadia.chevalier@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0075",
+    "employment_type": "CDI",
+    "first_name": "Nadia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Chevalier",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0060",
+    "project_memberships": [
+      "PRJ-0049",
+      "PRJ-0050",
+      "PRJ-0051"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ049",
+      "RAG_PROJECT_PJ050",
+      "RAG_PROJECT_PJ051"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0050",
+      "CLI-0051",
+      "CLI-0052"
+    ],
+    "corporate_email": "quentin.okafor2@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0076",
+    "employment_type": "CDD",
+    "first_name": "Quentin",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Okafor",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0061",
+    "project_memberships": [
+      "PRJ-0050",
+      "PRJ-0051",
+      "PRJ-0052"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ050",
+      "RAG_PROJECT_PJ051",
+      "RAG_PROJECT_PJ052"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0050",
+      "CLI-0052",
+      "CLI-0053"
+    ],
+    "corporate_email": "xenia.schmidt@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0077",
+    "employment_type": "CDI",
+    "first_name": "Xenia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Schmidt",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0062",
+    "project_memberships": [
+      "PRJ-0050",
+      "PRJ-0052",
+      "PRJ-0053"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ050",
+      "RAG_PROJECT_PJ052",
+      "RAG_PROJECT_PJ053"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0052",
+      "CLI-0053",
+      "CLI-0054"
+    ],
+    "corporate_email": "theo.marchetti@genai-enterprise-lab.example",
+    "department": "Data & AI",
+    "employee_id": "EMP-0078",
+    "employment_type": "CDI",
+    "first_name": "Theo",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Data / ML Engineer",
+    "last_name": "Marchetti",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0060",
+    "project_memberships": [
+      "PRJ-0052",
+      "PRJ-0053",
+      "PRJ-0054"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_DATA_AI",
+      "RAG_PROJECT_PJ052",
+      "RAG_PROJECT_PJ053",
+      "RAG_PROJECT_PJ054"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0010",
+      "CLI-0022",
+      "CLI-0034",
+      "CLI-0046",
+      "CLI-0053",
+      "CLI-0054",
+      "CLI-0055",
+      "CLI-0058"
+    ],
+    "corporate_email": "alice.fabre@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0079",
+    "employment_type": "CDI",
+    "first_name": "Alice",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER"
+    ],
+    "job_title": "Head of Engineering",
+    "last_name": "Fabre",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0004",
+    "project_memberships": [
+      "PRJ-0010",
+      "PRJ-0022",
+      "PRJ-0034",
+      "PRJ-0046",
+      "PRJ-0053",
+      "PRJ-0054",
+      "PRJ-0055",
+      "PRJ-0058"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ010",
+      "RAG_PROJECT_PJ022",
+      "RAG_PROJECT_PJ034",
+      "RAG_PROJECT_PJ046",
+      "RAG_PROJECT_PJ053",
+      "RAG_PROJECT_PJ054",
+      "RAG_PROJECT_PJ055",
+      "RAG_PROJECT_PJ058"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0011",
+      "CLI-0023",
+      "CLI-0035",
+      "CLI-0047",
+      "CLI-0053",
+      "CLI-0055",
+      "CLI-0056",
+      "CLI-0059"
+    ],
+    "corporate_email": "jana.fabre@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0080",
+    "employment_type": "FREELANCE",
+    "first_name": "Jana",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Engineering Team Lead",
+    "last_name": "Fabre",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0079",
+    "project_memberships": [
+      "PRJ-0011",
+      "PRJ-0023",
+      "PRJ-0035",
+      "PRJ-0047",
+      "PRJ-0053",
+      "PRJ-0055",
+      "PRJ-0056",
+      "PRJ-0059"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ011",
+      "RAG_PROJECT_PJ023",
+      "RAG_PROJECT_PJ035",
+      "RAG_PROJECT_PJ047",
+      "RAG_PROJECT_PJ053",
+      "RAG_PROJECT_PJ055",
+      "RAG_PROJECT_PJ056",
+      "RAG_PROJECT_PJ059"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [
+      "CLI-0012",
+      "CLI-0024",
+      "CLI-0036",
+      "CLI-0048",
+      "CLI-0055",
+      "CLI-0056",
+      "CLI-0057",
+      "CLI-0060"
+    ],
+    "corporate_email": "ines.benali@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0081",
+    "employment_type": "CDD",
+    "first_name": "Ines",
+    "identity_roles": [
+      "TEAM_LEAD",
+      "MANAGER"
+    ],
+    "job_title": "Engineering Team Lead",
+    "last_name": "Benali",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0079",
+    "project_memberships": [
+      "PRJ-0012",
+      "PRJ-0024",
+      "PRJ-0036",
+      "PRJ-0048",
+      "PRJ-0055",
+      "PRJ-0056",
+      "PRJ-0057",
+      "PRJ-0060"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ012",
+      "RAG_PROJECT_PJ024",
+      "RAG_PROJECT_PJ036",
+      "RAG_PROJECT_PJ048",
+      "RAG_PROJECT_PJ055",
+      "RAG_PROJECT_PJ056",
+      "RAG_PROJECT_PJ057",
+      "RAG_PROJECT_PJ060"
+    ],
+    "seniority_level": "LEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0056",
+      "CLI-0057",
+      "CLI-0058"
+    ],
+    "corporate_email": "jonas.lambert@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0082",
+    "employment_type": "CDI",
+    "first_name": "Jonas",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Lambert",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0080",
+    "project_memberships": [
+      "PRJ-0056",
+      "PRJ-0057",
+      "PRJ-0058"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ056",
+      "RAG_PROJECT_PJ057",
+      "RAG_PROJECT_PJ058"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0056",
+      "CLI-0058",
+      "CLI-0059"
+    ],
+    "corporate_email": "nora.richter@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0083",
+    "employment_type": "CDD",
+    "first_name": "Nora",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Richter",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0081",
+    "project_memberships": [
+      "PRJ-0056",
+      "PRJ-0058",
+      "PRJ-0059"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ056",
+      "RAG_PROJECT_PJ058",
+      "RAG_PROJECT_PJ059"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0058",
+      "CLI-0059",
+      "CLI-0060"
+    ],
+    "corporate_email": "quentin.silva@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0084",
+    "employment_type": "CDI",
+    "first_name": "Quentin",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Silva",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0080",
+    "project_memberships": [
+      "PRJ-0058",
+      "PRJ-0059",
+      "PRJ-0060"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ058",
+      "RAG_PROJECT_PJ059",
+      "RAG_PROJECT_PJ060"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0059",
+      "CLI-0060",
+      "CLI-0061"
+    ],
+    "corporate_email": "dalia.lambert@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0085",
+    "employment_type": "CDI",
+    "first_name": "Dalia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Lambert",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0081",
+    "project_memberships": [
+      "PRJ-0059",
+      "PRJ-0060",
+      "PRJ-0061"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ059",
+      "RAG_PROJECT_PJ060",
+      "RAG_PROJECT_PJ061"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0059",
+      "CLI-0061",
+      "CLI-0062"
+    ],
+    "corporate_email": "olivier.benali@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0086",
+    "employment_type": "CDI",
+    "first_name": "Olivier",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Benali",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0080",
+    "project_memberships": [
+      "PRJ-0059",
+      "PRJ-0061",
+      "PRJ-0062"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ059",
+      "RAG_PROJECT_PJ061",
+      "RAG_PROJECT_PJ062"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0061",
+      "CLI-0062",
+      "CLI-0063"
+    ],
+    "corporate_email": "bianca.berger@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0087",
+    "employment_type": "CDI",
+    "first_name": "Bianca",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Berger",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0081",
+    "project_memberships": [
+      "PRJ-0061",
+      "PRJ-0062",
+      "PRJ-0063"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ061",
+      "RAG_PROJECT_PJ062",
+      "RAG_PROJECT_PJ063"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": false,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0062",
+      "CLI-0063",
+      "CLI-0064"
+    ],
+    "corporate_email": "samuel.silva@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0088",
+    "employment_type": "CDI",
+    "first_name": "Samuel",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Silva",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0080",
+    "project_memberships": [
+      "PRJ-0062",
+      "PRJ-0063",
+      "PRJ-0064"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ062",
+      "RAG_PROJECT_PJ063",
+      "RAG_PROJECT_PJ064"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0062",
+      "CLI-0064",
+      "CLI-0065"
+    ],
+    "corporate_email": "leila.berger@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0089",
+    "employment_type": "CDI",
+    "first_name": "Leila",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Berger",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0081",
+    "project_memberships": [
+      "PRJ-0062",
+      "PRJ-0064",
+      "PRJ-0065"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ062",
+      "RAG_PROJECT_PJ064",
+      "RAG_PROJECT_PJ065"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0064",
+      "CLI-0065"
+    ],
+    "corporate_email": "xenia.silva@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0090",
+    "employment_type": "APPRENTICESHIP",
+    "first_name": "Xenia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Silva",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0080",
+    "project_memberships": [
+      "PRJ-0064",
+      "PRJ-0065"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ064",
+      "RAG_PROJECT_PJ065"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0065"
+    ],
+    "corporate_email": "wei.andersen@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0091",
+    "employment_type": "CDI",
+    "first_name": "Wei",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Andersen",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0081",
+    "project_memberships": [
+      "PRJ-0065"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ065"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [
+      "CLI-0065"
+    ],
+    "corporate_email": "yara.berger@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0092",
+    "employment_type": "CDI",
+    "first_name": "Yara",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Berger",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0080",
+    "project_memberships": [
+      "PRJ-0065"
+    ],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING",
+      "RAG_PROJECT_PJ065"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "jonas.almeida@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0093",
+    "employment_type": "CDD",
+    "first_name": "Jonas",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Almeida",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0081",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "bea.novak@genai-enterprise-lab.example",
+    "department": "Engineering",
+    "employee_id": "EMP-0094",
+    "employment_type": "CDI",
+    "first_name": "Bea",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Software Engineer",
+    "last_name": "Novak",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0080",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_ENGINEERING"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "valentina.almeida@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0095",
+    "employment_type": "CDI",
+    "first_name": "Valentina",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER",
+      "IT_ADMIN"
+    ],
+    "job_title": "Head of IT & Cybersecurity",
+    "last_name": "Almeida",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0002",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "quang.wagner@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0096",
+    "employment_type": "CDI",
+    "first_name": "Quang",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Wagner",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "aaron.perrin@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0097",
+    "employment_type": "CDI",
+    "first_name": "Aaron",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Perrin",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "emile.costa@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0098",
+    "employment_type": "CDI",
+    "first_name": "Emile",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Costa",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "theo.dumont@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0099",
+    "employment_type": "CDD",
+    "first_name": "Theo",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Dumont",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "quang.leroy@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0100",
+    "employment_type": "CDI",
+    "first_name": "Quang",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Leroy",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "yara.lambert@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0101",
+    "employment_type": "CDI",
+    "first_name": "Yara",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Lambert",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Delivery",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "dalia.simon@genai-enterprise-lab.example",
+    "department": "IT / Cybersecurity",
+    "employee_id": "EMP-0102",
+    "employment_type": "FREELANCE",
+    "first_name": "Dalia",
+    "identity_roles": [
+      "EMPLOYEE",
+      "IT_ADMIN"
+    ],
+    "job_title": "IT / Security Analyst",
+    "last_name": "Simon",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0095",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_IT"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "hugo.royer@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0103",
+    "employment_type": "CDI",
+    "first_name": "Hugo",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER",
+      "HR_ADMIN"
+    ],
+    "job_title": "Head of HR",
+    "last_name": "Royer",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0005",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "quentin.rossi@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0104",
+    "employment_type": "CDI",
+    "first_name": "Quentin",
+    "identity_roles": [
+      "EMPLOYEE",
+      "HR_ADMIN"
+    ],
+    "job_title": "HR Business Partner",
+    "last_name": "Rossi",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0103",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "aaron.lindqvist@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0105",
+    "employment_type": "CDI",
+    "first_name": "Aaron",
+    "identity_roles": [
+      "EMPLOYEE",
+      "HR_ADMIN"
+    ],
+    "job_title": "HR Business Partner",
+    "last_name": "Lindqvist",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0103",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "yanis.silva@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0106",
+    "employment_type": "CDI",
+    "first_name": "Yanis",
+    "identity_roles": [
+      "EMPLOYEE",
+      "HR_ADMIN"
+    ],
+    "job_title": "HR Business Partner",
+    "last_name": "Silva",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0103",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "bianca.moreau@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0107",
+    "employment_type": "FREELANCE",
+    "first_name": "Bianca",
+    "identity_roles": [
+      "EMPLOYEE",
+      "HR_ADMIN"
+    ],
+    "job_title": "HR Business Partner",
+    "last_name": "Moreau",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0103",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "ulysse.conti@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0108",
+    "employment_type": "CDI",
+    "first_name": "Ulysse",
+    "identity_roles": [
+      "EMPLOYEE",
+      "HR_ADMIN"
+    ],
+    "job_title": "HR Business Partner",
+    "last_name": "Conti",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0103",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "elena.fabre@genai-enterprise-lab.example",
+    "department": "RH",
+    "employee_id": "EMP-0109",
+    "employment_type": "CDI",
+    "first_name": "Elena",
+    "identity_roles": [
+      "EMPLOYEE",
+      "HR_ADMIN"
+    ],
+    "job_title": "HR Business Partner",
+    "last_name": "Fabre",
+    "location": "Lille, FR",
+    "manager_id": "EMP-0103",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_HR"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "quang.gauthier@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0110",
+    "employment_type": "CDI",
+    "first_name": "Quang",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER",
+      "FINANCE_ADMIN",
+      "LEGAL_ADMIN"
+    ],
+    "job_title": "Head of Finance & Legal",
+    "last_name": "Gauthier",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0003",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_FINANCE",
+      "RAG_LEGAL"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": false,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "theo.fabre@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0111",
+    "employment_type": "CDI",
+    "first_name": "Theo",
+    "identity_roles": [
+      "EMPLOYEE",
+      "FINANCE_ADMIN"
+    ],
+    "job_title": "Financial Controller",
+    "last_name": "Fabre",
+    "location": "Nantes, FR",
+    "manager_id": "EMP-0110",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_FINANCE"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "julie.okafor@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0112",
+    "employment_type": "CDI",
+    "first_name": "Julie",
+    "identity_roles": [
+      "EMPLOYEE",
+      "LEGAL_ADMIN"
+    ],
+    "job_title": "Legal Counsel",
+    "last_name": "Okafor",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0110",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_LEGAL"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "romy.conti2@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0113",
+    "employment_type": "CDI",
+    "first_name": "Romy",
+    "identity_roles": [
+      "EMPLOYEE",
+      "FINANCE_ADMIN"
+    ],
+    "job_title": "Accountant",
+    "last_name": "Conti",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0110",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_FINANCE"
+    ],
+    "seniority_level": "SENIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "julie.novotny@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0114",
+    "employment_type": "CDI",
+    "first_name": "Julie",
+    "identity_roles": [
+      "EMPLOYEE",
+      "LEGAL_ADMIN"
+    ],
+    "job_title": "Contracts Manager",
+    "last_name": "Novotny",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0110",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_LEGAL"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "aaron.lund@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0115",
+    "employment_type": "CDI",
+    "first_name": "Aaron",
+    "identity_roles": [
+      "EMPLOYEE",
+      "FINANCE_ADMIN"
+    ],
+    "job_title": "FP&A Analyst",
+    "last_name": "Lund",
+    "location": "Bruxelles, BE",
+    "manager_id": "EMP-0110",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_FINANCE"
+    ],
+    "seniority_level": "JUNIOR"
+  },
+  {
+    "active": true,
+    "business_unit": "Corporate",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "cedric.richter@genai-enterprise-lab.example",
+    "department": "Finance / Legal",
+    "employee_id": "EMP-0116",
+    "employment_type": "CDI",
+    "first_name": "Cedric",
+    "identity_roles": [
+      "EMPLOYEE",
+      "LEGAL_ADMIN"
+    ],
+    "job_title": "Compliance Officer",
+    "last_name": "Richter",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0110",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_LEGAL"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "ELEVATED",
+    "client_memberships": [],
+    "corporate_email": "aaron.silva@genai-enterprise-lab.example",
+    "department": "Marketing / Partnerships",
+    "employee_id": "EMP-0117",
+    "employment_type": "CDI",
+    "first_name": "Aaron",
+    "identity_roles": [
+      "DEPARTMENT_HEAD",
+      "MANAGER"
+    ],
+    "job_title": "Head of Marketing & Partnerships",
+    "last_name": "Silva",
+    "location": "Remote - EU",
+    "manager_id": "EMP-0006",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_MARKETING"
+    ],
+    "seniority_level": "HEAD"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "sofia.robin@genai-enterprise-lab.example",
+    "department": "Marketing / Partnerships",
+    "employee_id": "EMP-0118",
+    "employment_type": "CDI",
+    "first_name": "Sofia",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Marketing & Partnerships Specialist",
+    "last_name": "Robin",
+    "location": "Geneve, CH",
+    "manager_id": "EMP-0117",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_MARKETING"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "cyril.barbier@genai-enterprise-lab.example",
+    "department": "Marketing / Partnerships",
+    "employee_id": "EMP-0119",
+    "employment_type": "CDI",
+    "first_name": "Cyril",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Marketing & Partnerships Specialist",
+    "last_name": "Barbier",
+    "location": "Lyon, FR",
+    "manager_id": "EMP-0117",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_MARKETING"
+    ],
+    "seniority_level": "CONFIRMED"
+  },
+  {
+    "active": true,
+    "business_unit": "Go-To-Market",
+    "clearance": "STANDARD",
+    "client_memberships": [],
+    "corporate_email": "mateo.petit@genai-enterprise-lab.example",
+    "department": "Marketing / Partnerships",
+    "employee_id": "EMP-0120",
+    "employment_type": "CDI",
+    "first_name": "Mateo",
+    "identity_roles": [
+      "EMPLOYEE"
+    ],
+    "job_title": "Marketing & Partnerships Specialist",
+    "last_name": "Petit",
+    "location": "Paris, FR",
+    "manager_id": "EMP-0117",
+    "project_memberships": [],
+    "security_groups": [
+      "RAG_ALL_EMPLOYEES",
+      "RAG_MARKETING"
+    ],
+    "seniority_level": "JUNIOR"
+  }
+]

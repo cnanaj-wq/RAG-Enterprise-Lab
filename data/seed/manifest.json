@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "clients": 65,
+    "employees": 120,
+    "opportunities": 65,
+    "partners": 30,
+    "projects": 65,
+    "prospects": 120,
+    "suppliers": 80
+  },
+  "identity_groups_count": 141,
+  "reference_date": "2026-09-01",
+  "seed": 42
+}
