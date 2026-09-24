@@ -1,5 +1,6 @@
 import hashlib
 import io
+import time
 import zipfile
 
 from rag_enterprise_lab.generation.document_content_generator import generate_content
@@ -66,3 +67,26 @@ def test_checksum_is_stable_across_regeneration(document_dataset):
     content1, _, _ = generate_content(entry)
     content2, _, _ = generate_content(entry)
     assert hashlib.sha256(content1).hexdigest() == hashlib.sha256(content2).hexdigest()
+
+
+def test_zip_formats_are_byte_identical_across_a_wall_clock_second_boundary(document_dataset):
+    """Régression : zipfile.writestr(name, ...) embarque l'heure système par
+    défaut, ce qui rendait les octets DOCX/XLSX/PPTX non déterministes d'un
+    appel à l'autre et cassait l'idempotence R2 (CONFLICT au lieu de SKIP,
+    constaté lors du smoke test réel). On force explicitly le franchissement
+    d'une seconde d'horloge entre les deux générations pour reproduire ce
+    scénario, plutôt que de compter sur la chance d'un test rapide."""
+    for fmt in ("docx", "xlsx", "pptx"):
+        entry = _first_entry_of_format(document_dataset, fmt)
+        content1, _, ext1 = generate_content(entry)
+        time.sleep(1.1)
+        content2, _, ext2 = generate_content(entry)
+
+        assert ext1 == ext2 == fmt
+        assert content1 == content2
+        assert hashlib.sha256(content1).hexdigest() == hashlib.sha256(content2).hexdigest()
+
+        # L'archive reste valide et l'ordre des entrées est déterministe.
+        names1 = zipfile.ZipFile(io.BytesIO(content1)).namelist()
+        names2 = zipfile.ZipFile(io.BytesIO(content2)).namelist()
+        assert names1 == names2

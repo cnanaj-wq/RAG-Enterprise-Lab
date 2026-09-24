@@ -1,0 +1,39 @@
+# Cloud Run Job definition — NOT applied (Google Cloud provisioning is
+# explicitly out of scope this task). Deploy manually when ready:
+#   gcloud run jobs replace worker/cloudrun-job.yaml --region=europe-west9
+#
+# PROJECT_ID and the image digest are placeholders — never guessed. Fill
+# PROJECT_ID with your real GCP project, and IMAGE_DIGEST after the first
+# verified `docker build` of worker/Dockerfile (never deploy a floating tag).
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: docling-worker
+  labels:
+    app: rag-enterprise-lab
+spec:
+  template:
+    spec:
+      taskCount: 1
+      parallelism: 1
+      template:
+        spec:
+          timeoutSeconds: 900 # 15 minutes
+          containers:
+            - image: europe-west9-docker.pkg.dev/PROJECT_ID/rag-enterprise-lab/docling-worker@sha256:IMAGE_DIGEST
+              resources:
+                limits:
+                  cpu: "2"
+                  memory: 8Gi
+              env:
+                - name: R2_ENDPOINT
+                  valueFrom: { secretKeyRef: { name: r2-endpoint, key: latest } }
+                - name: R2_BUCKET
+                  valueFrom: { secretKeyRef: { name: r2-bucket, key: latest } }
+                - name: R2_ACCESS_KEY_ID
+                  valueFrom: { secretKeyRef: { name: r2-access-key-id, key: latest } }
+                - name: R2_SECRET_ACCESS_KEY
+                  valueFrom: { secretKeyRef: { name: r2-secret-access-key, key: latest } }
+                - name: LIMIT
+                  value: "50" # progression 1 -> 10 -> 50 -> 500 -> 5000, voir docs/ingestion
+          restartPolicy: Never

@@ -106,11 +106,21 @@ def _generate_pdf(entry: DocumentManifestEntry) -> bytes:
     return bytes(out)
 
 
+# Horodatage ZIP fixe : zipfile.writestr(name, ...) embarque l'heure système
+# courante par défaut, ce qui rend les octets DOCX/XLSX/PPTX non
+# déterministes d'un appel à l'autre (et casse l'idempotence côté R2, basée
+# sur le checksum du contenu). 1980-01-01 est le plus ancien horodatage
+# valide au format ZIP DOS.
+_ZIP_FIXED_DATE_TIME = (1980, 1, 1, 0, 0, 0)
+
+
 def _zip_write(parts: dict[str, str]) -> bytes:
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as zf:
-        for path, content in parts.items():
-            zf.writestr(path, content)
+        for path, content in parts.items():  # ordre d'insertion du dict = déterministe
+            info = zipfile.ZipInfo(filename=path, date_time=_ZIP_FIXED_DATE_TIME)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            zf.writestr(info, content)
     return buffer.getvalue()
 
 

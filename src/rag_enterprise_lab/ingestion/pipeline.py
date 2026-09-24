@@ -249,9 +249,15 @@ def ingest(
             )
             continue
 
+        document_payload = parsed.document or {
+            "document_id": document_id,
+            "extension": ext,
+            "text_length": len(parsed.text),
+        }
         document_json = json.dumps(
-            {"document_id": document_id, "extension": ext, "text_length": len(parsed.text)},
+            document_payload,
             sort_keys=True,
+            default=str,
         ).encode("utf-8")
         content_md = parsed.text.encode("utf-8")
         metadata_json = json.dumps(parsed.metadata, sort_keys=True, default=str).encode("utf-8")

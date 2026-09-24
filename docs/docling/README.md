@@ -43,3 +43,22 @@ Aucun embedding n'est créé à ce stade (explicitement hors périmètre Phase 3
 et le compare au checksum stocké en métadonnée R2 (`head().checksum`) avant
 tout parsing : une divergence déclenche une mise en quarantaine
 `CHECKSUM_MISMATCH` (voir [docs/quarantine](../quarantine/README.md)).
+
+## Worker Cloud Run distant (`worker/docling_worker.py`)
+
+Architecture : `Cloudflare R2 EU -> Google Cloud Run Job -> Docling -> R2
+processed/quarantine`. Le worker réutilise directement `ingestion.pipeline
+::ingest` (aucune logique dupliquée) avec le vrai `DoclingWorkerAdapter` et
+un vrai `R2StorageAdapter` — aucun document n'est jamais persisté sur le
+disque du worker (traitement en mémoire).
+
+- Entrée : `DOCUMENT_ID` (un seul document, prioritaire) ou `LIMIT` (les N
+  premiers du manifest, chargé depuis `manifests/document_manifest.json`
+  sur R2 — ce fichier doit y être déposé au préalable).
+- Conteneur : `worker/Dockerfile` (Python 3.12 slim + torch CPU +
+  `docling==2.130.0`, épinglé, vérifié sur PyPI). `worker/requirements.txt`.
+- Déploiement (non appliqué) : `worker/cloudrun-job.yaml` — région
+  `europe-west9`, 2 vCPU / 8 GiB / 1 tâche / parallélisme 1 / timeout 15 min,
+  credentials exclusivement via secrets Cloud Run (jamais en dur).
+- Tests offline : `tests/test_docling_worker.py` (orchestration, succès,
+  quarantaine, absence de fichier temporaire local, aucun secret loggé).

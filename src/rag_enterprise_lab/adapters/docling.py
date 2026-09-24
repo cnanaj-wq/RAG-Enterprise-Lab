@@ -16,6 +16,7 @@ class ParsedDocument:
     text: str
     metadata: dict[str, object]
     tables: list[dict[str, object]] | None = None
+    document: dict[str, object] | None = None
 
 
 class DocumentParserPort(Protocol):
@@ -69,19 +70,57 @@ class MockDoclingAdapter:
 
 
 class DoclingWorkerAdapter:
-    """Adapter réel — à exécuter uniquement dans l'environnement worker où
-    `docling` est installé (jamais dans le venv de développement local)."""
+    """Adapter réel — à exécuter uniquement dans le conteneur worker Cloud
+    Run où `docling==2.130.0` est installé (voir worker/requirements.txt),
+    jamais dans le venv de développement local. Non exercé par la suite de
+    tests locale (docling absent par conception) — voir
+    docs/phase-reports/PHASE-3-REPORT.md § blockers pour ce que cela implique."""
 
     def parse(self, *, document_id: str, content: bytes, extension: str) -> ParsedDocument:
+        ext = extension.lower().lstrip(".")
+        if ext not in _SUPPORTED_EXTENSIONS:
+            raise UnsupportedFormatError(f"unsupported format: .{ext}")
+
         try:
-            import docling  # type: ignore[import-not-found]  # noqa: F401
+            import io as _io
+
+            from docling.datamodel.base_models import DocumentStream  # type: ignore
+            from docling.document_converter import DocumentConverter  # type: ignore
         except ImportError as exc:
             raise RuntimeError(
                 "docling is not installed in this environment — install it only in "
-                "the dedicated Docling worker environment (see docs/docling/README.md), "
+                "the dedicated Docling worker container (see docs/docling/README.md), "
                 "never in the local dev venv."
             ) from exc
-        raise NotImplementedError(
-            "Docling worker integration ships once the worker environment is "
-            "provisioned (not yet — see docs/phase-reports/PHASE-3-REPORT.md)."
+
+        try:
+            converter = DocumentConverter()
+            stream = DocumentStream(name=f"{document_id}.{ext}", stream=_io.BytesIO(content))
+            result = converter.convert(stream)
+            document = result.document
+            text = document.export_to_markdown()
+            tables: list[dict[str, object]] | None = None
+            parsed_tables = getattr(document, "tables", None)
+            if parsed_tables:
+                tables = []
+                for index, table in enumerate(parsed_tables):
+                    dataframe = table.export_to_dataframe(doc=document)
+                    tables.append(
+                        {
+                            "index": index,
+                            "self_ref": getattr(table, "self_ref", None),
+                            "columns": [str(column) for column in dataframe.columns],
+                            "rows": dataframe.astype(object).where(
+                                dataframe.notna(), None
+                            ).to_dict(orient="records"),
+                        }
+                    )
+        except Exception as exc:
+            raise CorruptedDocumentError(f"{document_id}: docling parsing failed: {exc}") from exc
+
+        return ParsedDocument(
+            text=text,
+            metadata={"document_id": document_id, "source_format": ext, "byte_size": len(content)},
+            tables=tables,
+            document=document.export_to_dict(),
         )
