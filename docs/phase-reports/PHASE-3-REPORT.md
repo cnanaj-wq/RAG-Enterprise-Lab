@@ -1,232 +1,346 @@
 # Phase 3 — Cloud Storage & Document Ingestion
 
-Date : 2026-09-23
-Périmètre exécuté : correctif documentaire préalable (BUSINESS_REGISTRY) +
-Phase 3 (adapter R2, génération physique déterministe, pipeline
-upload/ingestion, quarantaine, idempotence, dry-run progressif).
+Date de clôture : 2026-09-24  
+Statut : **COMPLETED**
 
-## 0. Correctif documentaire préalable
+## 1. Objectif
 
-Comme demandé, toute mention affirmant que « PostgreSQL Phase 1 » existe
-déjà a été corrigée. La source de vérité actuelle pour le statut client
-(scénario `CUSTOMER_STATUS`) est **BUSINESS_REGISTRY**, implémentée en
-Phase 1/2 par les fichiers seed structurés (`data/seed/*.json`) ; PostgreSQL
-en sera l'implémentation persistante dans une phase ultérieure. Fichiers
-corrigés : `generation/conflict_generator.py`, `docs/scenarios/README.md`,
-`docs/phase-reports/PHASE-2-REPORT.md`, `tests/test_document_conflicts.py`
-(préfixe `ground_truth_source_document_id` : `CRM:` → `BUSINESS_REGISTRY:`).
-Dataset Phase 2 régénéré, 73/73 tests Phase 0-2 toujours au vert avant de
-démarrer la Phase 3. Commit séparé : `docs: clarify business registry
-source of truth`.
+Mettre en place une chaîne documentaire cloud réaliste et contrôlée :
 
-## 1. Credentials R2 — état constaté AVANT toute action
+`Manifest -> génération physique -> Cloudflare R2 EU -> Cloud Run Job Paris -> Docling -> R2 processed/quarantine`
 
-Aucun fichier `.env` et aucune variable d'environnement `R2_*` ne sont
-présents dans cet environnement (vérifié explicitement avant d'écrire le
-moindre code de provisioning). Conformément à CLAUDE.md Phase 3 :
+Contraintes respectées :
 
-**Statut : `BLOCKED_BY_CREDENTIALS`.**
+- aucun corpus de 5000 documents matérialisé durablement en local ;
+- stockage objet privé en juridiction UE ;
+- worker Docling éphémère ;
+- secrets hors Git ;
+- idempotence par checksum ;
+- quarantaine explicite ;
+- aucune génération d'embeddings à ce stade ;
+- aucune décision d'autorisation confiée au LLM.
 
-- Le code complet a été implémenté (adapter réel `R2StorageAdapter` inclus).
-- Aucune ressource distante (bucket, objet) n'a été créée ni supposée exister.
-- Tous les tests ont été exécutés en mode offline/mock
-  (`InMemoryObjectStore`, `MockDoclingAdapter`).
-- Checklist de déblocage (affichée aussi par
-  `scripts/phase3_ingest.py` quand `--dry-run` n'est pas utilisé) :
+## 2. Stockage Cloudflare R2
 
+Bucket privé :
+
+`rag-enterprise-lab`
+
+Juridiction :
+
+`European Union`
+
+Le manifest documentaire Phase 2 a été publié dans :
+
+`manifests/document_manifest.json`
+
+avec contrôle SHA-256 effectué après upload.
+
+Les documents bruts sont stockés sous :
+
+`raw/{domain}/{document_id}.{extension}`
+
+Les résultats Docling sont écrits sous :
+
+`processed/{document_id}/`
+
+avec selon le type de document :
+
+- `content.md`
+- `document.json`
+- `metadata.json`
+- `tables.json` lorsqu'une structure tabulaire est extraite
+
+Les documents en erreur peuvent être routés vers :
+
+`quarantine/`
+
+## 3. Worker Docling Google Cloud Run
+
+Projet GCP :
+
+`rag-enterprise-lab`
+
+Région :
+
+`europe-west9` — Paris
+
+Cloud Run Job :
+
+`rag-docling-worker`
+
+Configuration validée :
+
+- 2 vCPU
+- 8 GiB RAM
+- timeout 900 s
+- max retries 0
+- exécution éphémère
+- traitement CPU
+- un document ciblable avec `DOCUMENT_ID`
+
+Service account dédié :
+
+`rag-docling-worker@rag-enterprise-lab.iam.gserviceaccount.com`
+
+Les credentials R2 sont fournis exclusivement via Google Secret Manager :
+
+- `r2-endpoint`
+- `r2-bucket`
+- `r2-access-key-id`
+- `r2-secret-access-key`
+
+Le service account dispose uniquement du droit nécessaire de lecture de ces secrets.
+
+## 4. Image de production validée
+
+Repository Artifact Registry :
+
+`europe-west9-docker.pkg.dev/rag-enterprise-lab/rag-docling-worker`
+
+Image validée :
+
+`v6`
+
+Digest :
+
+`sha256:2df2d1e3cc24a5f29969b7598982ed55bbfdf749d6a145b9ab44e2a3be2584cb`
+
+Le Dockerfile utilise notamment :
+
+- Python 3.12 slim Bookworm épinglé par digest ;
+- PyTorch CPU ;
+- torchvision CPU compatible ;
+- Docling ;
+- bibliothèques système requises par OpenCV/PDF/OCR.
+
+Les anciennes images intermédiaires ont été supprimées afin de limiter le stockage Artifact Registry.
+
+## 5. Correctifs techniques validés pendant les smoke tests
+
+### 5.1 Idempotence DOCX/XLSX/PPTX
+
+Le générateur Office utilisait initialement le timestamp courant dans les archives ZIP.
+
+Conséquence : deux générations logiquement identiques pouvaient produire des checksums différents et provoquer un conflit R2 au lieu d'un `SKIP`.
+
+Correction :
+
+- timestamp ZIP fixe ;
+- ordre déterministe ;
+- test de régression byte-for-byte.
+
+### 5.2 Conservation du DoclingDocument complet
+
+Le pipeline initial ne persistait qu'une représentation minimale du résultat.
+
+Correction :
+
+`ParsedDocument` transporte désormais le résultat complet de :
+
+`document.export_to_dict()`
+
+`document.json` conserve donc la structure Docling réelle :
+
+- textes ;
+- provenance ;
+- body ;
+- pages ;
+- références internes ;
+- métadonnées structurelles.
+
+### 5.3 Extraction des tableaux
+
+L'utilisation de `TableItem.export_to_dict()` n'était pas compatible avec la version Docling exécutée.
+
+Correction :
+
+les tables sont converties via :
+
+`table.export_to_dataframe(doc=document)`
+
+puis sérialisées dans `tables.json`.
+
+### 5.4 PDF / OCR
+
+Les premiers essais PDF ont révélé successivement :
+
+- incompatibilité torch / torchvision ;
+- dépendance système `libxcb.so.1` absente.
+
+Corrections intégrées dans l'image v6 :
+
+- versions CPU compatibles de torch et torchvision ;
+- bibliothèques système X11/OpenCV nécessaires ;
+- RapidOCR fonctionnel sur CPU.
+
+## 6. Formats réellement validés sur Cloud Run
+
+### DOCX
+
+Document : `DOC-00003`  
+Résultat : **SUCCESS**
+
+Artefacts Docling réels créés dans R2.
+
+### XLSX
+
+Document : `DOC-02703`  
+Résultat : **SUCCESS**
+
+Extraction validée :
+
+- `content.md`
+- `document.json`
+- `metadata.json`
+- `tables.json`
+
+### PDF
+
+Document : `DOC-03226`  
+Résultat : **SUCCESS**
+
+OCR RapidOCR exécuté sur CPU.
+
+Le `document.json` contient notamment les informations de page, bounding boxes et provenance Docling.
+
+### PPTX
+
+Document : `DOC-04002`  
+Résultat : **SUCCESS**
+
+Artefacts structurés créés dans R2.
+
+### Matrice de validation
+
+| Format | Cloud Run | Docling réel | R2 processed | Tables |
+|---|---:|---:|---:|---:|
+| DOCX | PASS | PASS | PASS | N/A |
+| XLSX | PASS | PASS | PASS | PASS |
+| PDF | PASS | PASS | PASS | N/A |
+| PPTX | PASS | PASS | PASS | N/A |
+
+## 7. Validation offline
+
+Le pipeline avait préalablement été validé sur les 5000 entrées du manifest avec les adapters offline/mock.
+
+Cette validation a couvert notamment :
+
+- génération ;
+- upload ;
+- checksum ;
+- idempotence ;
+- protection contre l'écrasement ;
+- nettoyage temporaire ;
+- limitation disque local ;
+- quarantaine ;
+- formats invalides ;
+- dry-run ;
+- limites de batch ;
+- audit sans exposition de secrets.
+
+Le corpus physique complet n'est pas conservé sur le poste local.
+
+## 8. Validation qualité finale locale
+
+Après rapatriement des correctifs Cloud Shell dans le repository Windows :
+
+```text
+pytest:
+127 passed in 13.39s
+
+ruff:
+All checks passed!
+
+mypy:
+Success: no issues found in 45 source files
 ```
-BLOCKED_BY_CREDENTIALS — R2 credentials are not configured.
-Checklist to unblock remote provisioning:
-  [ ] R2_ENDPOINT
-  [ ] R2_BUCKET
-  [ ] R2_ACCESS_KEY_ID
-  [ ] R2_SECRET_ACCESS_KEY
-```
 
-## 2. Tests — PASS / FAIL
+Le repository était propre après commit.
 
-### Tests unitaires (offline/mock)
+## 9. Commit de clôture technique
 
-Commande : `pytest -v`
+Commit :
 
-**117 PASSED, 0 FAILED, 1 SKIPPED.** Le seul test sauté est le test
-d'intégration réel (§3), correctement `skipped` (pas d'échec) en l'absence
-de credentials, conformément à l'exigence « ne jamais faire échouer les
-tests unitaires parce qu'un compte cloud n'est pas configuré ».
+`68e6c0d`
 
-Couverture des 17 catégories demandées, toutes vertes :
+Message :
 
-| Catégorie | Fichier |
+`feat(phase3): add Cloud Run Docling worker and deterministic ingestion`
+
+Ce commit contient notamment :
+
+- worker Cloud Run ;
+- Dockerfile ;
+- configuration cloud ;
+- adapter Docling réel ;
+- conservation du DoclingDocument ;
+- extraction XLSX ;
+- pipeline enrichi ;
+- génération Office déterministe ;
+- tests worker et tests de régression ;
+- `.dockerignore` ;
+- `.gcloudignore`.
+
+## 10. Décision de volumétrie
+
+La Phase 3 ne lance volontairement pas un traitement réel des 5000 documents.
+
+Les quatre familles de formats principales ont été validées individuellement dans l'environnement réel.
+
+Les campagnes plus importantes — 10, 50, 100 documents puis éventuellement davantage — sont reportées aux phases de performance / évaluation afin :
+
+- de mesurer les temps de traitement ;
+- de mesurer le coût réel ;
+- d'éviter des dépenses cloud inutiles pendant la construction ;
+- de distinguer validation fonctionnelle et benchmark de charge.
+
+## 11. Points non bloquants / backlog
+
+Les éléments suivants ne bloquent pas la Phase 4 :
+
+1. RapidOCR peut télécharger certains modèles lors d'un démarrage à froid.
+2. Le téléchargement Hugging Face peut afficher un warning d'authentification non bloquant.
+3. Une ligne de footer synthétique XLSX peut apparaître comme ligne de table et pourra être normalisée ultérieurement.
+4. Le corpus réel complet de 5000 documents n'a volontairement pas été traité par Docling.
+5. Les objets historiques de quarantaine issus des essais techniques doivent être conservés ou nettoyés explicitement selon la politique d'audit retenue.
+
+## 12. Critères d'acceptation Phase 3
+
+| Critère | Statut |
 |---|---|
-| R2 adapter mock | `test_r2_adapter.py` |
-| Bucket key generation | `test_bucket_layout.py` |
-| Deterministic content generation | `test_document_content_generation.py` |
-| Checksum | `test_document_content_generation.py`, `test_processing_record.py` |
-| Idempotency | `test_ingestion_pipeline.py::test_upload_is_idempotent_on_rerun` |
-| Overwrite protection | `test_ingestion_pipeline.py::test_overwrite_protection_on_content_conflict` |
-| Cleanup tempfile | `test_temp_guard.py`, `test_ingestion_pipeline.py::test_cleanup_tempfile_after_each_upload` |
-| MAX_LOCAL_TEMP_MB | `test_temp_guard.py::test_max_local_temp_mb_stop_cleanup_error`, `test_ingestion_pipeline.py::test_max_local_temp_mb_stops_the_whole_run` |
-| Docling adapter interface | `test_docling_adapter.py` |
-| Quarantine routing | `test_ingestion_pipeline.py::test_ingest_quarantine_routing_for_unsupported_format` |
-| Unsupported format | `test_docling_adapter.py::test_mock_adapter_raises_on_unsupported_format` |
-| Corrupted document | `test_docling_adapter.py::test_mock_adapter_raises_on_empty_content` (+3 variantes) |
-| No credentials in logs | `test_ingestion_pipeline.py::test_no_credentials_appear_in_audit_events` |
-| Dry-run creates zero remote objects | `test_ingestion_pipeline.py::test_dry_run_creates_zero_remote_objects` |
-| Limit N respected | `test_ingestion_pipeline.py::test_limit_n_is_respected` |
-| Processed artifacts structure | `test_ingestion_pipeline.py::test_ingest_processed_artifacts_structure` (+ tables.json) |
-
-Qualité complémentaire :
-- `ruff check .` → **All checks passed!**
-- `mypy src` → **Success: no issues found in 44 source files.**
-
-### Tests d'intégration réels (Cloudflare)
-
-Commande : `pytest -m integration -v`
-
-**0 PASSED, 1 SKIPPED.** `test_r2_integration.py::test_real_r2_put_head_get_delete_roundtrip`
-est marqué `@pytest.mark.integration` et `skipif(not credentials_available(...))` —
-sauté proprement, `BLOCKED_BY_CREDENTIALS`.
-
-## 3. Taille locale du repository
-
-| Emplacement | Taille |
-|---|---:|
-| `data/` (Phase 1 + Phase 2 seed + 11 exemples) | ≈ 5,6 Mo |
-| Fichiers temporaires laissés après les runs | **0 octet** (nettoyage vérifié par test) |
-
-Le corpus complet (5000 documents physiques) n'a jamais existé localement
-au-delà de la durée d'un seul fichier temporaire à la fois par document
-(généré → uploadé (mock) → supprimé immédiatement).
-
-## 4. Run complet offline (mock, seed=142, 5000 documents)
-
-Puisque le provisioning réel est bloqué, la validation à pleine échelle a
-été effectuée avec `InMemoryObjectStore` + `MockDoclingAdapter` (aucun
-réseau, aucune écriture hors `data/`inchangée — voir §3).
-
-### `generate_and_upload` (5000/5000)
-
-| Métrique | Valeur |
-|---|---:|
-| processed | 5000 |
-| uploaded | 5000 |
-| skipped | 0 |
-| conflicts | 0 |
-| quarantined | 0 |
-| failed | 0 |
-| bytes_uploaded | 4 030 129 |
-| temp_disk_current_mb | 0.0 |
-| **temp_disk_peak_mb** | **0.0018** (un seul fichier temporaire à la fois) |
-| duration_seconds | 8.09 |
-
-### `ingest` (Docling mock, 5000/5000)
-
-| Métrique | Valeur |
-|---|---:|
-| processed | 5000 |
-| uploaded (= documents Docling traités avec succès) | 5000 |
-| skipped | 0 |
-| quarantined | 0 |
-| failed | 0 |
-| duration_seconds | 0.34 |
-
-Aucune anomalie de contenu synthétique n'a déclenché la quarantaine sur
-cette exécution complète (les scénarios de quarantaine sont testés
-individuellement et de façon déterministe — §2). Validation progressive
-préalable en `--dry-run` : paliers 1 → 10 → 50 → 500 → 5000, tous réussis
-(0 objet R2 créé à chaque palier).
-
-### Structure du bucket obtenue (mock)
-
-```
-raw/               5000 objets
-  hr/                950
-  legal/             850
-  clients/           900
-  pricing/           450
-  technical/         850
-  projects/          600
-  finance/           400
-processed/        15824 objets
-  {document_id}/document.json    (5000)
-  {document_id}/content.md       (5000)
-  {document_id}/metadata.json    (5000)
-  {document_id}/tables.json      (824 — documents csv/xlsx uniquement)
-quarantine/           0 objets
-```
-
-## 5. Documents effectivement uploadés / traités (R2 réel)
-
-**0** — `BLOCKED_BY_CREDENTIALS`. Voir §4 pour les chiffres de la
-validation mock à pleine échelle, qui démontre que le pipeline fonctionne
-correctement de bout en bout et est prêt pour un run réel dès que les
-credentials seront fournis.
-
-## 6. Livrables
-
-### Domaine
-`domain/processing.py` (ProcessingStatus, QuarantineReason, ProcessingRecord,
-AuditEvent).
-
-### Storage
-`storage/bucket_layout.py`. `adapters/r2.py` étendu (ObjectStorePort sync,
-ObjectHead, InMemoryObjectStore, R2StorageAdapter, credentials_available).
-
-### Docling
-`adapters/docling.py` étendu (DocumentParserPort sync, MockDoclingAdapter,
-DoclingWorkerAdapter, UnsupportedFormatError, CorruptedDocumentError).
-
-### Génération physique
-`generation/document_format_rules.py`, `generation/document_content_generator.py`
-(7 formats, aucune dépendance ajoutée).
-
-### Pipeline
-`ingestion/temp_guard.py` (TempFileGuard, MAX_LOCAL_TEMP_MB),
-`ingestion/stats.py` (RunStats, RunResult), `ingestion/pipeline.py`
-(`generate_and_upload`, `ingest`).
-
-### Script
-`scripts/phase3_ingest.py` (`generate_and_upload` / `ingest`,
-`--dry-run`, `--limit N`, checklist BLOCKED_BY_CREDENTIALS).
-
-### Tests (10 fichiers, 45 tests)
-`test_bucket_layout.py`, `test_r2_adapter.py`, `test_docling_adapter.py`,
-`test_document_content_generation.py`, `test_temp_guard.py`,
-`test_ingestion_pipeline.py`, `test_processing_record.py`,
-`test_r2_integration.py` (marker `integration`).
-
-### Documentation
-`docs/storage/README.md`, `docs/ingestion/README.md` (+ schéma Mermaid
-Manifest→Generator→Temp→R2 Raw→Cleanup), `docs/docling/README.md` (+ schéma
-Mermaid R2 Raw→Docling→Normalization→Processed/Quarantine),
-`docs/quarantine/README.md`, `docs/phase-reports/PHASE-3-REPORT.md` (ce
-document).
-
-## 7. Points bloquants
-
-1. **`BLOCKED_BY_CREDENTIALS`** (le seul blocage réel) : aucune ressource
-   Cloudflare R2 n'existe. Fournir `R2_ENDPOINT`, `R2_BUCKET`,
-   `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (variables d'environnement,
-   jamais dans Git) pour débloquer le provisioning réel et l'exécution des
-   tests d'intégration.
-2. **`DoclingWorkerAdapter` non implémenté fonctionnellement** — par
-   conception : Docling doit être installé uniquement dans l'environnement
-   worker dédié (non provisionné dans cette session). L'adapter échoue avec
-   un message explicite (`RuntimeError`) s'il est appelé sans `docling`
-   installé ; `MockDoclingAdapter` couvre tout le pipeline testable ici.
-
-Aucune interdiction Phase 3 n'a été franchie : pas de copie locale
-permanente des 5000 documents, pas de cache Docling non borné, pas
-d'embeddings, pas d'index vectoriel, pas de dump complet du corpus, pas de
-credential codé en dur, pas de secret dans les logs, pas de LLM, pas de
-Jev, pas de PostgreSQL, pas de pgvector.
-
-## 8. Commit
-
-Commit réalisé : `feat: build cloud document storage and docling ingestion`.
+| R2 privé en UE | PASS |
+| Manifest 5000 publié | PASS |
+| Secrets hors Git | PASS |
+| Service account dédié | PASS |
+| Worker Cloud Run Paris | PASS |
+| Docling réel | PASS |
+| DOCX réel | PASS |
+| XLSX réel | PASS |
+| PDF + OCR réel | PASS |
+| PPTX réel | PASS |
+| DoclingDocument structuré conservé | PASS |
+| Extraction tableaux | PASS |
+| Idempotence | PASS |
+| Quarantaine | PASS |
+| Pas de corpus massif local | PASS |
+| Tests unitaires | PASS — 127 |
+| Ruff | PASS |
+| MyPy | PASS |
+| Repository Git propre | PASS |
 
 ---
 
-**La Phase 3 est terminée (code complet, tests offline verts, provisioning
-distant BLOCKED_BY_CREDENTIALS documenté). En attente de validation
-explicite avant de démarrer la Phase 4.**
+# Conclusion
+
+**PHASE 3 — COMPLETED**
+
+La chaîne documentaire réelle est opérationnelle :
+
+`R2 EU -> Cloud Run Paris -> Docling -> processed/quarantine`
+
+Les quatre formats représentatifs ont été exécutés avec succès dans l'environnement cloud réel.
+
+La prochaine étape architecturale est :
+
+**Phase 4 — PostgreSQL + pgvector + Hybrid Retrieval.**
