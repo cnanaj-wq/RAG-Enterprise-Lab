@@ -1,8 +1,5 @@
-<p align="right">
-  <strong>🌍 Language:</strong>
-  English |
-  <a href="./README.fr.md">Français</a>
-</p>
+**🌍 Language:**  
+English | [Français](https://github.com/cnanaj-wq/RAG-Enterprise-Lab/blob/main/README.fr.md)  
 
 # RAG Enterprise Lab
 
