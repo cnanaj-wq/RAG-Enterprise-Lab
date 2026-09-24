@@ -1,7 +1,7 @@
 <p align="right">
   <strong>🌍 Language:</strong>
-  🇬🇧 English |
-  <a href="./README.fr.md">🇫🇷 Français</a>
+  English |
+  <a href="./README.fr.md">Français</a>
 </p>
 
 # RAG Enterprise Lab
