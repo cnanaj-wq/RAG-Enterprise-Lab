@@ -27,7 +27,7 @@ Pour accélérer la démonstration, le catalogue conserve **5 000 ressources doc
 
 Le projet suit une architecture **cloud-first** : le poste de développement ne doit pas contenir le corpus documentaire complet.
 
-## Architecture cloud-first — vue synthétique
+## Architecture logicielle : Cloud FIRST
 
 > GitHub README ne supporte pas de carrousel interactif JavaScript. Cette vue en **cartes horizontales** joue le même rôle visuel : elle permet de comprendre rapidement chaque brique et sa fonction.
 
