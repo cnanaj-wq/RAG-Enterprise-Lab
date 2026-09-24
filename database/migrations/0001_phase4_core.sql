@@ -1,4 +1,4 @@
--- Phase 4 — PostgreSQL + pgvector core schema
+﻿-- Phase 4 â€” PostgreSQL + pgvector core schema
 -- Security invariant: authorization data is persisted here, but the LLM never
 -- participates in an ALLOW/DENY decision.
 
@@ -45,7 +45,6 @@ CREATE TABLE IF NOT EXISTS document_versions (
     raw_object_key TEXT NOT NULL,
     processed_prefix TEXT,
     metadata JSONB NOT NULL DEFAULT '{}'::jsonb,
-    CONSTRAINT uq_document_version_label UNIQUE (logical_document_id, version_label),
     CONSTRAINT fk_supersedes_document
         FOREIGN KEY (supersedes_document_id)
         REFERENCES document_versions(document_id)
@@ -125,3 +124,4 @@ COMMENT ON COLUMN chunks.embedding IS
     '1536-dimensional embedding used for semantic retrieval in Phase 4.';
 
 COMMIT;
+

@@ -1,4 +1,4 @@
--- Phase 4 — governed hybrid retrieval.
+﻿-- Phase 4 â€” governed hybrid retrieval.
 -- ACL filtering is deliberately materialized BEFORE lexical/vector ranking.
 -- The function is SECURITY INVOKER (default) and never delegates authorization
 -- to an LLM or decision model.
@@ -75,8 +75,10 @@ semantic AS (
     FROM authorized a
     WHERE p_query_embedding IS NOT NULL
       AND a.embedding IS NOT NULL
-    ORDER BY a.embedding <=> p_query_embedding,
-             a.chunk_id
+      AND (1 - (a.embedding <=> p_query_embedding)) >= 0.50
+    ORDER BY
+        a.embedding <=> p_query_embedding,
+        a.chunk_id
     LIMIT greatest(p_limit, 1) * 4
 ),
 fused AS (
@@ -109,11 +111,13 @@ SELECT
     f.hybrid_score
 FROM fused f
 JOIN authorized a USING (chunk_id)
-ORDER BY f.hybrid_score DESC, a.chunk_id
+ORDER BY
+    f.hybrid_score DESC,
+    a.chunk_id
 LIMIT greatest(p_limit, 1);
 $$;
 
 COMMENT ON FUNCTION search_authorized_chunks(TEXT, TEXT[], VECTOR, INTEGER) IS
-    'ACL-first hybrid retrieval using lexical FTS + pgvector cosine distance + RRF.';
+    'ACL-first hybrid retrieval using lexical FTS + pgvector cosine distance + RRF, with semantic relevance guardrail >= 0.50.';
 
 COMMIT;
