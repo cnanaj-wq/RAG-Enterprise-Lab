@@ -2,6 +2,10 @@
   <a href="https://github.com/cnanaj-wq/RAG-Enterprise-Lab/blob/main/README.md">English</a> | Français
 </p>
 
+<p align="center">
+  <img src="./RAG_ENTERPRISE_LAB.png" alt="RAG Enterprise Lab — Ideas to Impact" width="760">
+</p>
+
 # RAG Enterprise Lab
 
 Blueprint technique d'un RAG d'entreprise gouverné pour **GenAI Enterprise Lab**.
