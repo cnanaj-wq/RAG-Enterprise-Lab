@@ -27,6 +27,43 @@ Pour accélérer la démonstration, le catalogue conserve **5 000 ressources doc
 
 Le projet suit une architecture **cloud-first** : le poste de développement ne doit pas contenir le corpus documentaire complet.
 
+## Architecture cloud-first — vue synthétique
+
+> GitHub README ne supporte pas de carrousel interactif JavaScript. Cette vue en **cartes horizontales** joue le même rôle visuel : elle permet de comprendre rapidement chaque brique et sa fonction.
+
+| ☁️ Cloudflare R2 | 🏗️ Cloud Build | 📦 Artifact Registry | 🔐 Secret Manager | ⚙️ Cloud Run Jobs | 🖥️ Cloud Shell |
+|---|---|---|---|---|---|
+| Stockage documentaire | Build de l'image Docker | Registry des images | Secrets R2 | Exécution Docling | Administration GCP |
+| `raw /` `processed /` `quarantine /` | Contexte de build minimal | Image worker versionnée | Injection au runtime | Parsing / OCR / tables | `gcloud`, logs, diagnostics |
+| Juridiction UE | Publication automatisée | Digest traçable | Aucun secret dans Git | Compute éphémère | Pas une brique runtime |
+
+### Flux cloud-first
+
+```text
+Documents
+   │
+   ▼
+Cloudflare R2 / raw
+   │
+   ▼
+Google Cloud Run Job
+   │
+   ├── image depuis Artifact Registry
+   ├── secrets depuis Secret Manager
+   └── worker Docling
+   │
+   ▼
+Cloudflare R2 / processed
+   │
+   ▼
+PostgreSQL + pgvector
+   │
+   ▼
+RAG gouverné
+```
+
+Cloud Build construit l'image du worker avant publication dans Artifact Registry. Cloud Shell sert à administrer, déployer et diagnostiquer l'ensemble des services Google Cloud.
+
 ```text
                                    UTILISATEUR
                                        │
@@ -82,46 +119,57 @@ Le projet suit une architecture **cloud-first** : le poste de développement ne 
                              Final Response
 ```
 
-## Pipeline d'une question
+## Parcours utilisateur
+
+Le parcours ci-dessous décrit ce qui se passe entre la question saisie par l'utilisateur et la réponse métier finale.
 
 ```text
 ❓ Question utilisateur
    >>
-🧠 Jev
-   - détecte l'intention
+🧠 Jev — Decision Layer
+   - détecte l’intention
    - score la confiance
    - route vers shortcut ou retrieval
    >>
-👤 Identité + groupes
+👤 Identity Context
+   - utilisateur
+   - rôles
+   - groupes
+   - clearance
    >>
-🛡️ Guardrail sécurité
+🛡️ Security Guardrail
    - ACL / RBAC / ABAC
    - filtre avant retrieval
    >>
-🔎 Recherche hybride
+🔎 Hybrid Retrieval
    - PostgreSQL Full-Text Search
    - embeddings + pgvector
    >>
-🎯 Guardrail de pertinence
-   - rejette les candidats trop faibles
+🎯 Relevance Guardrail
+   - élimine les candidats trop faibles
    >>
 📊 RRF
    - fusionne lexical_rank + semantic_rank
    - calcule hybrid_score
    >>
-⚖️ Résolution de version / autorité
+⚖️ Version & Authority Resolution
    - version applicable
    - document faisant foi
    - conflit éventuel
    >>
-📄 Chunks autorisés
+📄 Authorized Context
+   - chunks utiles
+   - sources autorisées uniquement
    >>
 🤖 Claude
-   - répond uniquement avec les sources autorisées
+   - raisonne sur ce contexte
    - cite les document_id
-   - n'invente pas si les preuves sont insuffisantes
+   - refuse d’inventer
    >>
-🛡️ Guardrail de sortie
+🛡️ Output Guardrail
+   - structure
+   - citations
+   - contenu sensible
    >>
 🧪 LLM-as-a-Judge
    - relevance
@@ -129,8 +177,32 @@ Le projet suit une architecture **cloud-first** : le poste de développement ne 
    - completeness
    - conflict awareness
    >>
-📊 Réponse finale
+📊 Final Response
+   - réponse métier
+   - sources
+   - hybrid score
+   - authority
+   - conflict flag
+   - judge score
 ```
+
+### Lecture fonctionnelle du parcours
+
+| Étape | Fonction |
+|---|---|
+| ❓ Question utilisateur | Point d'entrée naturel ou shortcut métier. |
+| 🧠 Jev | Comprend l'intention, estime le risque et choisit la route de traitement. |
+| 👤 Identity Context | Porte l'identité, les rôles, groupes et niveaux de clearance. |
+| 🛡️ Security Guardrail | Applique les droits avant toute exposition de contenu. |
+| 🔎 Hybrid Retrieval | Combine recherche lexicale et sémantique. |
+| 🎯 Relevance Guardrail | Écarte les résultats trop faibles pour limiter le bruit. |
+| 📊 RRF | Fusionne les classements lexical et sémantique. |
+| ⚖️ Authority Resolution | Détermine la version juridiquement ou métier applicable. |
+| 📄 Authorized Context | Construit le contexte minimal, utile et autorisé. |
+| 🤖 Claude | Génère une réponse sourcée à partir du seul contexte autorisé. |
+| 🛡️ Output Guardrail | Contrôle la forme, les citations et les risques de fuite. |
+| 🧪 LLM-as-a-Judge | Évalue la qualité de la réponse sans intervenir dans l'autorisation. |
+| 📊 Final Response | Restitue réponse, sources, score hybride, autorité, conflit et score Judge. |
 
 Le LLM n'est donc **qu'une étape du pipeline**. L'autorisation, le retrieval, la résolution documentaire et l'évaluation sont traités autour de lui.
 
