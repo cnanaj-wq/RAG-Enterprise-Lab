@@ -1,43 +1,49 @@
+<p align="right">
+  <strong>🌍 Language:</strong>
+  🇬🇧 English |
+  <a href="./README.fr.md">🇫🇷 Français</a>
+</p>
+
 # RAG Enterprise Lab
 
-Blueprint technique d'un RAG d'entreprise gouverné pour **GenAI Enterprise Lab**.
+Technical blueprint for a governed enterprise RAG system built for **GenAI Enterprise Lab**.
 
-## Objectif
+## Objective
 
-> Retrouver la bonne information, dans la bonne version, pour la bonne personne, avec des sources vérifiables.
+> Retrieve the right information, in the right version, for the right person, with verifiable sources.
 
-Cas simulé :
+Simulated environment:
 
-- 120 collaborateurs
-- 5 000 ressources documentaires modélisées
-- contrats clients / prestataires / RH
-- conventions, grilles tarifaires, procédures, runbooks
-- complétude documentaire
-- conflits de versions
+- 120 employees
+- 5,000 modeled document resources
+- client / supplier / HR contracts
+- agreements, pricing grids, procedures, runbooks
+- document completeness checks
+- version conflicts
 - ACL / RBAC / ABAC
-- RGPD
-- audit et évaluation
-- cas métier phare : clôture mensuelle des signatures commerciales
+- GDPR
+- audit and evaluation
+- flagship business use case: monthly closing of commercial signatures
 
-Pour accélérer la démonstration, le catalogue conserve **5 000 ressources documentaires**, tandis que l'exécution interactive utilise un sous-ensemble contrôlé de documents réellement parsés, chunkés et indexés.
+To keep the demo fast, the catalog models **5,000 document resources**, while the interactive execution uses a controlled subset of documents that are actually parsed, chunked, and indexed.
 
 ---
 
 # Architecture
 
-Le projet suit une architecture **cloud-first** : le poste de développement ne doit pas contenir le corpus documentaire complet.
+The project follows a **cloud-first** architecture: the developer workstation should not hold the full document corpus.
 
-## Architecture logicielle : Cloud FIRST
+## Software Architecture: Cloud FIRST
 
-> GitHub README ne supporte pas de carrousel interactif JavaScript. Cette vue en **cartes horizontales** joue le même rôle visuel : elle permet de comprendre rapidement chaque brique et sa fonction.
+> GitHub READMEs do not support interactive JavaScript carousels. This **horizontal card layout** serves the same purpose visually by giving a quick overview of each component and its function.
 
 | ☁️ Cloudflare R2 | 🏗️ Cloud Build | 📦 Artifact Registry | 🔐 Secret Manager | ⚙️ Cloud Run Jobs | 🖥️ Cloud Shell |
 |---|---|---|---|---|---|
-| Stockage documentaire | Build de l'image Docker | Registry des images | Secrets R2 | Exécution Docling | Administration GCP |
-| `raw /` `processed /` `quarantine /` | Contexte de build minimal | Image worker versionnée | Injection au runtime | Parsing / OCR / tables | `gcloud`, logs, diagnostics |
-| Juridiction UE | Publication automatisée | Digest traçable | Aucun secret dans Git | Compute éphémère | Pas une brique runtime |
+| Document storage | Docker image build | Image registry | R2 secrets | Docling execution | GCP administration |
+| `raw /` `processed /` `quarantine /` | Minimal build context | Versioned worker image | Runtime injection | Parsing / OCR / tables | `gcloud`, logs, diagnostics |
+| EU jurisdiction | Automated publishing | Traceable digest | No secrets in Git | Ephemeral compute | Not a runtime component |
 
-### Flux cloud-first
+### Cloud-first flow
 
 ```text
 Documents
@@ -48,9 +54,9 @@ Cloudflare R2 / raw
    ▼
 Google Cloud Run Job
    │
-   ├── image depuis Artifact Registry
-   ├── secrets depuis Secret Manager
-   └── worker Docling
+   ├── image from Artifact Registry
+   ├── secrets from Secret Manager
+   └── Docling worker
    │
    ▼
 Cloudflare R2 / processed
@@ -59,30 +65,30 @@ Cloudflare R2 / processed
 PostgreSQL + pgvector
    │
    ▼
-RAG gouverné
+Governed RAG
 ```
 
-Cloud Build construit l'image du worker avant publication dans Artifact Registry. Cloud Shell sert à administrer, déployer et diagnostiquer l'ensemble des services Google Cloud.
+Cloud Build builds the worker image before publishing it to Artifact Registry. Cloud Shell is used to administer, deploy, and diagnose the Google Cloud services.
 
 ```text
-                                   UTILISATEUR
-                                       │
-                                       ▼
+                                     USER
+                                      │
+                                      ▼
                               Question / Shortcut
-                                       │
-                                       ▼
+                                      │
+                                      ▼
                               Jev Decision Layer
                          intent / confidence / risk
-                                       │
-                                       ▼
+                                      │
+                                      ▼
                               Identity Context
                          groups / roles / clearance
-                                       │
-                                       ▼
+                                      │
+                                      ▼
                            Security Guardrail
                             ACL / RBAC / ABAC
-                                       │
-                                       ▼
+                                      │
+                                      ▼
                          PostgreSQL + pgvector
                     documents / versions / chunks / ACL
                            │                 │
@@ -119,57 +125,57 @@ Cloud Build construit l'image du worker avant publication dans Artifact Registry
                              Final Response
 ```
 
-## Parcours utilisateur
+## User Journey
 
-Le parcours ci-dessous décrit ce qui se passe entre la question saisie par l'utilisateur et la réponse métier finale.
+The journey below shows what happens between the user's question and the final business response.
 
 ```text
-❓ Question utilisateur
+❓ User question
    >>
 🧠 Jev — Decision Layer
-   - détecte l’intention
-   - score la confiance
-   - route vers shortcut ou retrieval
+   - detects intent
+   - scores confidence
+   - routes to shortcut or retrieval
    >>
 👤 Identity Context
-   - utilisateur
-   - rôles
-   - groupes
+   - user
+   - roles
+   - groups
    - clearance
    >>
 🛡️ Security Guardrail
    - ACL / RBAC / ABAC
-   - filtre avant retrieval
+   - filters before retrieval
    >>
 🔎 Hybrid Retrieval
    - PostgreSQL Full-Text Search
    - embeddings + pgvector
    >>
 🎯 Relevance Guardrail
-   - élimine les candidats trop faibles
+   - removes weak candidates
    >>
 📊 RRF
-   - fusionne lexical_rank + semantic_rank
-   - calcule hybrid_score
+   - merges lexical_rank + semantic_rank
+   - computes hybrid_score
    >>
 ⚖️ Version & Authority Resolution
-   - version applicable
-   - document faisant foi
-   - conflit éventuel
+   - applicable version
+   - authoritative document
+   - potential conflict
    >>
 📄 Authorized Context
-   - chunks utiles
-   - sources autorisées uniquement
+   - useful chunks
+   - authorized sources only
    >>
 🤖 Claude
-   - raisonne sur ce contexte
-   - cite les document_id
-   - refuse d’inventer
+   - reasons over this context
+   - cites document_id values
+   - refuses to invent missing facts
    >>
 🛡️ Output Guardrail
    - structure
    - citations
-   - contenu sensible
+   - sensitive content checks
    >>
 🧪 LLM-as-a-Judge
    - relevance
@@ -178,7 +184,7 @@ Le parcours ci-dessous décrit ce qui se passe entre la question saisie par l'ut
    - conflict awareness
    >>
 📊 Final Response
-   - réponse métier
+   - business answer
    - sources
    - hybrid score
    - authority
@@ -186,47 +192,47 @@ Le parcours ci-dessous décrit ce qui se passe entre la question saisie par l'ut
    - judge score
 ```
 
-### Lecture fonctionnelle du parcours
+### Functional view of the journey
 
-| Étape | Fonction |
+| Step | Function |
 |---|---|
-| ❓ Question utilisateur | Point d'entrée naturel ou shortcut métier. |
-| 🧠 Jev | Comprend l'intention, estime le risque et choisit la route de traitement. |
-| 👤 Identity Context | Porte l'identité, les rôles, groupes et niveaux de clearance. |
-| 🛡️ Security Guardrail | Applique les droits avant toute exposition de contenu. |
-| 🔎 Hybrid Retrieval | Combine recherche lexicale et sémantique. |
-| 🎯 Relevance Guardrail | Écarte les résultats trop faibles pour limiter le bruit. |
-| 📊 RRF | Fusionne les classements lexical et sémantique. |
-| ⚖️ Authority Resolution | Détermine la version juridiquement ou métier applicable. |
-| 📄 Authorized Context | Construit le contexte minimal, utile et autorisé. |
-| 🤖 Claude | Génère une réponse sourcée à partir du seul contexte autorisé. |
-| 🛡️ Output Guardrail | Contrôle la forme, les citations et les risques de fuite. |
-| 🧪 LLM-as-a-Judge | Évalue la qualité de la réponse sans intervenir dans l'autorisation. |
-| 📊 Final Response | Restitue réponse, sources, score hybride, autorité, conflit et score Judge. |
+| ❓ User question | Natural-language entry point or business shortcut. |
+| 🧠 Jev | Detects intent, assesses risk, and chooses the processing route. |
+| 👤 Identity Context | Carries user identity, roles, groups, and clearance levels. |
+| 🛡️ Security Guardrail | Enforces access rights before any content is exposed. |
+| 🔎 Hybrid Retrieval | Combines lexical and semantic retrieval. |
+| 🎯 Relevance Guardrail | Removes weak matches to reduce noise. |
+| 📊 RRF | Fuses lexical and semantic rankings. |
+| ⚖️ Authority Resolution | Determines the legally or operationally authoritative version. |
+| 📄 Authorized Context | Builds the smallest useful authorized context. |
+| 🤖 Claude | Generates a grounded answer using only authorized context. |
+| 🛡️ Output Guardrail | Controls response structure, citations, and data leakage risks. |
+| 🧪 LLM-as-a-Judge | Evaluates response quality without influencing authorization. |
+| 📊 Final Response | Returns answer, sources, hybrid score, authority, conflict, and judge score. |
 
-Le LLM n'est donc **qu'une étape du pipeline**. L'autorisation, le retrieval, la résolution documentaire et l'évaluation sont traités autour de lui.
+The LLM is therefore **only one step in the pipeline**. Authorization, retrieval, document authority resolution, and evaluation are handled around it.
 
 ---
 
 ## Cloudflare
 
-### Cloudflare R2 — stockage documentaire
+### Cloudflare R2 — document storage
 
-**Rôle :** stocker les documents physiques et les artefacts Docling sans matérialiser le corpus complet sur le poste local.
+**Role:** store physical documents and Docling artifacts without materializing the full corpus on the local workstation.
 
-Bucket :
+Bucket:
 
 ```text
 rag-enterprise-lab
 ```
 
-Juridiction :
+Jurisdiction:
 
 ```text
 European Union
 ```
 
-Organisation logique :
+Logical layout:
 
 ```text
 manifests/
@@ -252,54 +258,54 @@ quarantine/
     ...
 ```
 
-R2 assure notamment :
+R2 is used for:
 
-- le stockage des documents originaux ;
-- le stockage des artefacts structurés générés par Docling ;
-- la séparation `raw / processed / quarantine` ;
-- le contrôle par checksum ;
-- l'idempotence des uploads ;
-- un stockage privé en juridiction UE ;
-- l'absence de corpus documentaire massif dans Git ou sur le poste local.
+- original document storage;
+- structured Docling output storage;
+- separation between `raw / processed / quarantine`;
+- checksum-based control;
+- idempotent uploads;
+- private EU-based storage;
+- keeping the large document corpus out of Git and off the developer workstation.
 
 ---
 
 ## Google Cloud
 
-Le traitement documentaire réel est exécuté dans le projet GCP :
+The real document-processing workload runs in the GCP project:
 
 ```text
 rag-enterprise-lab
 ```
 
-Région principale :
+Primary region:
 
 ```text
 europe-west9 — Paris
 ```
 
-Quatre services Google Cloud sont utilisés.
+Four Google Cloud services are used.
 
 ### 1. Cloud Run Jobs
 
-**Rôle :** exécuter le worker Docling à la demande dans un environnement éphémère.
+**Role:** execute the Docling worker on demand in an ephemeral runtime.
 
-Job :
+Job:
 
 ```text
 rag-docling-worker
 ```
 
-Configuration utilisée :
+Configuration used:
 
 - 2 vCPU
 - 8 GiB RAM
-- timeout 900 s
+- 900 s timeout
 - max retries 0
-- traitement CPU
-- ciblage d'un document avec `DOCUMENT_ID`
+- CPU-based processing
+- per-document targeting through `DOCUMENT_ID`
 
-Flux :
+Flow:
 
 ```text
 Cloudflare R2 / raw
@@ -311,49 +317,49 @@ Cloud Run Job
 Docling
         │
         ├── parsing
-        ├── OCR si nécessaire
-        ├── structure
-        └── extraction de tableaux
+        ├── OCR when needed
+        ├── structure extraction
+        └── table extraction
         │
         ▼
 Cloudflare R2 / processed
 ```
 
-Cloud Run est utilisé comme **compute éphémère** : aucun worker permanent n'est maintenu en fonctionnement.
+Cloud Run is used as **ephemeral compute**: no permanent worker stays online.
 
 ### 2. Artifact Registry
 
-**Rôle :** stocker l'image Docker du worker Docling.
+**Role:** store the Docker image used by the Docling worker.
 
-Repository :
+Repository:
 
 ```text
 europe-west9-docker.pkg.dev/rag-enterprise-lab/rag-docling-worker
 ```
 
-Image validée :
+Validated image:
 
 ```text
 v6
 sha256:2df2d1e3cc24a5f29969b7598982ed55bbfdf749d6a145b9ab44e2a3be2584cb
 ```
 
-L'image contient notamment :
+The image includes:
 
 - Python 3.12
 - Docling
 - PyTorch CPU
 - torchvision CPU
 - RapidOCR
-- dépendances système nécessaires au parsing PDF / OpenCV
+- system dependencies required for PDF parsing and OpenCV
 
-Les anciennes images intermédiaires sont supprimées afin de limiter les coûts de stockage.
+Intermediate obsolete images are deleted to keep storage costs under control.
 
 ### 3. Secret Manager
 
-**Rôle :** fournir les secrets R2 au worker Cloud Run sans les stocker dans Git ni dans l'image Docker.
+**Role:** provide R2 credentials to the Cloud Run worker without storing them in Git or baking them into the Docker image.
 
-Secrets utilisés :
+Secrets used:
 
 ```text
 r2-endpoint
@@ -362,13 +368,13 @@ r2-access-key-id
 r2-secret-access-key
 ```
 
-Service account dédié :
+Dedicated service account:
 
 ```text
 rag-docling-worker@rag-enterprise-lab.iam.gserviceaccount.com
 ```
 
-Principe appliqué :
+Runtime pattern:
 
 ```text
 Secret Manager
@@ -377,19 +383,19 @@ Secret Manager
 Cloud Run Job
       │
       ▼
-variables d'environnement runtime
+runtime environment variables
 ```
 
-Le worker reçoit uniquement les secrets nécessaires à son exécution.
+The worker only receives the secrets required for execution.
 
 ### 4. Cloud Build
 
-**Rôle :** construire l'image Docker du worker Docling avant publication dans Artifact Registry.
+**Role:** build the Docling worker Docker image before publishing it to Artifact Registry.
 
-Flux :
+Flow:
 
 ```text
-Code source
+Source code
     │
     ▼
 Cloud Build
@@ -404,37 +410,37 @@ Artifact Registry
 Cloud Run Job
 ```
 
-Le contexte de build est volontairement minimal grâce à :
+The build context is intentionally minimized through:
 
 ```text
 .gcloudignore
 .dockerignore
 ```
 
-afin d'éviter d'envoyer le corpus, les environnements virtuels ou les fichiers inutiles pendant les builds.
+This prevents the document corpus, virtual environments, and unrelated files from being sent during builds.
 
 ---
 
 ## Google Cloud Shell
 
-**Rôle :** poste d'administration cloud temporaire utilisé pendant la construction et le diagnostic de l'infrastructure.
+**Role:** temporary cloud administration workstation used while building and diagnosing the infrastructure.
 
-Cloud Shell a notamment servi à :
+Cloud Shell has been used to:
 
-- piloter `gcloud` ;
-- construire et publier les images ;
-- mettre à jour le Cloud Run Job ;
-- lancer les exécutions Docling ;
-- inspecter les logs ;
-- vérifier les secrets sans les exposer ;
-- contrôler les digests Artifact Registry ;
-- diagnostiquer les dépendances Docker ;
-- valider les traitements DOCX / XLSX / PDF / PPTX.
+- operate `gcloud`;
+- build and publish images;
+- update the Cloud Run Job;
+- launch Docling executions;
+- inspect logs;
+- verify secret configuration without exposing secret values;
+- inspect Artifact Registry digests;
+- diagnose Docker dependency issues;
+- validate DOCX / XLSX / PDF / PPTX processing.
 
-Cloud Shell n'est **pas une brique runtime du RAG**. C'est une console d'exploitation et d'administration.
+Cloud Shell is **not a runtime component of the RAG system**. It is an administration and operations console.
 
 ```text
-Développeur
+Developer
     │
     ▼
 Cloud Shell
@@ -449,9 +455,9 @@ Cloud Shell
 
 ## PostgreSQL + pgvector
 
-PostgreSQL est utilisé comme **registre gouverné du RAG**, pas uniquement comme base vectorielle.
+PostgreSQL acts as the **governed RAG registry**, not merely as a vector database.
 
-Tables principales :
+Main tables:
 
 ```text
 documents
@@ -461,37 +467,37 @@ chunks
 audit_events
 ```
 
-Rôle :
+Responsibilities:
 
-- identité logique des documents ;
-- gestion des versions ;
-- validité métier ;
-- autorité documentaire ;
-- relations `supersedes` ;
-- ACL par document ;
-- chunks exploitables par le RAG ;
-- embeddings ;
-- journal d'audit.
+- stable logical document identity;
+- document version management;
+- business validity;
+- document authority;
+- `supersedes` relationships;
+- per-document ACLs;
+- RAG-ready chunks;
+- embeddings;
+- audit trail.
 
-### Recherche lexicale
+### Lexical search
 
 ```text
 PostgreSQL Full-Text Search
 → TSVECTOR
-→ index GIN
+→ GIN index
 ```
 
-### Recherche sémantique
+### Semantic search
 
 ```text
 Embeddings
 → VECTOR(1536)
 → pgvector
-→ index HNSW
-→ distance cosinus
+→ HNSW index
+→ cosine distance
 ```
 
-### Recherche hybride
+### Hybrid search
 
 ```text
 Lexical Search
@@ -503,23 +509,23 @@ Semantic Search
 Hybrid Score
 ```
 
-Le guardrail actuel impose également un seuil minimal de pertinence sémantique avant fusion.
+The current relevance guardrail also enforces a minimum semantic-similarity threshold before fusion.
 
 ---
 
-## Versioning et autorité documentaire
+## Versioning and document authority
 
-Trois notions sont volontairement séparées :
+Three concepts are intentionally kept separate:
 
 ```text
-Version chronologique
+Chronological version
 ≠
-Validité métier
+Business validity
 ≠
-Autorité documentaire
+Document authority
 ```
 
-Exemple réel de démonstration :
+Demo example:
 
 ```text
 DOC-01281
@@ -531,26 +537,26 @@ Contract Amendment — SIGNED
 SIGNED_AMENDMENT
 ```
 
-Le système peut donc déterminer quel document **fait foi**, même si le document le plus récent n'est pas nécessairement le plus autoritaire.
+The system can therefore determine which document **takes precedence**, even when the newest document is not necessarily the most authoritative one.
 
 ---
 
 ## Jev — Decision Layer
 
-Jev est utilisé comme couche de décision bornée et typée.
+Jev is used as a bounded, typed decision layer.
 
-Il intervient pour :
+It handles:
 
-- intent routing ;
-- détection des shortcuts ;
-- scoring de confiance ;
-- qualification du risque ;
-- décision `shortcut vs retrieval` ;
-- indication du besoin de résolution d'autorité.
+- intent routing;
+- shortcut detection;
+- confidence scoring;
+- risk qualification;
+- `shortcut vs retrieval` routing;
+- whether authority resolution is required.
 
-Jev ne décide **jamais** si un utilisateur peut consulter un document.
+Jev **never** decides whether a user is authorized to access a document.
 
-Sortie type :
+Example output:
 
 ```json
 {
@@ -566,35 +572,35 @@ Sortie type :
 
 ## Claude
 
-Claude intervient **après** :
+Claude runs **after**:
 
-- l'identité ;
-- les ACL ;
-- le retrieval ;
-- le guardrail de pertinence ;
-- la résolution de version / autorité.
+- identity resolution;
+- ACL enforcement;
+- retrieval;
+- relevance filtering;
+- version and authority resolution.
 
-Il reçoit uniquement un **Authorized Context**.
+Claude receives only an **Authorized Context**.
 
-Règles :
+Rules:
 
-- répondre uniquement à partir des sources fournies ;
-- ne pas inventer une information absente ;
-- respecter le document faisant foi ;
-- citer les `document_id` ;
-- signaler des preuves insuffisantes plutôt que compléter par hallucination.
+- answer only from the supplied sources;
+- do not invent information missing from the sources;
+- respect the authoritative-document decision;
+- cite the `document_id` values used;
+- explicitly report insufficient evidence instead of hallucinating.
 
 ---
 
 ## Guardrails
 
-La démonstration met en place plusieurs guardrails :
+The demo implements several guardrails.
 
 ### Security Guardrail
 
 ```text
 ACL / RBAC / ABAC
-→ avant retrieval
+→ before retrieval
 ```
 
 ### Relevance Guardrail
@@ -613,24 +619,24 @@ authority_level
 
 ### Output Guardrail
 
-Le modèle ne reçoit que les sources autorisées et doit conserver une réponse sourcée.
+The model only receives authorized sources and must keep answers grounded and cited.
 
 ---
 
 ## LLM-as-a-Judge
 
-Une seconde passe LLM évalue automatiquement la réponse générée.
+A second LLM pass evaluates the generated answer.
 
-Critères :
+Criteria:
 
-- relevance ;
-- faithfulness ;
-- completeness ;
-- conflict awareness ;
-- overall score ;
-- verdict `PASS / REVIEW / FAIL`.
+- relevance;
+- faithfulness;
+- completeness;
+- conflict awareness;
+- overall score;
+- `PASS / REVIEW / FAIL` verdict.
 
-Exemple de résultat de la démo :
+Example result:
 
 ```text
 🎯 Relevance           : 1.00
@@ -642,13 +648,13 @@ Exemple de résultat de la démo :
 ✅ Verdict : PASS
 ```
 
-Le Judge ne participe jamais à l'autorisation.
+The Judge never participates in authorization.
 
 ---
 
-## Shortcuts métier
+## Business shortcuts
 
-Le système expose des raccourcis déterministes :
+The system exposes deterministic business shortcuts:
 
 ```text
 /contrat
@@ -658,64 +664,64 @@ Le système expose des raccourcis déterministes :
 /signatures mois
 ```
 
-Exemple :
+Example:
 
 ```text
 🧭 /signatures mois
 
-📄 Contrats attendus    65
-✅ Signés               28
-⏳ En cours             19
-🆕 À traiter            12
-🚫 Échecs                6
+📄 Expected contracts   65
+✅ Signed               28
+⏳ In progress          19
+🆕 To process           12
+🚫 Failures              6
 
-📊 Taux signé           43.1 %
+📊 Signed rate          43.1 %
 ```
 
-Les shortcuts déclenchent des calculs métier structurés et ne reposent pas sur une réponse libre du LLM.
+Shortcuts trigger structured business logic and do not rely on free-form LLM generation.
 
 ---
 
 ## GitHub
 
-GitHub contient :
+GitHub contains:
 
-- code Python ;
-- migrations SQL ;
-- scripts ;
-- tests ;
-- prompts ;
-- configurations ;
-- documentation ;
-- diagrammes.
+- Python code;
+- SQL migrations;
+- scripts;
+- tests;
+- prompts;
+- configuration;
+- documentation;
+- diagrams.
 
-GitHub ne contient jamais :
+GitHub never contains:
 
-- secrets ;
-- clés API ;
-- corpus complet de documents physiques ;
-- dumps PostgreSQL massifs.
+- secrets;
+- API keys;
+- the full physical document corpus;
+- large PostgreSQL dumps.
 
 ---
 
-## Règles non négociables
+## Non-negotiable rules
 
 1. Never trust the LLM for authorization.
-2. ACL/RBAC/ABAC sont évalués avant que le contenu ne soit transmis au LLM.
-3. Une information interdite ne doit jamais entrer dans le contexte Claude.
-4. Une version plus récente n'est pas forcément la version juridiquement applicable.
-5. Toute réponse métier factuelle doit être traçable jusqu'à une source.
-6. Les données volumineuses restent cloud.
-7. Jev et le LLM-as-a-Judge ne décident jamais des droits d'accès.
+2. ACL/RBAC/ABAC are evaluated before any content is sent to the LLM.
+3. Unauthorized information must never enter Claude's context.
+4. A newer version is not necessarily the legally or operationally applicable version.
+5. Every factual business answer must be traceable to a source.
+6. Large datasets stay in the cloud.
+7. Jev and the LLM-as-a-Judge never decide access permissions.
 
 ---
 
-## Démo actuelle
+## Current demo
 
-Le scénario Axion Solutions valide aujourd'hui :
+The Axion Solutions scenario currently validates:
 
 ```text
-Question naturelle
+Natural-language question
 → Jev
 → ACL
 → Hybrid Retrieval
@@ -726,13 +732,13 @@ Question naturelle
 → Final Response
 ```
 
-Résultat observé :
+Observed result:
 
 ```text
-⚖️ Document faisant foi : DOC-01346
-📅 Valid from            : 2026-02-12
-💳 Délai applicable      : 45 jours calendaires
-⚠️ Conflict detected    : True
-🧪 Judge verdict         : PASS
-📊 Judge overall         : 0.97
+⚖️ Authoritative document : DOC-01346
+📅 Valid from             : 2026-02-12
+💳 Applicable payment term: 45 calendar days
+⚠️ Conflict detected     : True
+🧪 Judge verdict          : PASS
+📊 Judge overall          : 0.97
 ```
