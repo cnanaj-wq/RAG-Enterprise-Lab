@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="./RAG_ENTERPRISE_LAB.png" alt="RAG Enterprise Lab — Ideas to Impact" width="760">
+  <img src="./RAG_ENTERPRISE_LAB.png" alt="RAG Enterprise Lab — Ideas to Impact" width="520">
 </p>
 
 # RAG Enterprise Lab
