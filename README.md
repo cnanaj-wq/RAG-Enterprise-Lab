@@ -545,7 +545,7 @@ The system can therefore determine which document **takes precedence**, even whe
 
 ## Jev — Decision Layer
 
-Jev is used as a bounded, typed decision layer.
+The current demo uses a **deterministic local adapter that implements the Jev decision contract**. It provides a stable typed interface for intent, confidence, risk, shortcut routing, and authority-resolution requirements. A real external Jev integration is not enabled yet.
 
 It handles:
 
@@ -601,9 +601,14 @@ The demo implements several guardrails.
 ### Security Guardrail
 
 ```text
-ACL / RBAC / ABAC
-→ before retrieval
+Current interactive Phase 4 retrieval:
+ACL → before retrieval
+
+Authorization engine already implemented:
+ACL → RBAC → ABAC
 ```
+
+The SQL retrieval path currently enforces **ACLs directly before ranking**. The deterministic authorization engine in `src/rag_enterprise_lab/security/authorization.py` already supports RBAC roles and ABAC clearance, but those two layers are not yet wired into the interactive Phase 4 SQL demo.
 
 ### Relevance Guardrail
 
@@ -709,7 +714,7 @@ GitHub never contains:
 ## Non-negotiable rules
 
 1. Never trust the LLM for authorization.
-2. ACL/RBAC/ABAC are evaluated before any content is sent to the LLM.
+2. Authorization is always evaluated before content reaches the LLM. The current interactive Phase 4 retrieval enforces ACLs directly; the deterministic authorization engine also supports RBAC and ABAC for the next integration step.
 3. Unauthorized information must never enter Claude's context.
 4. A newer version is not necessarily the legally or operationally applicable version.
 5. Every factual business answer must be traceable to a source.
@@ -724,7 +729,7 @@ The Axion Solutions scenario currently validates:
 
 ```text
 Natural-language question
-→ Jev
+→ Jev-compatible local decision adapter
 → ACL
 → Hybrid Retrieval
 → Relevance Guardrail
