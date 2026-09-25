@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 
 from anthropic import Anthropic
+from anthropic.types import TextBlock
 from pydantic import BaseModel, Field
 
 
@@ -100,7 +101,19 @@ FORMAT JSON ATTENDU
         ],
     )
 
-    raw = response.content[0].text.strip()
+    text_block = next(
+        (
+            block
+            for block in response.content
+            if isinstance(block, TextBlock)
+        ),
+        None,
+    )
+
+    if text_block is None:
+        raise ValueError("Claude Judge returned no text block")
+
+    raw = text_block.text.strip()
 
     if raw.startswith("```"):
         raw = raw.strip("`")
