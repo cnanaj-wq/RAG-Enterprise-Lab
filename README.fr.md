@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="./RAG_ENTERPRISE_LAB.png" alt="RAG Enterprise Lab — Ideas to Impact" width="520">
+  <img src="Logo_Blanc_RAG_Enterprise_Lab.png" alt="RAG Enterprise Lab" width="300">
 </p>
 
 # RAG Enterprise Lab
@@ -545,7 +545,7 @@ Le système peut donc déterminer quel document **fait foi**, même si le docume
 
 ## Jev — Decision Layer
 
-Jev est utilisé comme couche de décision bornée et typée.
+La démo actuelle utilise un **adaptateur local déterministe qui implémente le contrat de décision Jev**. Il fournit une interface typée stable pour l'intention, la confiance, le risque, le routage des shortcuts et le besoin de résolution d'autorité. L'intégration avec un service Jev externe réel n'est pas encore activée.
 
 Il intervient pour :
 
@@ -601,9 +601,14 @@ La démonstration met en place plusieurs guardrails :
 ### Security Guardrail
 
 ```text
-ACL / RBAC / ABAC
-→ avant retrieval
+Retrieval interactif Phase 4 actuel :
+ACL → avant retrieval
+
+Moteur d'autorisation déjà implémenté :
+ACL → RBAC → ABAC
 ```
+
+Le chemin SQL de retrieval applique actuellement les **ACL directement avant le ranking**. Le moteur d'autorisation déterministe dans `src/rag_enterprise_lab/security/authorization.py` supporte déjà les rôles RBAC et la clearance ABAC, mais ces deux couches ne sont pas encore branchées sur la démo SQL interactive de Phase 4.
 
 ### Relevance Guardrail
 
@@ -709,7 +714,7 @@ GitHub ne contient jamais :
 ## Règles non négociables
 
 1. Never trust the LLM for authorization.
-2. ACL/RBAC/ABAC sont évalués avant que le contenu ne soit transmis au LLM.
+2. L'autorisation est toujours évaluée avant que le contenu n'atteigne le LLM. Le retrieval interactif actuel de Phase 4 applique directement les ACL ; le moteur déterministe supporte également RBAC et ABAC pour l'étape d'intégration suivante.
 3. Une information interdite ne doit jamais entrer dans le contexte Claude.
 4. Une version plus récente n'est pas forcément la version juridiquement applicable.
 5. Toute réponse métier factuelle doit être traçable jusqu'à une source.
@@ -724,7 +729,7 @@ Le scénario Axion Solutions valide aujourd'hui :
 
 ```text
 Question naturelle
-→ Jev
+→ Adaptateur local compatible Jev
 → ACL
 → Hybrid Retrieval
 → Relevance Guardrail
