@@ -1,14 +1,11 @@
-# Cloud Run Job definition — NOT applied (Google Cloud provisioning is
-# explicitly out of scope this task). Deploy manually when ready:
-#   gcloud run jobs replace worker/cloudrun-job.yaml --region=europe-west9
-#
-# PROJECT_ID and the image digest are placeholders — never guessed. Fill
-# PROJECT_ID with your real GCP project, and IMAGE_DIGEST after the first
-# verified `docker build` of worker/Dockerfile (never deploy a floating tag).
+# Cloud Run Job reference manifest.
+# Phase 3 has been validated with a live job in europe-west9 (Paris).
+# This file remains a reproducible template: keep the image digest explicit
+# before applying it and never deploy a floating tag.
 apiVersion: run.googleapis.com/v1
 kind: Job
 metadata:
-  name: docling-worker
+  name: rag-docling-worker
   labels:
     app: rag-enterprise-lab
 spec:
