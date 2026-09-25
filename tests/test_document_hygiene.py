@@ -14,6 +14,7 @@ SECRET_PATTERNS = [
 # Volume total attendu très inférieur à 100 Mo (limite Phase 2).
 MAX_REPO_DATA_BYTES = 20 * 1024 * 1024
 MAX_EXAMPLE_DOCUMENTS = 50
+MANUAL_DEMO_IDS = {"DOC-01346"}
 
 
 def test_no_secrets_in_document_seed_files():
@@ -63,8 +64,11 @@ def test_manifest_generation_status_matches_physical_examples():
     generated_ids = {
         e["document_id"] for e in manifest if e["generation_status"] == "EXAMPLE_GENERATED"
     }
-    assert generated_ids == physical_ids
-    assert len(generated_ids) <= MAX_EXAMPLE_DOCUMENTS
+    # DOC-01346 is an explicit hand-authored Phase 4 demo fixture rather than
+    # an output of the Phase 2 example generator.
+    assert MANUAL_DEMO_IDS <= physical_ids
+    assert generated_ids | MANUAL_DEMO_IDS == physical_ids
+    assert len(physical_ids) <= MAX_EXAMPLE_DOCUMENTS
 
 
 def test_total_repository_data_volume_under_limit():
