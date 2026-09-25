@@ -2,7 +2,9 @@
 
 import argparse
 import os
+import re
 import subprocess
+import sys
 from pathlib import Path
 
 from anthropic import Anthropic
@@ -120,6 +122,71 @@ def extract_client_name(
             return client
 
     return ""
+
+
+
+def _shortcut_client(
+    question: str,
+    shortcut: str,
+) -> str:
+    known = extract_client_name(question)
+    if known:
+        return known
+
+    remainder = question.strip()[len(shortcut):].strip()
+    return remainder
+
+
+def run_shortcut(
+    question: str,
+    shortcut: str,
+    groups: list[str],
+) -> None:
+    print("🧭 SHORTCUT ROUTING")
+    print(f"   Shortcut      : {shortcut}")
+    print(f"   ACL groups    : {', '.join(groups)}")
+    print()
+
+    if shortcut == "/signatures mois":
+        match = re.search(r"\b(20\d{2}-\d{2})\b", question)
+        month = match.group(1) if match else "2026-09"
+
+        command = [
+            sys.executable,
+            str(ROOT / "scripts" / "test_phase4_signatures.py"),
+            "--month",
+            month,
+        ]
+    else:
+        client_name = _shortcut_client(question, shortcut)
+
+        if not client_name:
+            print("⚠️ Client manquant dans le shortcut.")
+            return
+
+        shortcut_name = shortcut.removeprefix("/")
+        command = [
+            sys.executable,
+            str(ROOT / "scripts" / "test_phase4_shortcuts.py"),
+            shortcut_name,
+            client_name,
+        ]
+
+        for group in groups:
+            command.extend(["--group", group])
+
+    result = subprocess.run(
+        command,
+        cwd=ROOT,
+        text=True,
+        encoding="utf-8",
+        check=False,
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"Shortcut failed with exit code {result.returncode}"
+        )
 
 
 def retrieve(
@@ -514,6 +581,14 @@ def main() -> None:
         f"{decision.needs_authority_resolution}"
     )
     print()
+
+    if decision.shortcut:
+        run_shortcut(
+            args.question,
+            decision.shortcut,
+            groups,
+        )
+        return
 
     openai_client = OpenAI(
         api_key=os.environ[
