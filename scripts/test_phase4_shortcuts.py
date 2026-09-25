@@ -59,7 +59,15 @@ def sql_literal(value: str) -> str:
     return "'" + value.replace("'", "''") + "'"
 
 
-def fetch_client_documents(client_name: str) -> list[dict[str, str]]:
+def fetch_client_documents(
+    client_name: str,
+    groups: list[str],
+) -> list[dict[str, str]]:
+    groups_sql = ",".join(
+        sql_literal(group)
+        for group in groups
+    )
+
     sql = f"""
 SELECT
     document_id,
@@ -71,9 +79,16 @@ SELECT
     coalesce(valid_from::text, ''),
     coalesce(created_at::text, ''),
     coalesce(supersedes_document_id, '')
-FROM document_versions
-WHERE title ILIKE '%' || {sql_literal(client_name)} || '%'
-ORDER BY created_at;
+FROM document_versions dv
+WHERE dv.title ILIKE '%' || {sql_literal(client_name)} || '%'
+  AND cardinality(ARRAY[{groups_sql}]::TEXT[]) > 0
+  AND EXISTS (
+      SELECT 1
+      FROM document_acl acl
+      WHERE acl.document_version_id = dv.id
+        AND acl.group_name = ANY(ARRAY[{groups_sql}]::TEXT[])
+  )
+ORDER BY dv.created_at;
 """
 
     output = run_sql(sql)
@@ -149,8 +164,11 @@ def load_completeness_config() -> dict:
     )
 
 
-def shortcut_contract(client_name: str) -> None:
-    documents = fetch_client_documents(client_name)
+def shortcut_contract(
+    client_name: str,
+    groups: list[str],
+) -> None:
+    documents = fetch_client_documents(client_name, groups)
 
     print("🧭 Shortcut : /contrat")
     print()
@@ -188,8 +206,11 @@ def shortcut_contract(client_name: str) -> None:
     )
 
 
-def shortcut_conflicts(client_name: str) -> None:
-    documents = fetch_client_documents(client_name)
+def shortcut_conflicts(
+    client_name: str,
+    groups: list[str],
+) -> None:
+    documents = fetch_client_documents(client_name, groups)
 
     print("🧭 Shortcut : /conflits")
     print()
@@ -220,8 +241,11 @@ def shortcut_conflicts(client_name: str) -> None:
         )
 
 
-def shortcut_sources(client_name: str) -> None:
-    documents = fetch_client_documents(client_name)
+def shortcut_sources(
+    client_name: str,
+    groups: list[str],
+) -> None:
+    documents = fetch_client_documents(client_name, groups)
 
     print("🧭 Shortcut : /sources")
     print()
@@ -241,8 +265,9 @@ def shortcut_sources(client_name: str) -> None:
 
 def shortcut_completeness(
     client_name: str,
+    groups: list[str],
 ) -> None:
-    documents = fetch_client_documents(client_name)
+    documents = fetch_client_documents(client_name, groups)
     config = load_completeness_config()
 
     print("🧭 Shortcut : /completude")
@@ -361,19 +386,27 @@ def main() -> None:
         ),
     )
 
+    parser.add_argument(
+        "--group",
+        action="append",
+        default=None,
+        help="Groupe ACL utilisateur. Répétable. Défaut: RAG_LEGAL.",
+    )
+
     args = parser.parse_args()
+    groups = args.group or ["RAG_LEGAL"]
 
     if args.shortcut == "contrat":
-        shortcut_contract(args.client)
+        shortcut_contract(args.client, groups)
 
     elif args.shortcut == "conflits":
-        shortcut_conflicts(args.client)
+        shortcut_conflicts(args.client, groups)
 
     elif args.shortcut == "sources":
-        shortcut_sources(args.client)
+        shortcut_sources(args.client, groups)
 
     elif args.shortcut == "completude":
-        shortcut_completeness(args.client)
+        shortcut_completeness(args.client, groups)
 
 
 if __name__ == "__main__":
