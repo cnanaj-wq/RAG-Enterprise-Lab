@@ -28,3 +28,12 @@ def test_business_shortcuts_are_acl_scoped() -> None:
     assert "from document_acl acl" in fetch_documents
     assert "acl.group_name = any" in fetch_documents
     assert "groups: list[str]" in fetch_documents
+
+
+def test_unified_demo_routes_shortcuts_before_rag() -> None:
+    text = _text(DEMO)
+
+    assert "if decision.shortcut:" in text
+    assert "run_shortcut(" in text
+    assert "test_phase4_shortcuts.py" in text
+    assert "test_phase4_signatures.py" in text
