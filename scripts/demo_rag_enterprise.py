@@ -195,6 +195,7 @@ FROM search_authorized_chunks(
 
 def fetch_authority(
     client_name: str,
+    groups: list[str],
 ) -> tuple[
     dict[str, str] | None,
     bool,
@@ -202,20 +203,32 @@ def fetch_authority(
     if not client_name:
         return None, False
 
+    groups_sql = ",".join(
+        sql_literal(group)
+        for group in groups
+    )
+
     sql = f"""
 SELECT
-    document_id,
-    title,
-    document_type,
-    status,
-    authority_level,
-    coalesce(valid_from::text, ''),
-    coalesce(created_at::text, ''),
-    coalesce(supersedes_document_id, '')
-FROM document_versions
-WHERE title ILIKE
+    dv.document_id,
+    dv.title,
+    dv.document_type,
+    dv.status,
+    dv.authority_level,
+    coalesce(dv.valid_from::text, ''),
+    coalesce(dv.created_at::text, ''),
+    coalesce(dv.supersedes_document_id, '')
+FROM document_versions dv
+WHERE dv.title ILIKE
     '%' || {sql_literal(client_name)} || '%'
-ORDER BY created_at;
+  AND cardinality(ARRAY[{groups_sql}]::TEXT[]) > 0
+  AND EXISTS (
+      SELECT 1
+      FROM document_acl acl
+      WHERE acl.document_version_id = dv.id
+        AND acl.group_name = ANY(ARRAY[{groups_sql}]::TEXT[])
+  )
+ORDER BY dv.created_at;
 """.strip()
 
     output = run_sql(sql)
@@ -451,14 +464,15 @@ def main() -> None:
     parser.add_argument(
         "--group",
         action="append",
-        default=["RAG_LEGAL"],
+        default=None,
         help=(
             "Groupe ACL utilisateur. "
-            "Répétable."
+            "Répétable. Défaut: RAG_LEGAL."
         ),
     )
 
     args = parser.parse_args()
+    groups = args.group or ["RAG_LEGAL"]
 
     load_env()
     print_header()
@@ -468,7 +482,7 @@ def main() -> None:
     )
     print(
         "👤 Groupes  : "
-        + ", ".join(args.group)
+        + ", ".join(groups)
     )
     print()
 
@@ -518,7 +532,7 @@ def main() -> None:
 
     retrieval_results = retrieve(
         args.question,
-        args.group,
+        groups,
         embedding,
     )
 
@@ -571,7 +585,8 @@ def main() -> None:
             authority,
             conflict_candidate,
         ) = fetch_authority(
-            client_name
+            client_name,
+            groups,
         )
 
     if authority:
