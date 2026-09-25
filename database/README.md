@@ -63,6 +63,7 @@ later phase can tune candidate depth and RRF parameters.
 - HNSW cosine index on non-null `chunks.embedding`;
 - B-tree indexes for ACL, version lineage, business relations and audit.
 
-The first Phase 4 commit defines the contract only. Provisioning a real database,
-loading the 5,000-document manifest and benchmarking retrieval are separate,
-measured steps.
+The schema is now exercised by the Phase 4 demo against a dedicated PostgreSQL
+database with pgvector enabled. The interactive demo uses a controlled subset of
+the 5,000-document catalog for speed and cost control; the same loader can scale
+to the full manifest for performance and retrieval benchmarking.
