@@ -13,6 +13,11 @@ shortcuts:
   /rgpd: {purpose: "Vue RGPD / gouvernance"}
   /signatures:
     purpose: "Pilotage des signatures"
+    allowed_groups:
+      - RAG_SALES
+      - RAG_FINANCE
+      - RAG_LEGAL
+      - RAG_EXECUTIVE
     variants:
       - "/signatures mois"
       - "/signatures commerciaux"
