@@ -37,3 +37,20 @@ def test_unified_demo_routes_shortcuts_before_rag() -> None:
     assert "run_shortcut(" in text
     assert "test_phase4_shortcuts.py" in text
     assert "test_phase4_signatures.py" in text
+
+
+SIGNATURES = ROOT / "scripts" / "test_phase4_signatures.py"
+SHORTCUTS_CONFIG = ROOT / "config" / "shortcuts.yml"
+
+
+def test_signature_shortcut_requires_authorized_group() -> None:
+    text = _text(SIGNATURES)
+    config = _text(SHORTCUTS_CONFIG)
+
+    assert "def authorize(groups: list[str]) -> bool:" in text
+    assert "restricted_message" in text
+    assert "--group" in text
+    assert "rag_sales" in config
+    assert "rag_finance" in config
+    assert "rag_legal" in config
+    assert "rag_executive" in config
