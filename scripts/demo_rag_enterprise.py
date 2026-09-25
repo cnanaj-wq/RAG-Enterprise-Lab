@@ -157,6 +157,9 @@ def run_shortcut(
             "--month",
             month,
         ]
+
+        for group in groups:
+            command.extend(["--group", group])
     else:
         client_name = _shortcut_client(question, shortcut)
 
