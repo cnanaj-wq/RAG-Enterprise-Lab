@@ -729,15 +729,15 @@ def main() -> None:
     )
 
     print(
-        f"✅ Answer generated      : YES"
+        "✅ Answer generated      : YES"
     )
 
     print(
-        f"🛡️ ACL enforced          : YES"
+        "🛡️ ACL enforced          : YES"
     )
 
     print(
-        f"🎯 Relevance guardrail   : >= 0.50"
+        "🎯 Relevance guardrail   : >= 0.50"
     )
 
     if authority:
