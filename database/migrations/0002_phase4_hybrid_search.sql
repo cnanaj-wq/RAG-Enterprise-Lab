@@ -1,4 +1,4 @@
-﻿-- Phase 4 â€” governed hybrid retrieval.
+-- Phase 4 — governed hybrid retrieval.
 -- ACL filtering is deliberately materialized BEFORE lexical/vector ranking.
 -- The function is SECURITY INVOKER (default) and never delegates authorization
 -- to an LLM or decision model.
