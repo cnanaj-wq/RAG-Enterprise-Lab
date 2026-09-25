@@ -8,8 +8,6 @@
 
 # RAG Enterprise Lab
 
-# RAG Enterprise Lab
-
 Technical blueprint for a governed enterprise RAG system built for **GenAI Enterprise Lab**.
 
 ## Objective
