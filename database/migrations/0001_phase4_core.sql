@@ -1,4 +1,4 @@
-﻿-- Phase 4 â€” PostgreSQL + pgvector core schema
+-- Phase 4 — PostgreSQL + pgvector core schema
 -- Security invariant: authorization data is persisted here, but the LLM never
 -- participates in an ALLOW/DENY decision.
 
