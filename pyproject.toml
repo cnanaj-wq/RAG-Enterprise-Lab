@@ -13,7 +13,9 @@ dependencies = [
   "pgvector",
   "boto3",
   "httpx",
-  "pyyaml"
+  "pyyaml",
+  "openai>=3.19,<4",
+  "anthropic>=1.8,<2"
 ]
 
 [project.optional-dependencies]
