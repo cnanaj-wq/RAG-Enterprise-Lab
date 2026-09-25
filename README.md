@@ -1,10 +1,12 @@
 <p align="right">
-  English | <a href="https://github.com/cnanaj-wq/RAG-Enterprise-Lab/blob/main/README.fr.md">Français</a>
+  <a href="README.md">English</a> | <a href="README.fr.md">Français</a>
 </p>
 
 <p align="center">
-  <img src="./RAG_ENTERPRISE_LAB.png" alt="RAG Enterprise Lab — Ideas to Impact" width="520">
+  <img src="Logo_Blanc_RAG_Enterprise_Lab.png" alt="RAG Enterprise Lab" width="300">
 </p>
+
+# RAG Enterprise Lab
 
 # RAG Enterprise Lab
 
